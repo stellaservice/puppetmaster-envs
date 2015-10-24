@@ -1,3 +1,3 @@
-mod 'jfryman-nginx'
-mod 'zanloy-ohmyzsh'
-mod 'arnoudj-sudo'
+mod 'jfryman/nginx'
+mod 'zanloy/ohmyzsh'
+mod 'arnoudj/sudo'
