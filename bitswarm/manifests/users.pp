@@ -5,7 +5,6 @@ class bitswarm::users {
 
   user { 'ravery':
     ensure => present,
-    managehome => true,
   }
   ->
   ohmyzsh::install { ['root', 'ravery']: set_sh => true, disable_auto_update => true }
