@@ -1,5 +1,3 @@
-moduledir "contrib"
-
 mod 'puppetlabs/apt'
 mod 'puppetlabs/aws'
 mod 'puppetlabs/concat'
@@ -7,6 +5,7 @@ mod 'puppetlabs/docker_platform'
 mod 'puppetlabs/firewall'
 mod 'puppetlabs/java'
 mod 'puppetlabs/mysql'
+mod 'puppetlabs/ntp'
 mod 'puppetlabs/puppet_agent'
 mod 'puppetlabs/reboot'
 mod 'puppetlabs/stdlib'
