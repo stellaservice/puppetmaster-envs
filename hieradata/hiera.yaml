@@ -1,0 +1,12 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - "%{clientcert}"
+  - "%{environment}"
+  - "%{puppet_role}"
+  - "%{aws_tag_profile}"
+  - global
+
+:yaml:
+  :datadir: '/etc/puppet/environments/%{::environment}/hieradata'
