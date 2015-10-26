@@ -11,9 +11,12 @@ mod 'puppetlabs/reboot'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/vcsrepo'
 
+mod 'ghoneycutt/dnsclient'
 mod 'jfryman/nginx'
 mod 'zanloy/ohmyzsh'
 mod 'mayflower/php'
 mod 'nanliu/staging'
 mod 'arnoudj/sudo'
+mod 'saz/timezone'
 mod 'maestrodev/wget'
+
