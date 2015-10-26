@@ -1,5 +1,7 @@
-class bitswarm {
+class bitswarm(
+  $derp = 'derpisty'
+) {
   notify { 'hello-world':
-    message => "Hello world role=${::puppet_role}"
+    message => "Hello world ${derp} role=${::puppet_role}"
   }
 }
