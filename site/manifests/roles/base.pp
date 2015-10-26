@@ -3,8 +3,6 @@ class site::roles::base(
 ) {
   anchor { '::site::roles::base': }
 
-  include bitswarm
-  
   notify { 'puppet-clientcert':
     message => "## hello clientcert ${::clientcert}"
   }

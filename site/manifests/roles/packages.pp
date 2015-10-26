@@ -3,4 +3,5 @@ class site::roles::packages {
 
   package { 'zsh': }
   package { 'git': }
+  hiera_include('classes')
 }

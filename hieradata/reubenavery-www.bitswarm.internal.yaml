@@ -1,5 +1,4 @@
 ---
 classes:
-  - bitswarm
   - nginx
 bitswarm::derp: 'faboot'
