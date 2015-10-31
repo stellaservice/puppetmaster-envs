@@ -8,7 +8,7 @@ class reubenavery::www(
   }
 
   class { '::php':
-
+    fpm => true,
   }
 
   apache::vhost { 'reubenavery-www':
@@ -16,7 +16,7 @@ class reubenavery::www(
     docroot             => $reubenavery::wordpress::home,
     fallbackresource    => '/index.php',
     override            => 'all',
-    custom_fragment     => "ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
+    proxy_pass_match    => "^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 
   Class['apache']->anchor { '::reubenavery:www': }
