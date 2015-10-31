@@ -1,4 +1,4 @@
 ---
-classes:
-  - nginx
-bitswarm::derp: 'faboot'
+#classes:
+#  - nginx
+#bitswarm::derp: 'faboot'

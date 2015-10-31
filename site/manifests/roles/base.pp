@@ -3,9 +3,7 @@ class site::roles::base(
 ) {
   anchor { '::site::roles::base': }
 
-  notify { 'puppet-clientcert':
-    message => "## hello clientcert ${::clientcert}"
-  }
+  info("## hello clientcert ${::clientcert}")
 
   Class {
     require => Anchor['::site::roles::base'],
