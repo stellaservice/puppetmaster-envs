@@ -1,12 +1,16 @@
-class reubenavery::wordpress {
-  include www
-  include apache
+class reubenavery::wordpress(
+  $home = '/srv/reubenavery-www/wordpress',
+) {
+  include reubenavery
+  include reubenavery::www
 
   class { 'wordpress':
-    wp_owner    => 'wordpress',
-    wp_group    => 'wordpress',
-    db_user     => 'wordpress',
-    db_password => 'hvyH(S%t(\"0\"16',
+    install_dir => $home,
+    wp_owner    => $reubenavery::www_user,
+    wp_group    => $reubenavery::www_user,
+    db_user     => $reubenavery::db_user,
+    db_password => $reubenavery::db_pass,
+    require     => Class['reubenavery::www'],
   }
 
 }
