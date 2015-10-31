@@ -12,17 +12,15 @@ class reubenavery::www(
     include_src => true,
     require     => Class['apt'],
   }
-  ->
+
   class { '::apache':
     default_vhost => false,
   }
-  class { '::apache::mod::fastcgi':
-
-  }
+  
   class { '::php':
     fpm => true,
   }
-
+  ->
   apache::fastcgi::server { 'php':
     host       => '127.0.0.1:9000',
     timeout    => 15,
