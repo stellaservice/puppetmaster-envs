@@ -1,4 +1,6 @@
 ---
 classes:
   - reubenavery
+  - reubenavery::www
+
 bitswarm::derp: 'hiera working for reubenavery-www'
