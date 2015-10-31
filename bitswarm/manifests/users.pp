@@ -1,8 +1,4 @@
 class bitswarm::users {
-  #  user { 'ubuntu':
-  #    ensure => absent,
-  #  }
-  
   user { 'ravery':
     ensure     => present,
     managehome => true,
@@ -32,5 +28,4 @@ class bitswarm::users {
     tags     => ['NOPASSWD'],
     defaults => [ 'env_keep += "SSH_AUTH_SOCK"' ]
   }
-
 }

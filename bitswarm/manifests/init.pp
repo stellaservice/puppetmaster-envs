@@ -1,7 +1,7 @@
 class bitswarm(
-  $derp = 'derpisty'
+  $derp = undef
 ) {
-  notify { 'hello-world':
-    message => "Hello world ${derp} role=${::puppet_role}"
+  if $derp and $derp != '' {
+    info "bitswarm derp is $derp"
   }
 }

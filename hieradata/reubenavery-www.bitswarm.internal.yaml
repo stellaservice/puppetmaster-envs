@@ -1,4 +1,4 @@
 ---
 #classes:
 #  - nginx
-#bitswarm::derp: 'faboot'
+bitswarm::derp: 'hiera working for reubenavery-www'

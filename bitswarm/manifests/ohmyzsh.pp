@@ -1,1 +1,3 @@
-class bitswarm::ohmyzsh { }
+class bitswarm::ohmyzsh {
+
+}
