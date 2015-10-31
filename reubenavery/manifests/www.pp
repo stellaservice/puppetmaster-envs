@@ -10,6 +10,7 @@ class reubenavery::www(
 
   class { '::apache':
     default_vhost => false,
+    require => Class['apt::backports'],
   }
 
   class { '::php':
