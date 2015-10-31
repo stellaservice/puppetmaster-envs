@@ -1,5 +1,5 @@
 ---
 classes:
-  - reubenavery::wordpress
+  - reubenavery::www
 
 bitswarm::derp: 'hiera working for reubenavery-www'

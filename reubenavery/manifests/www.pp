@@ -8,9 +8,9 @@ class reubenavery::www(
   }
 
   class { 'apache::mod::php':
-    content => '
-AddHandler php5-script .php
-AddType text/html .php',
+#    content => '
+#AddHandler php5-script .php
+#AddType text/html .php',
   }
 
   class { '::php':
