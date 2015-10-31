@@ -1,7 +1,6 @@
 class reubenavery::wordpress(
-  $home = '/srv/reubenavery-www/wordpress',
-) {
-  include reubenavery
+  $home = "${reubenavery::srv_home}/wordpress",
+) inherits reubenavery {
   include reubenavery::www
 
   class { '::wordpress':
