@@ -17,9 +17,7 @@ class reubenavery::www(
     default_vhost => false,
   }
 
-  class { '::php':
-    fpm => true,
-  }
+  class { 'php::fpm': }
   ->
   apache::fastcgi::server { 'php':
     host       => '127.0.0.1:9000',
