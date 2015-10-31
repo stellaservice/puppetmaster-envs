@@ -17,7 +17,7 @@ mod 'stahnma/epel'
 mod 'jethrocarr/hostname'
 mod 'jfryman/nginx'
 mod 'mayflower/php'
-mod 'stephenrjohnson/puppet
+mod 'stephenrjohnson/puppet'
 mod 'example42/puppi'
 mod 'nanliu/staging'
 mod 'arnoudj/sudo'
