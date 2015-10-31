@@ -2,15 +2,20 @@ class reubenavery::www(
   $fastcgi_socket = 'fcgi://127.0.0.1:9000/$1',
 ) {
   include apt
-  class { 'apt::backports':
-    repos    => 'main universe multiverse restricted',
-    require  => Class['apt'],
+  # deb http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
+  # deb-src http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
+  apt::source { 'backports':
+    location    => 'http://us-east-1.ec2.archive.ubuntu.com/ubuntu/',
+    key         => '630239CC130E1A7FD81A27B140976EAF437D05B5',
+    repos       => 'main restricted universe multiverse',
+    include_src => true,
+    require     => Class['apt'],
   }
   include reubenavery::wordpress
 
   class { '::apache':
     default_vhost => false,
-    require => Class['apt::backports'],
+    require       => Class['apt::backports'],
   }
 
   class { '::php':
