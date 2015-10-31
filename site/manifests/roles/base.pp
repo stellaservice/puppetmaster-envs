@@ -17,6 +17,7 @@ class site::roles::base(
 
   class { '::puppet::agent':
     puppet_server => 'puppet.bitswarm.io',
+    reportserver => 'puppet.bitswarm.io',
   }
 
   sshkey { 'github.com':
