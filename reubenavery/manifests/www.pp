@@ -7,13 +7,6 @@ class reubenavery::www(
     default_vhost => false,
   }
 
-  include apache::mod::prefork
-  class { 'apache::mod::php':
-#    content => '
-#AddHandler php5-script .php
-#AddType text/html .php',
-  }
-
   class { '::php':
 
   }
