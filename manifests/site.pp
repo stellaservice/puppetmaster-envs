@@ -29,3 +29,7 @@ node 'ip-10-108-0-134.bitswarm.internal' inherits default {
     refreshonly => true,
   }
 }
+
+node 'reubenavery-www' inherits 'ip-10-108-0-134.bitswarm.internal' {
+
+}
