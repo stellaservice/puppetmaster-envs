@@ -3,6 +3,11 @@ class reubenavery::wordpress(
 ) inherits reubenavery {
   include reubenavery::www
 
+  apache::vhost { 'reubenavery-www':
+    port    => '80',
+    docroot => $home,
+  }
+
   class { '::wordpress':
     install_dir => $home,
     wp_owner    => $reubenavery::www_user,

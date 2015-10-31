@@ -1,6 +1,8 @@
 class reubenavery::www {
-  class { '::apache':
+  include reubenavery
 
+  class { '::apache':
+    default_vhost => false,
   }
 
   Class['apache']->anchor { '::reubenavery:www': }
