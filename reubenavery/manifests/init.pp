@@ -3,6 +3,7 @@ class reubenavery(
   $www_user = $reubenavery::params::www_user,
   $db_user  = 'wordpress',
   $db_pass  = 'dok3490vckz',
+  $db_root_pw = 'dakos934jkx',
 ) inherits reubenavery::params {
   file { '/srv':
     ensure => directory,
@@ -17,4 +18,10 @@ class reubenavery(
   group { $www_user:
     ensure => present,
   }
+
+  class { '::mysql::server':
+    root_password           => $db_root_pw,
+    remove_default_accounts => true,
+  }
+
 }
