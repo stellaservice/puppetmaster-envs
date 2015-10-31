@@ -2,6 +2,8 @@ class bitswarm(
   $derp = undef
 ) {
   if $derp and $derp != '' {
-    info("bitswarm derp= $derp")
+    notify { "bitswarm-derp":
+      message => "## bitswarm derp= $derp"
+    }
   }
 }
