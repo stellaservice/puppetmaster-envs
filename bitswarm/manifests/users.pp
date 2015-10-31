@@ -2,15 +2,41 @@ class bitswarm::users {
   #  user { 'ubuntu':
   #    ensure => absent,
   #  }
+  exec { "ohmyzsh::git clone ${name}":
+    creates => "${home}/.oh-my-zsh",
+    command => "/usr/bin/git clone git://github.com/robbyrussell/oh-my-zsh.git ${home}/.oh-my-zsh",
+    user    => $name,
+    require => [Package['git'], Package['zsh']]
+  }
 
+  exec { "ohmyzsh::cp .zshrc ${name}":
+    creates => "${home}/.zshrc",
+    command => "/bin/cp ${home}/.oh-my-zsh/templates/zshrc.zsh-template ${home}/.zshrc",
+    user    => $name,
+    require => Exec["ohmyzsh::git clone ${name}"],
+  }
+
+  if ! defined(User[$name]) {
+    user { "ohmyzsh::user ${name}":
+      ensure     => present,
+      name       => $name,
+      managehome => true,
+      shell      => $bitswarm::ohmyzsh::params::zsh,
+      require    => Package['zsh'],
+    }
+  } else {
+    User <| title == $name |> {
+      shell => $bitswarm::ohmyzsh::params::zsh
+    }
+  }
   user { 'ravery':
     ensure     => present,
     managehome => true,
   }
   ->
-  ohmyzsh::install { ['root', 'ravery']: set_sh => true, disable_auto_update => true }
+  bitswarm::ohmyzsh::install { ['root', 'ravery']: set_sh => true, disable_auto_update => true }
   ->
-  ohmyzsh::theme { ['root', 'ravery']: theme => 'dpoggi' }
+  bitswarm::ohmyzsh::theme { ['root', 'ravery']: theme => 'dpoggi' }
 
   ssh_authorized_key { 'ravery@bitswarm.io':
     user => 'ravery',
