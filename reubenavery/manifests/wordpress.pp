@@ -11,5 +11,4 @@ class reubenavery::wordpress(
     db_password => $reubenavery::db_pass,
     require     => Class['reubenavery::www'],
   }
-
 }
