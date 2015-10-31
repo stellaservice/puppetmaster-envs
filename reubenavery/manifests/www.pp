@@ -6,6 +6,7 @@ class reubenavery::www(
     location => 'http://archive.ubuntu.com/ubuntu',
     key      => '630239CC130E1A7FD81A27B140976EAF437D05B5',
     repos    => 'main universe multiverse restricted',
+    require  => Class['apt'],
   }
   include reubenavery::wordpress
 
