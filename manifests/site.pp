@@ -22,6 +22,6 @@ node 'ip-10-108-0-134.bitswarm.internal' {
   exec { "set-hostname":
     command => "/bin/hostname -F /etc/hostname",
     unless => "/usr/bin/test `hostname` = `/bin/cat /etc/hostname`",
-    notify => Service[$rsyslog::params::service_name],
+#    notify => Service[$rsyslog::params::service_name],
   }
 }
