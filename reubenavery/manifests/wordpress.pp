@@ -4,7 +4,7 @@ class reubenavery::wordpress(
   include reubenavery
   include reubenavery::www
 
-  class { 'wordpress':
+  class { '::wordpress':
     install_dir => $home,
     wp_owner    => $reubenavery::www_user,
     wp_group    => $reubenavery::www_user,
