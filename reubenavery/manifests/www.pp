@@ -16,7 +16,7 @@ class reubenavery::www(
   class { '::apache':
     default_vhost => false,
   }
-  
+
   class { '::php':
     fpm => true,
   }
@@ -35,8 +35,8 @@ class reubenavery::www(
     docroot             => $reubenavery::wordpress::home,
     fallbackresource    => '/index.php',
     override            => 'all',
-    custom_fragment     => "AddType application/x-httpd-php .php
-    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
+#    custom_fragment     => "AddType application/x-httpd-php .php
+#    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 
   Class['apache']->anchor { '::reubenavery:www': }
