@@ -1,4 +1,4 @@
 ---
-#classes:
-#  - nginx
+classes:
+  - reubenavery
 bitswarm::derp: 'hiera working for reubenavery-www'
