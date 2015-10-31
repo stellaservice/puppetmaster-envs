@@ -57,6 +57,7 @@ define bitswarm::ohmyzsh::install(
   ~>
   exec { "ohmyzsh::chown ${name}":
     command => "chown -R ${name}:${name} ${home}/oh-my-zsh",
+    path    => ['/bin', '/usr/bin'],
     refreshonly => true,
   }
 
