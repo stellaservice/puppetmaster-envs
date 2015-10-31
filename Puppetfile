@@ -1,3 +1,4 @@
+mod 'puppetlabs/apache'
 mod 'puppetlabs/apt'
 mod 'puppetlabs/aws'
 mod 'puppetlabs/concat'
