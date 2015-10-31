@@ -1,4 +1,4 @@
 class reubenavery::params {
   $home = '/srv/reubenavery-www'
-  $www_user = 'apache2'
+  $www_user = 'wordpress'
 }

@@ -8,9 +8,13 @@ class reubenavery(
     ensure => directory,
   }
   ->
-  file { $srv_home:
-    ensure => directory,
-    owner  => $www_user,
-    group  => $www_user,
+  user { $www_user:
+    ensure     => present,
+    home       => $srv_home,
+    managehome => true,
+  }
+
+  group { $www_user:
+    ensure => present,
   }
 }
