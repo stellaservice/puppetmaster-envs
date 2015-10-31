@@ -1,6 +1,8 @@
 class reubenavery::www(
   $fastcgi_socket = 'fcgi://127.0.0.1:9000/$1',
 ) {
+  include apt
+  include apt::backports
   include reubenavery::wordpress
 
   class { '::apache':
