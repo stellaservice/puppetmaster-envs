@@ -1,6 +1,7 @@
 class reubenavery::www(
   $fastcgi_socket = 'fcgi://127.0.0.1:9000/$1',
 ) {
+  include apt
   class { 'apt::backports':
     location => 'http://archive.ubuntu.com/ubuntu',
     key      => '630239CC130E1A7FD81A27B140976EAF437D05B5',
