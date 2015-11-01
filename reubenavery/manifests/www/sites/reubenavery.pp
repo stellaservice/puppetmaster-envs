@@ -31,14 +31,14 @@ class reubenavery::www::sites::reubenavery(
     db_password => $db_pass,
   }
 
-#  apache::vhost { 'reubenavery-www':
-#    servername          => 'www.reubenavery.com',
-#    serveraliases       => ['reubenavery.com'],
-#    port                => '80',
-#    docroot             => $docroot,
-#    fallbackresource    => '/index.php',
-#    override            => 'all',
+  apache::vhost { 'reubenavery-www':
+    servername          => 'www.reubenavery.com',
+    serveraliases       => ['reubenavery.com'],
+    port                => '80',
+    docroot             => $docroot,
+    fallbackresource    => '/index.php',
+    override            => 'all',
 #    custom_fragment     => 'AddType application/x-httpd-php .php'
-#    #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
-#  }
+    #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
+  }
 }
