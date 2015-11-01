@@ -36,10 +36,7 @@ class reubenavery::www::sites::reubenavery(
     serveraliases       => ['reubenavery.com'],
     port                => '80',
     docroot             => $docroot,
-#    fallbackresource    => '/index.php',
     override            => 'all',
-#    custom_fragment     => 'AddType application/x-httpd-php .php'
-    #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 
   ssh_authorized_key { 'reubenavery-www-general':
