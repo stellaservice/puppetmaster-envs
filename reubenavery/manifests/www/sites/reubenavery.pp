@@ -7,9 +7,6 @@ class reubenavery::www::sites::reubenavery(
 ) inherits reubenavery::params {
   include reubenavery::www
 
-  file { $home:
-    ensure => directory,
-  }
   user { $www_user:
     ensure     => present,
     home       => $home,
