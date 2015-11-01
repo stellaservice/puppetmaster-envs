@@ -5,14 +5,14 @@ class reubenavery::www(
   include drupal_php
 
   include php
-  include php::fpm
-
-  apache::fastcgi::server { 'php':
-    host       => '127.0.0.1:9000',
-    timeout    => 15,
-    flush      => false,
-    faux_path  => '/var/www/php.fcgi',
-    fcgi_alias => '/php.fcgi',
-    file_type  => 'application/x-httpd-php'
-  }
+#  include php::fpm
+#
+#  apache::fastcgi::server { 'php':
+#    host       => '127.0.0.1:9000',
+#    timeout    => 15,
+#    flush      => false,
+#    faux_path  => '/var/www/php.fcgi',
+#    fcgi_alias => '/php.fcgi',
+#    file_type  => 'application/x-httpd-php'
+#  }
 }
