@@ -20,20 +20,20 @@ class reubenavery(
     ensure => installed,
   }
 
-#  file { '/srv/mysql-data':
+#  file { '/srv/mysql':
 #    ensure  => directory,
 #    require => File['/srv'],
-#  }
-#  ->
-#  file { '/var/lib/mysql':
-#    ensure  => link,
-#    target  => '/srv/mysql-data',
-#    force   => true,
 #  }
 #  ->
   class { '::mysql::server':
     root_password           => $db_root_pw,
     remove_default_accounts => true,
     purge_conf_dir          => true,
+    override_options        => {
+      'mysqld' => {
+        datadir => '/srv/mysql/',
+        tmpdir  =>'/srv/mysql/temp/',
+      }
+    }
   }
 }
