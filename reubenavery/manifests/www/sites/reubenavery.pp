@@ -23,6 +23,7 @@ class reubenavery::www::sites::reubenavery(
     wp_group    => $www_user,
     db_user     => $db_user,
     db_password => $db_pass,
+    require     => User[$www_user],
   }
 
   apache::vhost { 'reubenavery-www':
@@ -30,7 +31,7 @@ class reubenavery::www::sites::reubenavery(
     docroot             => $docroot,
     fallbackresource    => '/index.php',
     override            => 'all',
-    custom_fragment => 'AddType application/x-httpd-php .php'
+    custom_fragment     => 'AddType application/x-httpd-php .php'
     #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 }
