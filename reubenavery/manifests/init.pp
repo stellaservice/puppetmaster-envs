@@ -39,9 +39,10 @@ class reubenavery(
     }
   }
 
-  class { 'pureftpd':
-    config => {
-      chrooteveryone => 'yes',
-    }
+  class { 'vsftpd':
+    anonymous_enable  => 'NO',
+    write_enable      => 'YES',
+    ftpd_banner       => 'ReubenAvery-WWW FTP Server',
+    chroot_local_user => 'YES',
   }
 }
