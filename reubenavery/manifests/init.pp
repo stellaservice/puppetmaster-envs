@@ -16,11 +16,15 @@ class reubenavery(
     require     => Class['apt'],
   }
 
+  file {  '/srv/mysql':
+    ensure => directory,
+    require => File['/srv'],
+  }
+  ->
   file { '/var/lib/mysql':
     ensure  => link,
     target  => '/srv/mysql',
     force   => true,
-    require => File['/srv'],
   }
   ->
   class { '::mysql::server':

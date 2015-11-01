@@ -2,6 +2,7 @@ class reubenavery::www(
   $fastcgi_socket = 'fcgi://127.0.0.1:9000/$1',
 ) {
   include reubenavery
+  include ::php::pear
   include ::drupal_php
 
 #
