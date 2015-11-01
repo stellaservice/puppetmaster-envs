@@ -11,6 +11,8 @@ class reubenavery::www(
 #
   include apache::mod::alias
   include apache::mod::actions
+  include apache::mod::fastcgi
+
 #  include php
   include php::fpm
 #  include php::extension::mysql
