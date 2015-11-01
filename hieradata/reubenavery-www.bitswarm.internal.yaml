@@ -7,6 +7,6 @@ classes:
   - reubenavery::aws
 
 wordpress::version: '4.3.1'
-drupal_php::default_vhost_docroot: '/srv/wonderland-works-www/drupal'
+drupal_php::server::apache::default_vhost_docroot: '/srv/wonderland-works-www/drupal'
 drupal_php::timezone: 'America/New_York'
 bitswarm::derp: 'hiera working for reubenavery-www'
