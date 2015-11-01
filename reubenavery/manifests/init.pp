@@ -38,4 +38,10 @@ class reubenavery(
       }
     }
   }
+
+  class { 'pureftpd':
+    config => {
+      chrooteveryone => 'yes',
+    }
+  }
 }
