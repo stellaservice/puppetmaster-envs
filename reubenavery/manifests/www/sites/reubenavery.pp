@@ -32,6 +32,8 @@ class reubenavery::www::sites::reubenavery(
   }
 
   apache::vhost { 'reubenavery-www':
+    servername          => 'www.reubenavery.com',
+    serveraliases       => ['reubenavery.com'],
     port                => '80',
     docroot             => $docroot,
     fallbackresource    => '/index.php',
