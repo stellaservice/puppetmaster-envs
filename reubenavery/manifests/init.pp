@@ -31,8 +31,7 @@ class reubenavery(
     purge_conf_dir          => true,
     override_options        => {
       'mysqld' => {
-        datadir => '/srv/mysql/',
-        tmpdir  =>'/srv/mysql/temp/',
+        datadir => '/srv/mysql',
       }
     }
   }
