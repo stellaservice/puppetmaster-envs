@@ -19,18 +19,18 @@ class reubenavery(
   package { 'build-essential':
     ensure => installed,
   }
-  
-  file { '/srv/mysql-data':
-    ensure  => directory,
-    require => File['/srv'],
-  }
-  ->
-  file { '/var/lib/mysql':
-    ensure  => link,
-    target  => '/srv/mysql-data',
-    force   => true,
-  }
-  ->
+
+#  file { '/srv/mysql-data':
+#    ensure  => directory,
+#    require => File['/srv'],
+#  }
+#  ->
+#  file { '/var/lib/mysql':
+#    ensure  => link,
+#    target  => '/srv/mysql-data',
+#    force   => true,
+#  }
+#  ->
   class { '::mysql::server':
     root_password           => $db_root_pw,
     remove_default_accounts => true,
