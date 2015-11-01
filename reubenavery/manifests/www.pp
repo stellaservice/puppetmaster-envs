@@ -36,7 +36,7 @@ apache::vhost { 'reubenavery-www':
     docroot             => $reubenavery::wordpress::home,
     fallbackresource    => '/index.php',
     override            => 'all',
-#    custom_fragment     => "AddType application/x-httpd-php .php
+    custom_fragment => 'AddType application/x-httpd-php .php'
 #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 
