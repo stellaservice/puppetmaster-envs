@@ -1,7 +1,7 @@
-node 'ip-10-108-0-89.bitswarm.internal' inherits default {
+node 'ip-10-108-0-245.bitswarm.internal' inherits default {
   host { $fqdn:
     ip           => $ipaddress,
-    host_aliases => ['ip-10-108-0-89', 'ip-10-108-0-89.bitswarm.internal', 'reubenavery-www', 'reubenavery-www.bitswarm.internal']
+    host_aliases => ['ip-10-108-0-245', 'ip-10-108-0-245.bitswarm.internal', 'reubenavery-www', 'reubenavery-www.bitswarm.internal']
   }
 
   file { "/etc/hostname":
@@ -24,6 +24,6 @@ node 'ip-10-108-0-89.bitswarm.internal' inherits default {
   }
 }
 
-node 'reubenavery-www' inherits 'ip-10-108-0-89.bitswarm.internal' {
+node 'reubenavery-www' inherits 'ip-10-108-0-245.bitswarm.internal' {
 
 }
