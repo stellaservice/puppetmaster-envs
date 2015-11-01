@@ -16,14 +16,14 @@ class reubenavery(
     require     => Class['apt'],
   }
 
-  file {  '/srv/mysql':
+  file {  '/srv/mysql-data':
     ensure => directory,
     require => File['/srv'],
   }
   ->
   file { '/var/lib/mysql':
     ensure  => link,
-    target  => '/srv/mysql',
+    target  => '/srv/mysql-data',
     force   => true,
   }
   ->
