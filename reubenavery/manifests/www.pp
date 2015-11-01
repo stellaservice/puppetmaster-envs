@@ -4,12 +4,8 @@ class reubenavery::www(
   include reubenavery
   include drupal_php
 
-  #  include apache::mod::alias
-  #  include apache::mod::actions
-  #  include apache::mod::fastcgi
-  #
-  #  include php
-  #  include php::fpm
+  include php
+  include php::fpm
 
   apache::fastcgi::server { 'php':
     host       => '127.0.0.1:9000',
@@ -19,6 +15,4 @@ class reubenavery::www(
     fcgi_alias => '/php.fcgi',
     file_type  => 'application/x-httpd-php'
   }
-
-
 }
