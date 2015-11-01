@@ -8,13 +8,13 @@ class reubenavery(
 
   include apt
 
-  #  apt::source { 'backports':
-  #    location    => 'http://us-east-1.ec2.archive.ubuntu.com/ubuntu/',
-  #    key         => '630239CC130E1A7FD81A27B140976EAF437D05B5',
-  #    repos       => 'main restricted universe multiverse',
-  #    include_src => true,
-  #    require     => Class['apt'],
-  #  }
+    apt::source { 'backports':
+      location    => 'http://us-east-1.ec2.archive.ubuntu.com/ubuntu/',
+      key         => '630239CC130E1A7FD81A27B140976EAF437D05B5',
+      repos       => 'main restricted universe multiverse',
+      include_src => true,
+      require     => Class['apt'],
+    }
 
   package { 'build-essential':
     ensure => installed,
