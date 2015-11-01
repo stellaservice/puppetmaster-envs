@@ -53,22 +53,22 @@ class drupal_php (
   include php::extension::mysql
 
   # php module wants to use apt as the provider but the package isn't available on ubuntu 12.04.
-  class { 'php::extension::redis':
-    provider => 'pecl',
-    package  => 'redis',
-  }->
-
-  php::config { 'redis_conf':
-    file  => "${php::params::config_root_ini}/redis.ini",
-    config => [
-      'set ".anon/extension" "redis.so"'
-    ],
-  }
-
-  # Modifying the config file is failing.
-  class { 'php::extension::uploadprogress':
-    package => 'uploadprogress',
-  }
+#  class { 'php::extension::redis':
+#    provider => 'pecl',
+#    package  => 'redis',
+#  }->
+#
+#  php::config { 'redis_conf':
+#    file  => "${php::params::config_root_ini}/redis.ini",
+#    config => [
+#      'set ".anon/extension" "redis.so"'
+#    ],
+#  }
+#
+#  # Modifying the config file is failing.
+#  class { 'php::extension::uploadprogress':
+#    package => 'uploadprogress',
+#  }
 
   include php::extension::gd
 
