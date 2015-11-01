@@ -4,4 +4,4 @@ node default {
   class { '::bitswarm::users': }
 }
 
-include 'nodes/*.pp'
+import 'nodes/*.pp'
