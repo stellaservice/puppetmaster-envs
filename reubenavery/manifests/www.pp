@@ -25,12 +25,20 @@ class reubenavery::www(
     host       => '127.0.0.1:9000',
     timeout    => 15,
     flush      => false,
-    faux_path  => '/var/www/php.fcgi',
-    fcgi_alias => '/php.fcgi',
-    file_type  => 'application/x-httpd-php'
+    faux_path  => '/var/www/',
+    fcgi_alias => '/usr/lib/cgi-bin/',
+    file_type  => 'php.fcgi'# 'application/x-httpd-php'
   }
+#FastCGIExternalServer /var/www/php.fcgi -idle-timeout 15  -host 127.0.0.1:9000
+#Alias /php.fcgi /var/www/php.fcgi
+#Action application/x-httpd-php /php.fcgi
 
-  apache::vhost { 'reubenavery-www':
+#FastCgiExternalServer /var/www/php5.external -host 127.0.0.1:9000
+#AddHandler php5-fcgi .php
+#Alias /usr/lib/cgi-bin/	/var/www/
+#Action php5-fcgi /usr/lib/cgi-bin/php5.external
+
+apache::vhost { 'reubenavery-www':
     port                => '80',
     docroot             => $reubenavery::wordpress::home,
     fallbackresource    => '/index.php',
