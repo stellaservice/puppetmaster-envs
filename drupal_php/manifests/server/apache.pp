@@ -16,6 +16,7 @@ class drupal_php::server::apache (
     $purge_configs = true,
     $apache_mods = [
       'actions',
+      'alias',
       'auth_basic',
       'authn_file',
       'authz_groupfile',
@@ -25,6 +26,7 @@ class drupal_php::server::apache (
       'dir',
       'env',
       'expires',
+      'fastcgi',
       'headers',
       'mime',
       'mime_magic',

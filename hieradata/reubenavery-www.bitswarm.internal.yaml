@@ -6,5 +6,5 @@ classes:
   - reubenavery::www::sites::endarus
   - reubenavery::aws
 
-apache::default_vhost: false
+drupal_php::server::apache::mpm_module: 'worker'
 bitswarm::derp: 'hiera working for reubenavery-www'
