@@ -6,7 +6,7 @@ classes:
   - reubenavery::www::sites::endarus
   - reubenavery::aws
 
-drupal_php::server::apache::mpm_module: 'worker'
+drupal_php::server::apache::mpm_module: 'prefork'
 drupal_php::server::apache::apache_mods:
   - actions
   - alias
@@ -30,5 +30,5 @@ drupal_php::server::apache::apache_mods:
   - status
   - suexec
   - xsendfile
-  
+
 bitswarm::derp: 'hiera working for reubenavery-www'
