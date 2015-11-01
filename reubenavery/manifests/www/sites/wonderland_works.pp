@@ -29,7 +29,7 @@ class reubenavery::www::sites::wonderland_works(
 
   apache::vhost { 'wonderland-works-www':
     servername          => 'www.wonderland.works',
-    serveraliases       => ['wonderland.works'],
+    serveraliases       => ['wonderland.works', 'concussive.net', 'www.concussive.net', 'bitswarm.io', 'www.bitswarm.io'],
     port                => '80',
     docroot             => $docroot,
     override            => 'all',
