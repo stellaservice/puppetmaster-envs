@@ -4,8 +4,8 @@ class reubenavery::www(
   include reubenavery
   include drupal_php
 
-  include php
-  include php::fpm
+#  include php
+#  include php::fpm
 #
 #  apache::fastcgi::server { 'php':
 #    host       => '127.0.0.1:9000',
