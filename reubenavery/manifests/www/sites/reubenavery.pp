@@ -44,4 +44,10 @@ class reubenavery::www::sites::reubenavery(
     type => 'ssh-rsa',
     key  => 'AAAAB3NzaC1yc2EAAAADAQABAAAAgQDruHUiFjNbJfnmVeuU/B+Udv139ngjN1+qsXcDQFpVc4fGRWUG+CCAi9S+Tx/W/62YqU1qK2uJRzrpeyO+aEJorjWO7ozNn23alsnTWwuYC+YhPgQU4DkMe/5pcukee5p0I2qZrUxNtGcLmoUjvxNmbR5egVos9uhX0xnhBCqGBQ==',
   }
+
+  file { '/var/www/default':
+    ensure => link,
+    target => $docroot,
+    force => true,
+  }
 }
