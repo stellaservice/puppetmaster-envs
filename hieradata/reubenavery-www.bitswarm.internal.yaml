@@ -6,6 +6,8 @@ classes:
   - reubenavery::www::sites::endarus
   - reubenavery::aws
 
+php::fpm::ensure: 'absent'
+
 #drupal_php::server::apache::mpm_module: 'prefork'
 #drupal_php::server::apache::apache_mods:
 #  - actions
