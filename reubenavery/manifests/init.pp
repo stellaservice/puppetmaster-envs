@@ -16,6 +16,10 @@ class reubenavery(
   #    require     => Class['apt'],
   #  }
 
+  package { 'build-essential':
+    ensure => installed,
+  }
+  
   file { '/srv/mysql-data':
     ensure  => directory,
     require => File['/srv'],

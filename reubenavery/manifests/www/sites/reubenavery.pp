@@ -12,18 +12,23 @@ class reubenavery::www::sites::reubenavery(
     home       => $home,
     managehome => true,
   }
-
+  ->
   group { $www_user:
     ensure => present,
   }
-
+  ->
+  file { $docroot:
+    ensure => directory,
+    owner  => $www_user,
+    group  => $www_user,
+  }
+  ->
   class { '::wordpress':
     install_dir => $docroot,
     wp_owner    => $www_user,
     wp_group    => $www_user,
     db_user     => $db_user,
     db_password => $db_pass,
-    require     => User[$www_user],
   }
 
   apache::vhost { 'reubenavery-www':
