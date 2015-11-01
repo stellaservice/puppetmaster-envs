@@ -5,6 +5,6 @@ classes:
   - reubenavery::www::sites::reubidium
   - reubenavery::www::sites::endarus
   - reubenavery::aws
-  
+
 apache::default_vhost: false
 bitswarm::derp: 'hiera working for reubenavery-www'
