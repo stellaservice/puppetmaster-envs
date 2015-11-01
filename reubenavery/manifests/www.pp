@@ -17,6 +17,8 @@ class reubenavery::www(
     default_vhost => false,
   }
 
+  include apache::mod::alias
+
   class { 'php::fpm': }
   ->
   apache::fastcgi::server { 'php':
