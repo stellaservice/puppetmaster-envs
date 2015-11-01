@@ -6,7 +6,7 @@ classes:
   - reubenavery::www::sites::endarus
   - reubenavery::aws
 
-php::fpm::ensure: 'absent'
+wordpress::version: '4.3.1'
 
 #drupal_php::server::apache::mpm_module: 'prefork'
 #drupal_php::server::apache::apache_mods:
