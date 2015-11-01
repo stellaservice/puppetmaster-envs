@@ -8,23 +8,10 @@ class reubenavery(
 
   include apt
 
-  #  apt::source { 'backports':
-  #    location    => 'http://us-east-1.ec2.archive.ubuntu.com/ubuntu/',
-  #    key         => '630239CC130E1A7FD81A27B140976EAF437D05B5',
-  #    repos       => 'main restricted universe multiverse',
-  #    include_src => true,
-  #    require     => Class['apt'],
-  #  }
-
-  package { 'build-essential':
+  package { ['build-essential', 'unzip']:
     ensure => installed,
   }
 
-  #  file { '/srv/mysql':
-  #    ensure  => directory,
-  #    require => File['/srv'],
-  #  }
-  #  ->
   class { '::mysql::server':
     root_password           => $db_root_pw,
     remove_default_accounts => true,
@@ -37,11 +24,5 @@ class reubenavery(
         datadir => '/srv/mysql',
       }
     }
-  }
-
-  class { 'vsftpd':
-    anonymous_enable  => 'NO',
-    write_enable      => 'YES',
-    ftpd_banner       => 'ReubenAvery-WWW FTP Server',
   }
 }
