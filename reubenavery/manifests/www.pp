@@ -19,9 +19,10 @@ class reubenavery::www(
 
   include apache::mod::alias
   include apache::mod::actions
+  include php
+  include php::fpm
+  include php::extension::mysql
 
-  class { 'php::fpm': }
-  ->
   apache::fastcgi::server { 'php':
     host       => '127.0.0.1:9000',
     timeout    => 15,
@@ -31,7 +32,7 @@ class reubenavery::www(
     file_type  => 'application/x-httpd-php'
   }
 
-apache::vhost { 'reubenavery-www':
+  apache::vhost { 'reubenavery-www':
     port                => '80',
     docroot             => $reubenavery::wordpress::home,
     fallbackresource    => '/index.php',
