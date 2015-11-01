@@ -16,6 +16,13 @@ class reubenavery(
     require     => Class['apt'],
   }
 
+  file { '/var/lib/mysql':
+    ensure  => link,
+    target  => '/srv/mysql',
+    force   => true,
+    require => File['/srv'],
+  }
+  ->
   class { '::mysql::server':
     root_password           => $db_root_pw,
     remove_default_accounts => true,
