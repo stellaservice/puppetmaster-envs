@@ -18,7 +18,8 @@ class reubenavery::www(
   }
 
   include apache::mod::alias
-
+  include apache::mod::actions
+  
   class { 'php::fpm': }
   ->
   apache::fastcgi::server { 'php':
