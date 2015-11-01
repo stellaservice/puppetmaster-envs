@@ -42,10 +42,10 @@ class reubenavery::www::sites::reubenavery(
     #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 
-  ssh_authorized_key { $www_user:
+  ssh_authorized_key { 'reubenavery-www-general':
     user => $www_user,
     type => 'ssh-rsa',
-    key  => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDxBGMmBih454ng98CUjgTfW/j2f38WIgYgCYJUeEjs9Ovwmbz8ZVSYZ449txUB5z6hjaEG+/Fb1jrqXVqLWnLDgcDtCmayQD+3vUq2vTHPnaDILodssx7t8CWOOxEWVjXEI2OhHZSREQxci1u4u5PbiIgoA1vTLLCJwqLrfESaDqR2eF7ATHd83eKZrx4hCIZlEwjaIemQiQVYEvJ2XYCeBEg5U967k+5NS3kqnhObtqlEL4xzmtxBvqeOrL5Iwe9+qNXJG4rems54PXAnzp4ANdkFtXeJHbAcivD4NXgBk1NtPUCSB/kPKSlN9cgOOYf/cJDW4b0Cp3KZXOuZcJ6P',
+    key  => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQC4nBaJAjFyPk8/s+Mwgm9wwFilbbyQNEANCgwkYlfAzSKsW9Gw6ZAJyjuxsJCpcvkWnvTy7DOX0/gOuxChW3FB4a1VOeYaoIUslbsUpfCCXcSeg8lSwwWS1RJcXAgGKHStik/7jlmJ88CS21b1YtsgAy5+jkxqAOwwHvrYOATUJjTfdgxrMLediIHm5oEUCo8AgnrkyFNQraUgdhXQkVYXHsmlYQu58q22ae+sG4yZzqw08y0UUHDzPyCecxbbNygSysvn89xyddpbQN+FSTD5Du39aCEKEsL1PGRJKvtkSCK1jY73kTeLQYL0QiJoZLecblC8W0veKUFk57Va4B0V194+yfLiseqOZSgzmt38VkK3qyJlc9VB4zhJWQVh1j9vYb3sF47luT5Um/GXX1lNB90VvlbTVUXlX15Qq8JuOTTn+5zZD5rXXHRYIyRH60Yu1slij25Ox2lf1zeTbhgGGicLfRtmivIbcngLZ/R3sLT+dOsCILY1BAmV92TMwkiTPulFGsKsEzKhQWpYMig0aTw7u3Hv3nCVfk+uQFCpiEDHVfxYivPLMwOG7rDX2squB8M8dOq4Xj+et0KrdJEVHnRwxiSHM2ogX14spFXzUmKPIOwl9wxXAcd7GJxYqpt3IhzIRC97rpe3m80h1HMJwoAzrf4aN5P20ecjO1c/uw==',
   }
 
 }
