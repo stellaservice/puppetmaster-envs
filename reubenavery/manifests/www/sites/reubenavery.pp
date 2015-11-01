@@ -45,6 +45,6 @@ class reubenavery::www::sites::reubenavery(
   ssh_authorized_key { 'reubenavery-www-general':
     user => $www_user,
     type => 'ssh-rsa',
-    key  => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQC4nBaJAjFyPk8/s+Mwgm9wwFilbbyQNEANCgwkYlfAzSKsW9Gw6ZAJyjuxsJCpcvkWnvTy7DOX0/gOuxChW3FB4a1VOeYaoIUslbsUpfCCXcSeg8lSwwWS1RJcXAgGKHStik/7jlmJ88CS21b1YtsgAy5+jkxqAOwwHvrYOATUJjTfdgxrMLediIHm5oEUCo8AgnrkyFNQraUgdhXQkVYXHsmlYQu58q22ae+sG4yZzqw08y0UUHDzPyCecxbbNygSysvn89xyddpbQN+FSTD5Du39aCEKEsL1PGRJKvtkSCK1jY73kTeLQYL0QiJoZLecblC8W0veKUFk57Va4B0V194+yfLiseqOZSgzmt38VkK3qyJlc9VB4zhJWQVh1j9vYb3sF47luT5Um/GXX1lNB90VvlbTVUXlX15Qq8JuOTTn+5zZD5rXXHRYIyRH60Yu1slij25Ox2lf1zeTbhgGGicLfRtmivIbcngLZ/R3sLT+dOsCILY1BAmV92TMwkiTPulFGsKsEzKhQWpYMig0aTw7u3Hv3nCVfk+uQFCpiEDHVfxYivPLMwOG7rDX2squB8M8dOq4Xj+et0KrdJEVHnRwxiSHM2ogX14spFXzUmKPIOwl9wxXAcd7GJxYqpt3IhzIRC97rpe3m80h1HMJwoAzrf4aN5P20ecjO1c/uw==',
+    key  => 'AAAAB3NzaC1yc2EAAAADAQABAAAAgQDruHUiFjNbJfnmVeuU/B+Udv139ngjN1+qsXcDQFpVc4fGRWUG+CCAi9S+Tx/W/62YqU1qK2uJRzrpeyO+aEJorjWO7ozNn23alsnTWwuYC+YhPgQU4DkMe/5pcukee5p0I2qZrUxNtGcLmoUjvxNmbR5egVos9uhX0xnhBCqGBQ==',
   }
 }
