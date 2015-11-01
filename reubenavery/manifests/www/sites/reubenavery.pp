@@ -38,7 +38,7 @@ class reubenavery::www::sites::reubenavery(
     docroot             => $docroot,
     fallbackresource    => '/index.php',
     override            => 'all',
-#    custom_fragment     => 'AddType application/x-httpd-php .php'
+    custom_fragment     => 'AddType application/x-httpd-php .php'
     #    ProxyPassMatch ^/(.*\\.php(/.*)?)$ ${fastcgi_socket}",
   }
 }
