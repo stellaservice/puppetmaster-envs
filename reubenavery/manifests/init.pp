@@ -43,6 +43,5 @@ class reubenavery(
     anonymous_enable  => 'NO',
     write_enable      => 'YES',
     ftpd_banner       => 'ReubenAvery-WWW FTP Server',
-    chroot_local_user => 'YES',
   }
 }
