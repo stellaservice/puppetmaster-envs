@@ -1,5 +1,9 @@
 ---
 classes:
-  - reubenavery::www
+  - reubenavery::www::sites::reubenavery
+  - reubenavery::www::sites::wonderland_works
+  - reubenavery::www::sites::reubidium
+  - reubenavery::www::sites::endarus
+  - reubenavery::aws
 
 bitswarm::derp: 'hiera working for reubenavery-www'

@@ -5,18 +5,15 @@ class reubenavery(
   $db_pass  = 'dok3490vckz',
   $db_root_pw = 'dakos934jkx',
 ) inherits reubenavery::params {
-  file { '/srv':
-    ensure => directory,
-  }
-  ->
-  user { $www_user:
-    ensure     => present,
-    home       => $srv_home,
-    managehome => true,
-  }
 
-  group { $www_user:
-    ensure => present,
+  include apt
+
+  apt::source { 'backports':
+    location    => 'http://us-east-1.ec2.archive.ubuntu.com/ubuntu/',
+    key         => '630239CC130E1A7FD81A27B140976EAF437D05B5',
+    repos       => 'main restricted universe multiverse',
+    include_src => true,
+    require     => Class['apt'],
   }
 
   class { '::mysql::server':
