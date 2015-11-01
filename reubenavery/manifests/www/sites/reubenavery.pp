@@ -1,7 +1,7 @@
 class reubenavery::www::sites::reubenavery(
   $home = '/srv/reubenavery-www',
   $docroot = "/srv/reubenavery-www/wordpress",
-  $www_user = 'www-reubenavery',
+  $www_user = 'reubenavery-www',
   $db_user  = 'wordpress',
   $db_pass  = 'dok3490vckz',
 ) inherits reubenavery::params {
