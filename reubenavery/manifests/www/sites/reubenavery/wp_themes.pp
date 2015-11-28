@@ -16,13 +16,14 @@ class reubenavery::www::sites::reubenavery::wp_themes(
 
   file { $theme_src_dir:
     ensure   => directory,
-    source  => 'puppet:///modules/reubenavery/wp-themes',
-    owner   => $www_user,
-    group   => $www_user,
+    recurse  => remote,
+    source   => 'puppet:///modules/reubenavery/wp-themes',
+    owner    => $www_user,
+    group    => $www_user,
   }
 
   file { "$theme_src_dir/center-main":
-    ensure => directory,
+    ensure  => directory,
     require => File[$theme_src_dir],
   }
   ->
