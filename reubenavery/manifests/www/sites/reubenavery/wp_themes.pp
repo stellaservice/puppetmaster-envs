@@ -23,11 +23,6 @@ class reubenavery::www::sites::reubenavery::wp_themes(
     mode     => '0755',
   }
 
-  file { "$theme_src_dir/center-main":
-    ensure  => directory,
-    require => File[$theme_src_dir],
-  }
-  ->
   exec { 'extract-center-main':
     cwd     => $theme_dir,
     command => "unzip $theme_src_dir/center-main/center.zip",
