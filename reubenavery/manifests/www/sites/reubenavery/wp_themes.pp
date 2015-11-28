@@ -32,6 +32,7 @@ class reubenavery::www::sites::reubenavery::wp_themes(
     cwd     => $theme_dir,
     command => "unzip $theme_src_dir/center-main/center.zip",
     path    => '/bin:/usr/bin',
+    user    => $www_user,
     require => File[$theme_dir],
   }
 }
