@@ -6,7 +6,7 @@ class reubenavery::www::sites::reubenavery::wp_themes(
   include sys::unzip
 
   $theme_dir = "$docroot/wp-content/themes"
-  $theme_src_dir = "$home/wp-themes"
+  $theme_src_dir = "$home/wp-themes.puppet-managed"
 
   file { $theme_dir:
     ensure   => directory,
