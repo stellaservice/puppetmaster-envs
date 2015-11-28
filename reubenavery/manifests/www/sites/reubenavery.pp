@@ -5,8 +5,6 @@ class reubenavery::www::sites::reubenavery(
   $db_user  = 'wordpress',
   $db_pass  = 'dok3490vckz',
 ) inherits reubenavery::params {
-  include reubenavery::www
-
   user { $www_user:
     ensure     => present,
     home       => $home,
@@ -29,6 +27,12 @@ class reubenavery::www::sites::reubenavery(
     wp_group    => $www_user,
     db_user     => $db_user,
     db_password => $db_pass,
+  }
+  ->
+  class { 'reubenavery::www::sites::reubenavery::wp_themes':
+    home     => $home,
+    docroot  => $docroot,
+    www_user => $www_user,
   }
 
   apache::vhost { 'reubenavery-www':

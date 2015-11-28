@@ -1,11 +1,12 @@
-class reubenavery::www::sites::reubenavery::wp_themes {
-  include reubenavery::www::sites::reubenavery
+class reubenavery::www::sites::reubenavery::wp_themes(
+  $home,
+  $docroot,
+  $www_user,
+) {
   include sys::unzip
 
-  $docroot = $reubenavery::www::sites::reubenavery::docroot
-  $www_user = $reubenavery::www::sites::reubenavery::www_user
   $theme_dir = "$docroot/wp-content/themes"
-  $theme_src_dir = "$docroot/wp-themes"
+  $theme_src_dir = "$home/wp-themes"
 
   file { $theme_dir:
     ensure   => directory,
