@@ -26,7 +26,7 @@ class reubenavery::www::sites::reubenavery::wp_themes(
   ->
   exec { 'extract-center-main':
     cwd     => $theme_dir,
-    command => "unzip $theme_src_dir/center-main/center.zip",
+    command => "unzip $theme_src_dir_managed/center-main/center.zip",
     path    => '/bin:/usr/bin',
     user    => $www_user,
   }
