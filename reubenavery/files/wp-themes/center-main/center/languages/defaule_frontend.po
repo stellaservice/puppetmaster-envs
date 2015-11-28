@@ -1,0 +1,370 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Center(Front end)\n"
+"POT-Creation-Date: 2015-02-17 13:19+0800\n"
+"PO-Revision-Date: 2015-02-17 13:19+0800\n"
+"Last-Translator: uiueux <uiueux@gmail.com>\n"
+"Language-Team: uiueux <uiueux@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: /Users/fanpeng/work/wordpress/center/center-po-frontend\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:11
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#: 404.php:11
+msgid "STAY CALM AND DON'T FREAK OUT!"
+msgstr ""
+
+#: 404.php:13
+msgid ""
+"Unfortunately, the page you are looking for is unavailable. Trying visit our"
+msgstr ""
+
+#: 404.php:13
+msgid "Homepage"
+msgstr ""
+
+#: 404.php:13
+msgid " and starting from there."
+msgstr ""
+
+#: comments.php:15
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:27 functions/interface/interface-functions.php:566
+msgid "0 Comment"
+msgstr ""
+
+#: comments.php:27 functions/interface/interface-functions.php:566
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:27 functions/interface/interface-functions.php:566
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:61
+msgid "Name"
+msgstr ""
+
+#: comments.php:62
+msgid "Email"
+msgstr ""
+
+#: comments.php:64
+msgid "Your Message"
+msgstr ""
+
+#: comments.php:66
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:68 functions/pagebuilder/modules/contact-form.php:17
+msgid "SEND"
+msgstr ""
+
+#: comments.php:83
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+
+#: comments.php:85
+#, php-format
+msgid "Leave a Comment to %s"
+msgstr ""
+
+#: comments.php:86
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:89
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: functions/interface/interface-functions.php:40
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:180
+msgid "Previous"
+msgstr ""
+
+#: functions/interface/interface-functions.php:181
+msgid "Next"
+msgstr ""
+
+#: functions/interface/interface-functions.php:258
+msgid "WPML not installed and activated."
+msgstr ""
+
+#: functions/interface/interface-functions.php:359
+msgid "Load More"
+msgstr ""
+
+#: functions/interface/interface-functions.php:364
+msgid "Sorry, no result."
+msgstr ""
+
+#: functions/interface/interface-functions.php:436
+msgid "PREMIUM"
+msgstr ""
+
+#: functions/interface/interface-functions.php:524
+#: functions/interface/interface-functions.php:526
+#: functions/interface/interface-functions.php:533
+#: functions/interface/interface-functions.php:535
+msgid " min read"
+msgstr ""
+
+#: functions/interface/interface-functions.php:544
+msgid "In: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:551
+msgid "Tags: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:558
+msgid "By: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:574
+msgid "Continue Reading"
+msgstr ""
+
+#: functions/interface/interface-functions.php:671
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:673
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:675
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:677
+msgid "Archives: Home"
+msgstr ""
+
+#: functions/interface/interface-functions.php:679
+msgid "404"
+msgstr ""
+
+#: functions/interface/interface-functions.php:681
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:683
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:685
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:687
+msgid "Archives: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:689
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:18
+msgid "YOUR MESSAGE"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:19
+msgid "Message has been sent."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:25
+msgid "NAME"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:25
+#: functions/pagebuilder/modules/contact-form.php:26
+#: functions/pagebuilder/modules/contact-form.php:27
+msgid "Required"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:26
+#: template/single/type-team_item.php:28
+msgid "EMAIL"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:26
+msgid "Invalid email"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:28
+#: functions/pagebuilder/modules/contact-form.php:61
+msgid "Sending"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:28
+msgid "Please Enter Correct Verification Number"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:38
+msgid "CAPTCHA"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:70
+msgid "Captcha"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:104
+#: functions/pagebuilder/modules/contact-form.php:117
+msgid "Contact Form"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:105
+msgid "Single Field"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:119
+msgid "Form Type"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:124
+msgid "Recipient Email"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:125
+msgid "Enter the email to receive the messages."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:133
+msgid "Field Text"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:141
+msgid "Message Box placeholder"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:151
+msgid "Button Text"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:152
+msgid "Enter the text you want to show on button."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:160
+msgid "Sent Message"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:161
+msgid ""
+"Enter the inform information you want to show after user send out the "
+"message."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:177
+msgid "Advanced Settings"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:178
+msgid "magin and animations"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:183
+msgid "Bottom Margin"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:184
+msgid "the spacing outside the bottom of module"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:220
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:231
+msgid "Contact Form 7 Alias"
+msgstr ""
+
+#: functions/theme/theme-post.php:106
+msgid " ago"
+msgstr ""
+
+#: functions/theme/theme-post.php:107
+msgid "Reply"
+msgstr ""
+
+#: functions/theme/theme-post.php:117
+msgid "Your comment is awaiting moderation"
+msgstr ""
+
+#: searchform.php:1 template/global/aside-navi.php:55
+msgid "Search"
+msgstr ""
+
+#: template/archive/loop-item-audio.php:25 template/single/format-audio.php:15
+msgid "Artist:"
+msgstr ""
+
+#: template/archive/loop.php:24
+msgid "Sorry, no articles"
+msgstr ""
+
+#: template/global/search-popup.php:1
+msgid "Enter a Key Word Here"
+msgstr ""
+
+#: template/page/content-archive.php:3
+msgid "lAST 10 POSTS"
+msgstr ""
+
+#: template/page/content-archive.php:7
+msgid "ARCHIVES BY MONTH"
+msgstr ""
+
+#: template/page/content-archive.php:12
+msgid "ARCHIVES BY CATEGORY"
+msgstr ""
+
+#: template/single/format-gallery.php:31
+msgid "More about this project"
+msgstr ""
+
+#: template/single/type-jobs_item.php:10
+msgid "Location:"
+msgstr ""
+
+#: template/single/type-jobs_item.php:14
+msgid "Number:"
+msgstr ""
+
+#: template/single/type-team_item.php:22
+msgid "POSITION"
+msgstr ""
+
+#: template/single/type-team_item.php:34
+msgid "PHONE NUMBER"
+msgstr ""

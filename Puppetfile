@@ -1,4 +1,6 @@
 mod 'arnoudj/sudo'
+mod 'camptocamp/archive'
+mod 'counsyl/sys'
 mod 'darin/zypprepo'
 mod 'example42/puppi'
 mod 'example42/yum'

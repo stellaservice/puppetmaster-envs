@@ -1,0 +1,5185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Center Wordpress Theme\n"
+"POT-Creation-Date: 2015-02-17 13:17+0800\n"
+"PO-Revision-Date: 2015-02-17 13:17+0800\n"
+"Last-Translator: uiueux <uiueux@gmail.com>\n"
+"Language-Team: uiueux <uiueux@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: /Applications/MAMP/htdocs/wordpress/wp-content/themes/"
+"center\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:11
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#: 404.php:11
+msgid "STAY CALM AND DON'T FREAK OUT!"
+msgstr ""
+
+#: 404.php:13
+msgid ""
+"Unfortunately, the page you are looking for is unavailable. Trying visit our"
+msgstr ""
+
+#: 404.php:13 functions/theme/options/options-fields.php:222
+msgid "Homepage"
+msgstr ""
+
+#: 404.php:13
+msgid " and starting from there."
+msgstr ""
+
+#: comments.php:15
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:27 functions/interface/interface-functions.php:566
+msgid "0 Comment"
+msgstr ""
+
+#: comments.php:27 functions/interface/interface-functions.php:566
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:27 functions/interface/interface-functions.php:566
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:61
+msgid "Name"
+msgstr ""
+
+#: comments.php:62 functions/theme/post/post-meta.php:603
+msgid "Email"
+msgstr ""
+
+#: comments.php:64 functions/theme/options/options-config.php:465
+msgid "Your Message"
+msgstr ""
+
+#: comments.php:66 functions/theme/options/options-config.php:458
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:68 functions/pagebuilder/modules/contact-form.php:17
+msgid "SEND"
+msgstr ""
+
+#: comments.php:83
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+
+#: comments.php:85
+#, php-format
+msgid "Leave a Comment to %s"
+msgstr ""
+
+#: comments.php:86
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:89
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: functions/class/class-admin.php:45
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:155
+#: functions/class/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions/class/class-admin.php:46
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:156
+#: functions/class/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr ""
+
+#: functions/class/class-admin.php:47
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:157
+#: functions/class/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions/class/class-admin.php:48
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions/class/class-admin.php:59
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:169
+#: functions/class/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions/class/class-admin.php:60
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:171
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1840
+#: functions/class/class-tgm-plugin-activation.php:177
+#: functions/class/class-tgm-plugin-activation.php:1945
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions/class/class-admin.php:61
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:158
+#: functions/class/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:170
+#: functions/class/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:172
+#: functions/class/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:173
+#: functions/class/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:174
+#: functions/class/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1085
+msgid "External Link"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1090
+#: functions/class/class-tgm-plugin-activation.php:1169
+msgid "Private Repository"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1093
+#: functions/class/class-tgm-plugin-activation.php:1172
+msgid "Pre-Packaged"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1097
+#: functions/class/class-tgm-plugin-activation.php:1177
+msgid "WordPress Repository"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1100
+#: functions/class/class-tgm-plugin-activation.php:1180
+#: functions/pagebuilder/modules/contact-form.php:25
+#: functions/pagebuilder/modules/contact-form.php:26
+#: functions/pagebuilder/modules/contact-form.php:27
+msgid "Required"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1100
+#: functions/class/class-tgm-plugin-activation.php:1180
+msgid "Recommended"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1103
+#: functions/class/class-tgm-plugin-activation.php:1183
+msgid "Not Installed"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1105
+#: functions/class/class-tgm-plugin-activation.php:1185
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1275
+#: functions/class/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1291
+#: functions/class/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1292
+#: functions/class/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1293
+#: functions/class/class-tgm-plugin-activation.php:1379
+#: functions/pagebuilder/modules/accordion-toggle.php:81
+#: functions/pagebuilder/modules/divider.php:92
+#: functions/pagebuilder/modules/fullwidth.php:433
+#: functions/pagebuilder/modules/message-box.php:55
+#: functions/pagebuilder/modules/progress-bar.php:160
+#: functions/pagebuilder/modules/tabs.php:80
+#: functions/theme/shortcode/tinymce/config.php:386
+msgid "Type"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1294
+#: functions/class/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1312
+#: functions/class/class-tgm-plugin-activation.php:1290
+#: functions/class/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1313
+#: functions/class/class-tgm-plugin-activation.php:1312
+#: functions/class/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1823
+#: functions/class/class-tgm-plugin-activation.php:1928
+msgid "Install package not available."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1824
+#: functions/class/class-tgm-plugin-activation.php:1929
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1825
+#: functions/class/class-tgm-plugin-activation.php:1930
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1826
+#: functions/class/class-tgm-plugin-activation.php:1931
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1827
+#: functions/class/class-tgm-plugin-activation.php:1932
+msgid "Plugin install failed."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1828
+#: functions/class/class-tgm-plugin-activation.php:1933
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1839
+#: functions/class/class-tgm-plugin-activation.php:1944
+msgid "Plugin activation failed."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1949
+#: functions/class/class-tgm-plugin-activation.php:2058
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1950
+#: functions/class/class-tgm-plugin-activation.php:2059
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1950
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1959
+#: functions/class/class-tgm-plugin-activation.php:2059
+#: functions/class/class-tgm-plugin-activation.php:2068
+msgid "Show Details"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1950
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1959
+#: functions/class/class-tgm-plugin-activation.php:2059
+#: functions/class/class-tgm-plugin-activation.php:2068
+msgid "Hide Details"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1951
+#: functions/class/class-tgm-plugin-activation.php:2060
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1952
+#: functions/class/class-tgm-plugin-activation.php:2061
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1956
+#: functions/class/class-tgm-plugin-activation.php:2065
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1957
+#: functions/class/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1958
+#: functions/class/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1959
+#: functions/class/class-tgm-plugin-activation.php:2068
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1960
+#: functions/class/class-tgm-plugin-activation.php:2069
+msgid "All installations have been completed."
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:1961
+#: functions/class/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/class/class-tgm-plugin-activation-2.3.6.php:2052
+#: functions/class/class-tgm-plugin-activation.php:534
+#: functions/class/class-tgm-plugin-activation.php:2162
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:99
+#: functions/class/class-ux-importer.php:108
+#: functions/class/class-ux-importer.php:159
+#: functions/class/class-ux-importer.php:163
+#: functions/class/class-ux-importer.php:172
+#: functions/theme/wordpress-importer/wordpress-importer.php:134
+#: functions/theme/wordpress-importer/wordpress-importer.php:143
+#: functions/theme/wordpress-importer/wordpress-importer.php:194
+#: functions/theme/wordpress-importer/wordpress-importer.php:198
+#: functions/theme/wordpress-importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:100
+#: functions/theme/wordpress-importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:143
+#: functions/theme/wordpress-importer/wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:143
+#: functions/theme/wordpress-importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:144
+#: functions/theme/wordpress-importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:164
+#: functions/theme/wordpress-importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:180
+#: functions/theme/wordpress-importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:205
+#: functions/theme/wordpress-importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:231
+#: functions/theme/wordpress-importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:232
+#: functions/theme/wordpress-importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:234
+#: functions/theme/wordpress-importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:244
+#: functions/theme/wordpress-importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:247
+#: functions/theme/wordpress-importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:251
+#: functions/theme/wordpress-importer/wordpress-importer.php:286
+msgid "Submit"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:264
+#: functions/theme/wordpress-importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:275
+#: functions/theme/wordpress-importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:278
+#: functions/theme/wordpress-importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:286
+#: functions/theme/wordpress-importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:288
+#: functions/theme/wordpress-importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:289
+#: functions/theme/wordpress-importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:339
+#: functions/theme/wordpress-importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:390
+#: functions/theme/wordpress-importer/wordpress-importer.php:425
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:430
+#: functions/theme/wordpress-importer/wordpress-importer.php:465
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:476
+#: functions/class/class-ux-importer.php:617
+#: functions/theme/wordpress-importer/wordpress-importer.php:511
+#: functions/theme/wordpress-importer/wordpress-importer.php:652
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:502
+#: functions/theme/wordpress-importer/wordpress-importer.php:537
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:524
+#: functions/theme/wordpress-importer/wordpress-importer.php:559
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:583
+#: functions/theme/wordpress-importer/wordpress-importer.php:618
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:748
+#: functions/theme/wordpress-importer/wordpress-importer.php:783
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:755
+#: functions/theme/wordpress-importer/wordpress-importer.php:790
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:818
+#: functions/theme/wordpress-importer/wordpress-importer.php:853
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:831
+#: functions/theme/wordpress-importer/wordpress-importer.php:866
+msgid "Invalid file type"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:875
+#: functions/theme/wordpress-importer/wordpress-importer.php:910
+msgid "Remote server did not respond"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:881
+#: functions/theme/wordpress-importer/wordpress-importer.php:916
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:888
+#: functions/theme/wordpress-importer/wordpress-importer.php:923
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:893
+#: functions/theme/wordpress-importer/wordpress-importer.php:928
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:899
+#: functions/theme/wordpress-importer/wordpress-importer.php:934
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:998
+#: functions/theme/wordpress-importer/wordpress-importer.php:1033
+msgid "Import WordPress"
+msgstr ""
+
+#: functions/class/class-ux-importer.php:1005
+#: functions/theme/wordpress-importer/wordpress-importer.php:1040
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:1020
+#: functions/theme/wordpress-importer/wordpress-importer.php:1055
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: functions/class/class-ux-importer.php:1021
+#: functions/theme/wordpress-importer/wordpress-importer.php:1056
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: functions/interface/interface-functions.php:40
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:180
+msgid "Previous"
+msgstr ""
+
+#: functions/interface/interface-functions.php:181
+msgid "Next"
+msgstr ""
+
+#: functions/interface/interface-functions.php:258
+msgid "WPML not installed and activated."
+msgstr ""
+
+#: functions/interface/interface-functions.php:359
+#: functions/pagebuilder/modules/blog.php:575
+#: functions/pagebuilder/modules/portfolio.php:649
+msgid "Load More"
+msgstr ""
+
+#: functions/interface/interface-functions.php:364
+msgid "Sorry, no result."
+msgstr ""
+
+#: functions/interface/interface-functions.php:436
+msgid "PREMIUM"
+msgstr ""
+
+#: functions/interface/interface-functions.php:524
+#: functions/interface/interface-functions.php:526
+#: functions/interface/interface-functions.php:533
+#: functions/interface/interface-functions.php:535
+#: functions/pagebuilder/modules/blog.php:532
+msgid " min read"
+msgstr ""
+
+#: functions/interface/interface-functions.php:544
+msgid "In: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:551
+msgid "Tags: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:558
+msgid "By: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:574
+#: functions/pagebuilder/modules/blog.php:585
+msgid "Continue Reading"
+msgstr ""
+
+#: functions/interface/interface-functions.php:671
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:673
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:675
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:677
+msgid "Archives: Home"
+msgstr ""
+
+#: functions/interface/interface-functions.php:679
+msgid "404"
+msgstr ""
+
+#: functions/interface/interface-functions.php:681
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:683
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:685
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: functions/interface/interface-functions.php:687
+msgid "Archives: "
+msgstr ""
+
+#: functions/interface/interface-functions.php:689
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:62
+msgid "Accordion"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:63
+msgid "Toggle"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:66
+msgid "Style A"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:67
+msgid "Style B"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:79
+#: functions/pagebuilder/pagebuilder-modules.php:5
+msgid "Accordion/Toggle"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:82
+msgid "Select accordion or toggle"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:87
+#: functions/pagebuilder/modules/portfolio.php:799
+#: functions/pagebuilder/modules/progress-bar.php:166
+#: functions/pagebuilder/modules/single-image.php:80
+#: functions/pagebuilder/modules/team.php:164
+#: functions/theme/shortcode/tinymce/config.php:337
+msgid "Style"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:88
+msgid "Select a style for the module"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:93
+msgid "Open First Item by Default"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:94
+msgid "Enable it the first item would be opened by default"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:99
+#: functions/pagebuilder/modules/price.php:129
+#: functions/pagebuilder/modules/tabs.php:86
+#: functions/pagebuilder/modules/text-list.php:56
+#: functions/pagebuilder/pagebuilder-fields.php:229
+msgid "Add Item"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:100
+#: functions/pagebuilder/modules/price.php:130
+#: functions/pagebuilder/modules/tabs.php:87
+#: functions/pagebuilder/modules/text-list.php:57
+msgid "Press the \"Add\" button to add an item"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:105
+#: functions/pagebuilder/modules/carousel.php:157
+#: functions/pagebuilder/modules/carousel.php:163
+#: functions/pagebuilder/modules/icon-box.php:188
+#: functions/pagebuilder/modules/image-box.php:136
+#: functions/pagebuilder/modules/portfolio.php:653
+#: functions/pagebuilder/modules/price.php:142
+#: functions/pagebuilder/modules/progress-bar.php:195
+#: functions/pagebuilder/modules/progress-bar.php:214
+#: functions/pagebuilder/modules/progress-bar.php:255
+#: functions/pagebuilder/modules/tabs.php:92
+#: functions/pagebuilder/pagebuilder-config.php:14
+#: functions/theme/post/post-meta.php:26
+#: functions/theme/post/post-meta.php:303
+#: functions/theme/post/post-meta.php:393
+#: functions/theme/post/post-meta.php:447
+#: functions/theme/post/post-meta.php:519
+#: functions/theme/widget/widget-facebook.php:43
+#: functions/theme/widget/widget-social-network-icons.php:56
+msgid "Title"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:106
+#: functions/pagebuilder/modules/tabs.php:93
+msgid "Enter the title for this item"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:111
+#: functions/pagebuilder/modules/icon-box.php:207
+#: functions/pagebuilder/modules/image-box.php:140
+#: functions/pagebuilder/modules/message-box.php:61
+#: functions/pagebuilder/modules/promote.php:56
+#: functions/pagebuilder/modules/tabs.php:98
+#: functions/pagebuilder/modules/text-block.php:59
+#: functions/pagebuilder/modules/text-list.php:68
+#: functions/theme/post/post-meta.php:447
+#: functions/theme/shortcode/tinymce/config.php:362
+#: functions/theme/shortcode/tinymce/config.php:376
+#: functions/theme/shortcode/tinymce/config.php:515
+msgid "Content"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:112
+#: functions/pagebuilder/modules/icon-box.php:208
+#: functions/pagebuilder/modules/tabs.php:99
+msgid "Enter content for this Icon Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:117
+#: functions/pagebuilder/modules/blog.php:696
+#: functions/pagebuilder/modules/button.php:213
+#: functions/pagebuilder/modules/contact-form.php:177
+#: functions/pagebuilder/modules/count-down.php:100
+#: functions/pagebuilder/modules/divider.php:144
+#: functions/pagebuilder/modules/faq.php:74
+#: functions/pagebuilder/modules/fullwidth.php:804
+#: functions/pagebuilder/modules/gallery.php:389
+#: functions/pagebuilder/modules/google-map.php:142
+#: functions/pagebuilder/modules/icon-box.php:212
+#: functions/pagebuilder/modules/image-box.php:174
+#: functions/pagebuilder/modules/jobs.php:82
+#: functions/pagebuilder/modules/latest-tweets.php:86
+#: functions/pagebuilder/modules/message-box.php:66
+#: functions/pagebuilder/modules/portfolio.php:848
+#: functions/pagebuilder/modules/price.php:172
+#: functions/pagebuilder/modules/progress-bar.php:338
+#: functions/pagebuilder/modules/promote.php:78
+#: functions/pagebuilder/modules/single-image.php:104
+#: functions/pagebuilder/modules/slider.php:235
+#: functions/pagebuilder/modules/tabs.php:104
+#: functions/pagebuilder/modules/team.php:215
+#: functions/pagebuilder/modules/testimonials.php:145
+#: functions/pagebuilder/modules/text-block.php:69
+#: functions/pagebuilder/modules/text-list.php:74
+msgid "Advanced Settings"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:118
+#: functions/pagebuilder/modules/blog.php:697
+#: functions/pagebuilder/modules/button.php:214
+#: functions/pagebuilder/modules/contact-form.php:178
+#: functions/pagebuilder/modules/count-down.php:101
+#: functions/pagebuilder/modules/divider.php:145
+#: functions/pagebuilder/modules/faq.php:75
+#: functions/pagebuilder/modules/gallery.php:390
+#: functions/pagebuilder/modules/google-map.php:143
+#: functions/pagebuilder/modules/icon-box.php:213
+#: functions/pagebuilder/modules/image-box.php:175
+#: functions/pagebuilder/modules/jobs.php:83
+#: functions/pagebuilder/modules/latest-tweets.php:87
+#: functions/pagebuilder/modules/message-box.php:67
+#: functions/pagebuilder/modules/portfolio.php:849
+#: functions/pagebuilder/modules/price.php:173
+#: functions/pagebuilder/modules/progress-bar.php:339
+#: functions/pagebuilder/modules/promote.php:79
+#: functions/pagebuilder/modules/single-image.php:105
+#: functions/pagebuilder/modules/slider.php:236
+#: functions/pagebuilder/modules/tabs.php:105
+#: functions/pagebuilder/modules/team.php:216
+#: functions/pagebuilder/modules/testimonials.php:146
+#: functions/pagebuilder/modules/text-block.php:70
+#: functions/pagebuilder/modules/text-list.php:75
+msgid "magin and animations"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:123
+#: functions/pagebuilder/modules/blog.php:702
+#: functions/pagebuilder/modules/button.php:219
+#: functions/pagebuilder/modules/carousel.php:244
+#: functions/pagebuilder/modules/client.php:75
+#: functions/pagebuilder/modules/contact-form.php:183
+#: functions/pagebuilder/modules/count-down.php:106
+#: functions/pagebuilder/modules/divider.php:150
+#: functions/pagebuilder/modules/faq.php:80
+#: functions/pagebuilder/modules/gallery.php:395
+#: functions/pagebuilder/modules/google-map.php:148
+#: functions/pagebuilder/modules/icon-box.php:219
+#: functions/pagebuilder/modules/image-box.php:180
+#: functions/pagebuilder/modules/jobs.php:88
+#: functions/pagebuilder/modules/latest-tweets.php:92
+#: functions/pagebuilder/modules/message-box.php:72
+#: functions/pagebuilder/modules/portfolio.php:854
+#: functions/pagebuilder/modules/price.php:178
+#: functions/pagebuilder/modules/progress-bar.php:344
+#: functions/pagebuilder/modules/promote.php:84
+#: functions/pagebuilder/modules/single-image.php:110
+#: functions/pagebuilder/modules/slider.php:241
+#: functions/pagebuilder/modules/tabs.php:110
+#: functions/pagebuilder/modules/team.php:221
+#: functions/pagebuilder/modules/testimonials.php:151
+#: functions/pagebuilder/modules/text-block.php:75
+#: functions/pagebuilder/modules/text-list.php:80
+msgid "Bottom Margin"
+msgstr ""
+
+#: functions/pagebuilder/modules/accordion-toggle.php:124
+#: functions/pagebuilder/modules/blog.php:703
+#: functions/pagebuilder/modules/button.php:220
+#: functions/pagebuilder/modules/carousel.php:245
+#: functions/pagebuilder/modules/client.php:76
+#: functions/pagebuilder/modules/contact-form.php:184
+#: functions/pagebuilder/modules/count-down.php:107
+#: functions/pagebuilder/modules/divider.php:151
+#: functions/pagebuilder/modules/faq.php:81
+#: functions/pagebuilder/modules/gallery.php:396
+#: functions/pagebuilder/modules/google-map.php:149
+#: functions/pagebuilder/modules/icon-box.php:220
+#: functions/pagebuilder/modules/image-box.php:181
+#: functions/pagebuilder/modules/jobs.php:89
+#: functions/pagebuilder/modules/latest-tweets.php:93
+#: functions/pagebuilder/modules/message-box.php:73
+#: functions/pagebuilder/modules/portfolio.php:855
+#: functions/pagebuilder/modules/price.php:179
+#: functions/pagebuilder/modules/progress-bar.php:345
+#: functions/pagebuilder/modules/promote.php:85
+#: functions/pagebuilder/modules/single-image.php:111
+#: functions/pagebuilder/modules/slider.php:242
+#: functions/pagebuilder/modules/tabs.php:111
+#: functions/pagebuilder/modules/team.php:222
+#: functions/pagebuilder/modules/testimonials.php:152
+#: functions/pagebuilder/modules/text-block.php:76
+#: functions/pagebuilder/modules/text-list.php:81
+msgid "the spacing outside the bottom of module"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:407
+#: template/archive/loop-item-audio.php:25 template/single/format-audio.php:15
+msgid "Artist:"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:568
+msgid "Masonry List"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:569
+#: functions/pagebuilder/modules/portfolio.php:587
+msgid "Standard List"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:573
+#: functions/pagebuilder/modules/gallery.php:281
+#: functions/pagebuilder/modules/gallery.php:288
+#: functions/pagebuilder/modules/portfolio.php:621
+#: functions/pagebuilder/modules/portfolio.php:628
+#: functions/pagebuilder/modules/portfolio.php:647
+msgid "No"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:574
+#: functions/pagebuilder/modules/gallery.php:289
+#: functions/pagebuilder/modules/portfolio.php:648
+#: functions/theme/post/post-meta.php:55
+msgid "Page Number"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:579
+#: functions/pagebuilder/modules/blog.php:589
+#: functions/pagebuilder/modules/count-down.php:83
+#: functions/pagebuilder/pagebuilder-config.php:15
+#: functions/theme/options/options-config.php:286
+#: functions/theme/post/post-meta.php:27
+msgid "Date"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:580
+#: functions/pagebuilder/modules/blog.php:590
+#: functions/theme/options/options-config.php:287
+msgid "Length"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:581
+#: functions/pagebuilder/modules/blog.php:591
+#: functions/pagebuilder/modules/blog.php:626
+#: functions/pagebuilder/modules/carousel.php:197
+#: functions/pagebuilder/modules/gallery.php:310
+#: functions/pagebuilder/modules/portfolio.php:773
+#: functions/pagebuilder/modules/slider.php:167
+#: functions/theme/options/options-config.php:288
+msgid "Category"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:582
+#: functions/pagebuilder/modules/blog.php:592
+#: functions/theme/options/options-config.php:289
+msgid "Tag"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:583
+#: functions/pagebuilder/modules/blog.php:593
+#: functions/pagebuilder/pagebuilder-config.php:18
+#: functions/theme/options/options-config.php:290
+#: functions/theme/post/post-meta.php:30
+msgid "Author"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:584
+#: functions/theme/options/options-config.php:291
+msgid "Comments"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:597
+#: functions/theme/options/options-config.php:68
+#: functions/theme/options/options-config.php:299
+#: functions/theme/post/post-meta.php:61
+msgid "Facebook"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:598
+#: functions/pagebuilder/modules/gallery.php:290
+#: functions/theme/options/options-config.php:75
+#: functions/theme/options/options-config.php:300
+#: functions/theme/post/post-meta.php:62
+msgid "Twitter"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:599
+#: functions/theme/options/options-config.php:301
+#: functions/theme/post/post-meta.php:63
+msgid "Google Plus"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:600
+#: functions/theme/options/options-config.php:117
+#: functions/theme/options/options-config.php:302
+#: functions/theme/post/post-meta.php:64
+msgid "Pinterest"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:601
+#: functions/theme/options/options-config.php:303
+#: functions/theme/post/post-meta.php:65
+msgid "Digg"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:602
+#: functions/theme/options/options-config.php:304
+#: functions/theme/post/post-meta.php:66
+msgid "Reddit"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:603
+#: functions/theme/options/options-config.php:124
+#: functions/theme/options/options-config.php:305
+#: functions/theme/post/post-meta.php:67
+msgid "Linkedin"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:604
+#: functions/theme/options/options-config.php:306
+#: functions/theme/post/post-meta.php:68
+msgid "Stumbleupon"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:605
+#: functions/theme/options/options-config.php:103
+#: functions/theme/options/options-config.php:307
+#: functions/theme/post/post-meta.php:69
+msgid "Tumblr"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:606
+#: functions/theme/options/options-config.php:308
+#: functions/theme/post/post-meta.php:70
+msgid "Mail"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:618
+#: functions/pagebuilder/pagebuilder-modules.php:6
+msgid "Blog"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:620
+#: functions/pagebuilder/modules/portfolio.php:668
+msgid "List Type"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:627
+msgid "The Posts under the category you selected would be shown in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:632
+#: functions/pagebuilder/modules/carousel.php:215
+#: functions/pagebuilder/modules/faq.php:68
+#: functions/pagebuilder/modules/gallery.php:326
+#: functions/pagebuilder/modules/jobs.php:76
+#: functions/pagebuilder/modules/portfolio.php:779
+#: functions/pagebuilder/modules/slider.php:177
+#: functions/pagebuilder/modules/team.php:209
+#: functions/pagebuilder/modules/testimonials.php:115
+msgid "Order by"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:633
+msgid "select sequence rules for the list"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:638
+msgid "Show on Top of Item"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:646
+msgid "Show Meta"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:654
+msgid "Show Summary of Content"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:662
+msgid "Words to Show on List"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:669
+msgid "Show Share Button"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:685
+#: functions/pagebuilder/modules/gallery.php:370
+#: functions/pagebuilder/modules/portfolio.php:764
+msgid "Post Number per Page"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:686
+#: functions/pagebuilder/modules/gallery.php:371
+#: functions/pagebuilder/modules/portfolio.php:765
+msgid ""
+"How many items should be displayed per page, leave it empty to show all "
+"items in one page"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:690
+#: functions/pagebuilder/modules/gallery.php:375
+#: functions/pagebuilder/modules/portfolio.php:734
+msgid "Pagination"
+msgstr ""
+
+#: functions/pagebuilder/modules/blog.php:691
+#: functions/pagebuilder/modules/gallery.php:376
+#: functions/pagebuilder/modules/portfolio.php:735
+msgid ""
+"The \"Twitter\" option is to show a \"Load More\" button on the bottom of "
+"the list"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:87
+#: functions/pagebuilder/modules/gallery.php:270
+#: functions/pagebuilder/modules/portfolio.php:603
+#: functions/theme/post/post-meta.php:40
+msgid "Small"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:88
+#: functions/pagebuilder/modules/gallery.php:268
+#: functions/pagebuilder/modules/portfolio.php:601
+msgid "Medium"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:89
+#: functions/pagebuilder/modules/gallery.php:269
+#: functions/pagebuilder/modules/portfolio.php:602
+msgid "Large"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:92
+#: functions/pagebuilder/modules/carousel.php:176
+#: functions/pagebuilder/modules/divider.php:63
+#: functions/pagebuilder/modules/fullwidth.php:341
+#: functions/pagebuilder/modules/gallery.php:283
+#: functions/pagebuilder/modules/portfolio.php:623
+#: functions/pagebuilder/modules/portfolio.php:630
+#: functions/pagebuilder/modules/promote.php:41
+#: functions/pagebuilder/modules/single-image.php:59
+msgid "Left"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:93
+#: functions/pagebuilder/modules/carousel.php:177
+#: functions/pagebuilder/modules/divider.php:64
+#: functions/pagebuilder/modules/promote.php:42
+#: functions/pagebuilder/modules/single-image.php:60
+#: functions/theme/theme-options.php:7
+msgid "Center"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:94
+#: functions/pagebuilder/modules/carousel.php:178
+#: functions/pagebuilder/modules/divider.php:65
+#: functions/pagebuilder/modules/fullwidth.php:342
+#: functions/pagebuilder/modules/gallery.php:284
+#: functions/pagebuilder/modules/portfolio.php:624
+#: functions/pagebuilder/modules/portfolio.php:631
+#: functions/pagebuilder/modules/single-image.php:61
+msgid "Right"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:97
+msgid "Light"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:98
+msgid "Dark"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:101
+msgid "On Left"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:102
+msgid "On Right"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:105
+msgid "Border"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:106
+#: functions/pagebuilder/modules/carousel.php:150
+#: functions/pagebuilder/modules/image-box.php:127
+#: functions/pagebuilder/modules/single-image.php:75
+#: functions/theme/shortcode/tinymce/ux-sc.php:28
+msgid "Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:118
+#: functions/pagebuilder/pagebuilder-modules.php:7
+#: functions/theme/shortcode/tinymce/ux-sc.php:23
+msgid "Button"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:120
+msgid "Buttons"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:126
+msgid "Button Style"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:132
+msgid "Button Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:141
+#: functions/pagebuilder/modules/carousel.php:232
+#: functions/pagebuilder/modules/contact-form.php:151
+#: functions/pagebuilder/modules/price.php:160
+msgid "Button Text"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:146
+#: functions/pagebuilder/modules/price.php:166
+msgid "Button Link"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:152
+msgid "Show Icon"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:162
+#: functions/pagebuilder/modules/icon-box.php:152
+#: functions/pagebuilder/modules/text-list.php:62
+#: functions/theme/options/options-fields.php:330
+#: functions/theme/options/options-fields.php:360
+#: functions/theme/theme-ajax.php:12
+#: functions/theme/widget/widget-social-network-icons.php:72
+#: functions/theme/widget/widget-social-network-icons.php:103
+msgid "Select Icon"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:163
+#: functions/pagebuilder/modules/icon-box.php:153
+#: functions/pagebuilder/modules/text-list.php:63
+#: functions/theme/theme-ajax.php:13
+msgid "Choose a icon for this Icon Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:172
+msgid "Icon Align"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:182
+msgid "Button Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:183
+msgid "Choose a color for the button"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:192
+msgid "Mouseover Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:193
+msgid "Choose a color for the button mouseover"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:202
+msgid "Button Size"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:203
+msgid "Choose a size for the button"
+msgstr ""
+
+#: functions/pagebuilder/modules/button.php:208
+msgid "Buttons Align"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:23
+msgid "Read more"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:149
+#: functions/pagebuilder/modules/portfolio.php:636
+#: functions/pagebuilder/modules/single-image.php:53
+msgid "Standard"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:151
+#: functions/pagebuilder/modules/portfolio.php:666
+#: functions/pagebuilder/pagebuilder-modules.php:23
+msgid "Portfolio"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:152
+#: functions/pagebuilder/modules/video.php:72
+#: functions/pagebuilder/pagebuilder-modules.php:31
+msgid "Video"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:153
+msgid "Audio"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:158
+#: functions/pagebuilder/modules/carousel.php:164
+msgid "Excerpt"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:159
+#: functions/pagebuilder/modules/carousel.php:165
+msgid "Read More Button"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:172
+#: functions/pagebuilder/modules/gallery.php:277
+#: functions/pagebuilder/modules/portfolio.php:610
+msgid "Auto"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:190
+#: functions/pagebuilder/pagebuilder-modules.php:8
+msgid "Carousel"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:192
+msgid "Post Type"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:193
+msgid "Check on the post types you want to show on this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:198
+msgid "The posts under the category you selected would be shown in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:204
+msgid "Number of Items"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:205
+msgid ""
+"How many items should be displayed in this module, leave it empty to show "
+"all items"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:209
+msgid "Ratio of Thumb"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:210
+msgid ""
+"The images come from featured image, choose a ratio to show in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:216
+#: functions/pagebuilder/modules/faq.php:69
+#: functions/pagebuilder/modules/gallery.php:327
+#: functions/pagebuilder/modules/jobs.php:77
+#: functions/pagebuilder/modules/portfolio.php:780
+#: functions/pagebuilder/modules/slider.php:178
+#: functions/pagebuilder/modules/team.php:210
+#: functions/pagebuilder/modules/testimonials.php:116
+msgid "Select sequence rules for the list"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:221
+msgid "Show"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:222
+msgid "Check on the elements you want to show"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:226
+#: functions/pagebuilder/modules/divider.php:107
+msgid "Text Align"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:227
+#: functions/pagebuilder/modules/divider.php:108
+msgid "Select alignment for the text"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:233
+msgid "It is a read more button, enter the text you want to show on button"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:237
+msgid "Show Navigation Hint"
+msgstr ""
+
+#: functions/pagebuilder/modules/carousel.php:238
+msgid "Turn on it to show navigation hint"
+msgstr ""
+
+#: functions/pagebuilder/modules/client.php:55
+#: functions/pagebuilder/pagebuilder-modules.php:9
+msgid "Client"
+msgstr ""
+
+#: functions/pagebuilder/modules/client.php:57
+msgid "Client Category"
+msgstr ""
+
+#: functions/pagebuilder/modules/client.php:58
+msgid ""
+"The clients under the category you selected would be shown in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/client.php:64
+#: functions/pagebuilder/modules/progress-bar.php:205
+#: functions/pagebuilder/modules/progress-bar.php:239
+#: functions/theme/shortcode/tinymce/ux-sc.php:31
+msgid "Columns"
+msgstr ""
+
+#: functions/pagebuilder/modules/client.php:65
+msgid "Setup the number of columns you want to show in front end"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:18
+msgid "YOUR MESSAGE"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:19
+msgid "Message has been sent."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:25
+msgid "NAME"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:26
+#: template/single/type-team_item.php:28
+msgid "EMAIL"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:26
+msgid "Invalid email"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:28
+#: functions/pagebuilder/modules/contact-form.php:61
+msgid "Sending"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:28
+msgid "Please Enter Correct Verification Number"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:38
+msgid "CAPTCHA"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:70
+#: functions/pagebuilder/pagebuilder-theme-ajax.php:64
+msgid "Captcha"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:104
+#: functions/pagebuilder/modules/contact-form.php:117
+#: functions/pagebuilder/pagebuilder-modules.php:10
+msgid "Contact Form"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:105
+msgid "Single Field"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:119
+msgid "Form Type"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:124
+msgid "Recipient Email"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:125
+msgid "Enter the email to receive the messages."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:133
+msgid "Field Text"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:141
+msgid "Message Box placeholder"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:152
+msgid "Enter the text you want to show on button."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:160
+msgid "Sent Message"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:161
+msgid ""
+"Enter the inform information you want to show after user send out the "
+"message."
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:220
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions/pagebuilder/modules/contact-form.php:231
+msgid "Contact Form 7 Alias"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:55
+#: functions/pagebuilder/modules/count-down.php:64
+msgid "Years"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:56
+#: functions/pagebuilder/modules/count-down.php:65
+msgid "Months"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:57
+#: functions/pagebuilder/modules/count-down.php:66
+msgid "Days"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:58
+#: functions/pagebuilder/modules/count-down.php:67
+msgid "Hours"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:59
+#: functions/pagebuilder/modules/count-down.php:68
+msgid "Minutes"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:60
+#: functions/pagebuilder/modules/count-down.php:69
+msgid "Seconds"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:81
+#: functions/pagebuilder/pagebuilder-modules.php:11
+msgid "Count Down"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:84
+msgid "Select a deadline for the counter"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:88
+msgid "Count Start"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:89
+msgid "Choose a start time unit"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:94
+msgid "Count To"
+msgstr ""
+
+#: functions/pagebuilder/modules/count-down.php:95
+msgid "Choose a end time unit"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:56
+msgid "Single Line"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:58
+msgid "Text and Line"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:59
+msgid "Blank Divider"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:66
+msgid "Above"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:70
+#: functions/pagebuilder/modules/gallery.php:264
+#: functions/pagebuilder/modules/portfolio.php:597
+#: functions/pagebuilder/pagebuilder-config.php:29
+msgid "20px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:71
+#: functions/pagebuilder/pagebuilder-config.php:30
+msgid "40px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:72
+#: functions/pagebuilder/pagebuilder-config.php:31
+msgid "60px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:73
+#: functions/pagebuilder/pagebuilder-config.php:32
+msgid "80px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:74
+msgid "100px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:75
+msgid "200px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:76
+msgid "300px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:77
+msgid "400px"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:90
+#: functions/pagebuilder/pagebuilder-modules.php:12
+msgid "Divider"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:93
+msgid "select a type for the Divider module"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:98
+msgid "Divider Text"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:99
+msgid ""
+"Enter the text you want to show in the divider, HTML: &lt;span "
+"class=heighlight&gt;Heighlight Text&lt;/span&gt;"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:117
+#: functions/pagebuilder/modules/fullwidth.php:763
+#: functions/pagebuilder/modules/google-map.php:93
+#: functions/theme/post/post-meta.php:43
+msgid "Height"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:126
+#: functions/pagebuilder/modules/price.php:135
+#: functions/theme/shortcode/tinymce/config.php:98
+#: functions/theme/shortcode/tinymce/config.php:322
+msgid "Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:127
+msgid "Select a color for the divider"
+msgstr ""
+
+#: functions/pagebuilder/modules/divider.php:135
+msgid "Short Line"
+msgstr ""
+
+#: functions/pagebuilder/modules/faq.php:59
+#: functions/pagebuilder/pagebuilder-modules.php:13
+msgid "FAQ"
+msgstr ""
+
+#: functions/pagebuilder/modules/faq.php:61
+msgid "FAQ Category"
+msgstr ""
+
+#: functions/pagebuilder/modules/faq.php:62
+msgid ""
+"The questions under the category you selected would be shown in this module."
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:346
+msgid "Fill"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:347
+msgid "Repeat"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:351
+msgid "Parallax"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:353
+msgid "Scroll"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:381
+msgid "Text Shadow"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:385
+msgid "Standard (Color Background)"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:386
+msgid "Standard (Image Background)"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:387
+msgid "Standard (Video Background)"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:388
+msgid "Half (Image Background)"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:389
+msgid "Half (Video Background)"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:390
+msgid "Tab"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:391
+msgid "Block"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:395
+msgid "2 Column"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:396
+msgid "3 Column"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:400
+#: functions/pagebuilder/modules/fullwidth.php:406
+#: functions/pagebuilder/modules/fullwidth.php:412
+#: functions/pagebuilder/modules/google-map.php:46
+#: functions/pagebuilder/modules/testimonials.php:85
+#: functions/pagebuilder/modules/testimonials.php:91
+msgid "1"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:401
+#: functions/pagebuilder/modules/fullwidth.php:407
+#: functions/pagebuilder/modules/fullwidth.php:413
+#: functions/pagebuilder/modules/google-map.php:47
+#: functions/pagebuilder/modules/testimonials.php:86
+#: functions/pagebuilder/modules/testimonials.php:92
+msgid "2"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:402
+#: functions/pagebuilder/modules/fullwidth.php:408
+#: functions/pagebuilder/modules/fullwidth.php:414
+#: functions/pagebuilder/modules/google-map.php:48
+#: functions/pagebuilder/modules/testimonials.php:87
+#: functions/pagebuilder/modules/testimonials.php:93
+msgid "3"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:426
+#: functions/pagebuilder/pagebuilder-ajax.php:4
+#: functions/pagebuilder/pagebuilder-modules.php:33
+#: functions/pagebuilder/pagebuilder-modules.php:69
+msgid "Fullwidth Wrap"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:428
+msgid "Anchor Name"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:429
+msgid ""
+"Please enter the anchor name, please use lowercase letters, do not use "
+"spaces and other characters"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:440
+msgid "Tab Name"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:446
+msgid "Block Column"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:456
+msgid "Block 1"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:464
+#: functions/pagebuilder/modules/fullwidth.php:527
+#: functions/pagebuilder/modules/fullwidth.php:590
+#: functions/pagebuilder/modules/fullwidth.php:646
+#: functions/pagebuilder/modules/text-block.php:54
+msgid "Background Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:465
+#: functions/pagebuilder/modules/fullwidth.php:528
+#: functions/pagebuilder/modules/fullwidth.php:591
+#: functions/pagebuilder/modules/fullwidth.php:647
+msgid "Optional, choose a background color for the wrap"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:491
+#: functions/pagebuilder/modules/fullwidth.php:554
+#: functions/pagebuilder/modules/fullwidth.php:617
+#: functions/pagebuilder/modules/fullwidth.php:730
+msgid "Shift Text Color for Dark Background"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:519
+msgid "Block 2"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:582
+msgid "Block 3"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:660
+msgid "Background Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:668
+msgid "Parallax Ratio"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:669
+msgid "select a ratio for Parallax effect"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:678
+msgid "Video Url"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:679
+msgid "enter the video url into right fields"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:682
+msgid "enter the webm video url here for firefox/chrome/opera browser"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:686
+msgid "enter the mp4 or m4v video url here for chrome/ie/safari browser"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:691
+msgid "enter the ogg or video url here for chrome/firefox  browser"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:699
+msgid "Alt Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:700
+msgid ""
+"Touch devices and ie 8 do not support video background, you need to select a "
+"image for them "
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:708
+msgid "Content Panel Align"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:717
+msgid "Foreground Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:741
+msgid "Foreground Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:749
+msgid "Overflow visible"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:758
+msgid "Height auto"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:766
+msgid ""
+"it is recommended to leave it empty to be \"auto\", if you do need a fixed "
+"height, please pay attention to the final effect on mobile devices. e.g. 500"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:767
+#: functions/pagebuilder/modules/google-map.php:98
+msgid "px"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:773
+msgid "Show Shadow"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:782
+msgid "Fit Content to Fullwidth"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:783
+msgid ""
+"Content would fit to content container by default, turn on this option the "
+"content would fit to fullwidth of the page"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:792
+#: functions/pagebuilder/modules/text-block.php:64
+msgid "Inner Wrap Width"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:809
+msgid "Enable Top Inner Spacer"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:819
+msgid "Enable Bottom Inner Spacer"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:829
+msgid "Enable Top Outer Spacer"
+msgstr ""
+
+#: functions/pagebuilder/modules/fullwidth.php:839
+msgid "Enable Bottom Outer Spacer"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:72
+#: functions/pagebuilder/modules/portfolio.php:97
+msgid "All"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:254
+msgid "Library"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:259
+#: functions/pagebuilder/modules/portfolio.php:592
+msgid "0px"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:260
+#: functions/pagebuilder/modules/portfolio.php:593
+msgid "1px"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:261
+#: functions/pagebuilder/modules/portfolio.php:594
+msgid "2px"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:262
+#: functions/pagebuilder/modules/portfolio.php:595
+msgid "5px"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:263
+#: functions/pagebuilder/modules/portfolio.php:596
+msgid "10px"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:282
+#: functions/pagebuilder/modules/portfolio.php:622
+#: functions/pagebuilder/modules/portfolio.php:629
+msgid "Top"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:302
+#: functions/pagebuilder/pagebuilder-modules.php:14
+#: functions/theme/shortcode/tinymce/ux-sc.php:29
+msgid "Gallery"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:304
+msgid "Image Source"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:305
+msgid "Select where the images come from"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:311
+msgid ""
+"The featured images of the Image Posts under the category you selected would "
+"be shown in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:320
+#: functions/pagebuilder/modules/portfolio.php:674
+msgid "Spacing Between Images"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:321
+#: functions/pagebuilder/modules/portfolio.php:675
+msgid "Choose the spacing between images"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:336
+#: functions/pagebuilder/modules/portfolio.php:684
+msgid "Image Size"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:337
+#: functions/pagebuilder/modules/portfolio.php:685
+msgid "Choose a size for the images"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:342
+#: functions/pagebuilder/modules/portfolio.php:694
+#: functions/pagebuilder/modules/portfolio.php:704
+msgid "Image Ratio"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:343
+msgid ""
+"From portfilio post featured image, recommended size: larger than 600px * "
+"600px"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:348
+#: functions/pagebuilder/modules/portfolio.php:714
+#: functions/pagebuilder/modules/portfolio.php:808
+msgid "Sortable"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:349
+#: functions/pagebuilder/modules/portfolio.php:715
+msgid "Choose whether you want the list to be sortable or not"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:358
+#: functions/pagebuilder/modules/portfolio.php:754
+msgid "Double Size First Item"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:359
+#: functions/pagebuilder/modules/portfolio.php:755
+msgid "Enlarge the first image in the list"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:364
+#: functions/pagebuilder/modules/portfolio.php:839
+msgid "Hover Effect"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:365
+#: functions/pagebuilder/modules/single-image.php:93
+msgid "Enable the mouseover effect"
+msgstr ""
+
+#: functions/pagebuilder/modules/gallery.php:381
+msgid "Choose Image from Library"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:49
+#: functions/pagebuilder/modules/testimonials.php:94
+msgid "4"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:50
+msgid "5"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:51
+msgid "6"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:52
+msgid "7"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:53
+msgid "8"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:54
+msgid "9"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:55
+msgid "10"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:56
+msgid "11"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:57
+msgid "12"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:58
+msgid "13"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:59
+msgid "14"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:60
+msgid "15"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:61
+msgid "16"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:62
+msgid "17"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:63
+msgid "18"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:64
+msgid "19"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:65
+msgid "20"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:69
+msgid "Map"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:70
+msgid "Satellite"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:71
+msgid "Map+Terrain"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:83
+#: functions/pagebuilder/pagebuilder-modules.php:15
+msgid "Google Map"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:85
+msgid "Address"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:86
+msgid ""
+"Enter the address that you would like to show on the map here, i.e. "
+"\"Sydney, NSW\"."
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:94
+msgid "Enter the height for your map (e.g. 400)"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:100
+msgid "View"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:101
+msgid "Select a map view"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:106
+msgid "Map Zoom"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:107
+#: functions/pagebuilder/modules/image-box.php:145
+#: functions/pagebuilder/modules/testimonials.php:122
+#: functions/pagebuilder/modules/testimonials.php:128
+#: functions/pagebuilder/modules/testimonials.php:134
+#: functions/pagebuilder/modules/testimonials.php:140
+#: functions/theme/options/options-config.php:451
+msgid "Descriptions"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:112
+msgid "Show Map Pin"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:124
+msgid "Enable Mouse Scroll Zoom"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:129
+msgid "Enable Google Map Style"
+msgstr ""
+
+#: functions/pagebuilder/modules/google-map.php:136
+msgid ""
+"Edit the style <a href=\"http://gmaps-samples-v3.googlecode.com/svn/trunk/"
+"styledmaps/wizard/index.html?utm_medium=twitter\" target=\"_blank\">here</"
+"a>, or get one in <a href=\"http://snazzymaps.com/\" target=\"_blank"
+"\">snazzymaps</a>"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:121
+msgid "Icon on Left"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:122
+msgid "Icon on Top"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:123
+msgid "Icon on Right"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:128
+msgid "Full Rotate"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:129
+#: functions/pagebuilder/modules/portfolio.php:642
+msgid "Flip"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:130
+msgid "Scale"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:134
+#: functions/pagebuilder/modules/image-box.php:109
+msgid "Circle"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:135
+#: functions/pagebuilder/modules/image-box.php:110
+msgid "Triangle"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:136
+#: functions/pagebuilder/modules/image-box.php:111
+msgid "Rounded Square"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:137
+#: functions/pagebuilder/modules/image-box.php:112
+msgid "Diamond"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:138
+#: functions/pagebuilder/modules/image-box.php:113
+msgid "Star"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:150
+#: functions/pagebuilder/pagebuilder-modules.php:16
+msgid "Icon Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:157
+#: functions/theme/options/options-config.php:977
+msgid "Layout"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:158
+msgid "Place the Icon on left or top"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:163
+msgid "Icon Mask"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:171
+msgid "Mask Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:179
+msgid "Hover Animation"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:189
+msgid "Enter a title for this Icon Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:193
+#: functions/pagebuilder/modules/image-box.php:144
+#: functions/pagebuilder/modules/promote.php:69
+#: functions/theme/post/post-meta.php:262
+#: functions/theme/post/post-meta.php:515
+#: functions/theme/post/post-meta.php:525
+#: functions/theme/shortcode/tinymce/config.php:93
+msgid "Link"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:197
+#: functions/pagebuilder/modules/image-box.php:150
+msgid "Url"
+msgstr ""
+
+#: functions/pagebuilder/modules/icon-box.php:198
+msgid "Paste a url for the icon"
+msgstr ""
+
+#: functions/pagebuilder/modules/image-box.php:125
+#: functions/pagebuilder/pagebuilder-modules.php:17
+msgid "Image Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/image-box.php:128
+#: functions/pagebuilder/modules/single-image.php:76
+msgid "Select image"
+msgstr ""
+
+#: functions/pagebuilder/modules/image-box.php:132
+msgid "Image Mask"
+msgstr ""
+
+#: functions/pagebuilder/modules/image-box.php:151
+msgid "Paste a url for the image"
+msgstr ""
+
+#: functions/pagebuilder/modules/image-box.php:160
+msgid "Show Social Icons"
+msgstr ""
+
+#: functions/pagebuilder/modules/image-box.php:166
+#: functions/theme/options/options-config.php:563
+msgid "Social Medias"
+msgstr ""
+
+#: functions/pagebuilder/modules/jobs.php:46
+#: template/single/type-jobs_item.php:10
+msgid "Location:"
+msgstr ""
+
+#: functions/pagebuilder/modules/jobs.php:46
+#: template/single/type-jobs_item.php:14
+msgid "Number:"
+msgstr ""
+
+#: functions/pagebuilder/modules/jobs.php:67
+#: functions/pagebuilder/pagebuilder-modules.php:19
+#: functions/theme/theme-register.php:232
+msgid "Jobs"
+msgstr ""
+
+#: functions/pagebuilder/modules/jobs.php:69
+msgid "Jobs Category"
+msgstr ""
+
+#: functions/pagebuilder/modules/jobs.php:70
+msgid "The jobs under the category you selected would be shown in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/latest-tweets.php:71
+#: functions/pagebuilder/pagebuilder-modules.php:32
+msgid "Latest Tweets"
+msgstr ""
+
+#: functions/pagebuilder/modules/latest-tweets.php:76
+msgid "Numberof Items"
+msgstr ""
+
+#: functions/pagebuilder/modules/latest-tweets.php:81
+#: functions/pagebuilder/modules/testimonials.php:139
+msgid "Show Navigation Buttons"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:38
+msgid "Success"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:39
+msgid "Warning"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:40
+msgid "Error"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:41
+msgid "Information"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:53
+#: functions/pagebuilder/pagebuilder-modules.php:20
+msgid "Message Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:56
+msgid "Select your message type"
+msgstr ""
+
+#: functions/pagebuilder/modules/message-box.php:62
+msgid "Enter content for this Message Box"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:366
+msgid "PREVIEW"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:367
+msgid "READMORE"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:588
+msgid "Interlock List"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:632
+msgid "Floating"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:637
+#: functions/pagebuilder/modules/single-image.php:55
+msgid "Grey"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:641
+msgid "Folding"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:643
+msgid "Mask"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:695
+#: functions/pagebuilder/modules/portfolio.php:705
+msgid ""
+"From portfilio post featured image, recommended size: larger than 800px * "
+"800px"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:724
+msgid "Show Tags"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:774
+msgid ""
+"The featured images of the Portfolio posts under the category you selected "
+"would be shown in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:789
+msgid "Enable Post Meta"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:790
+msgid "Turn on it to enable post meta information"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:817
+msgid "Filter Fixed"
+msgstr ""
+
+#: functions/pagebuilder/modules/portfolio.php:826
+msgid "Show On Hover Status"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:52
+msgid "Buy Now"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:99
+msgid "Hide Runtime"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:111
+#: functions/pagebuilder/modules/price.php:148
+#: functions/pagebuilder/pagebuilder-modules.php:21
+msgid "Price"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:113
+msgid "Currency"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:114
+msgid "Enter the Currency Symbol"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:117
+msgid "$"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:119
+msgid "Runtime"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:120
+msgid "Enter the runtime, e.g. per month"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:136
+msgid "Select a color for the price card"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:143
+msgid ""
+"Enter the name of this product, it would be placed on the top of the card."
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:149
+msgid "Enter the price of this product."
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:154
+msgid "Details"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:155
+msgid "EPress \"Add\" button to add detail items"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:161
+msgid "Enter the text you want to show on button, e.g. Buy Now!"
+msgstr ""
+
+#: functions/pagebuilder/modules/price.php:167
+msgid "Enter the link for this button"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:137
+msgid "Bar"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:138
+msgid "Column"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:139
+msgid "Pie"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:140
+msgid "Pictorial"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:141
+msgid "Big Number"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:145
+msgid "Doughnut"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:158
+#: functions/pagebuilder/pagebuilder-modules.php:18
+msgid "Info-graphic"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:161
+msgid "Choose a info-graphic type"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:167
+msgid "Choose a style for the pie"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:176
+msgid "Digit"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:177
+msgid "Enter the number"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:185
+#: functions/pagebuilder/modules/progress-bar.php:224
+#: functions/pagebuilder/modules/progress-bar.php:248
+msgid "Percent"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:186
+#: functions/pagebuilder/modules/progress-bar.php:225
+#: functions/pagebuilder/modules/progress-bar.php:249
+msgid "Enter the percentage data for this item."
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:189
+#: functions/pagebuilder/modules/progress-bar.php:228
+#: functions/pagebuilder/modules/progress-bar.php:252
+msgid "%"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:196
+#: functions/pagebuilder/modules/progress-bar.php:215
+#: functions/pagebuilder/modules/progress-bar.php:256
+msgid "Title for this item"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:231
+#: functions/pagebuilder/modules/progress-bar.php:261
+msgid "Column Percentage Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:232
+#: functions/pagebuilder/modules/progress-bar.php:262
+#: functions/pagebuilder/modules/progress-bar.php:303
+#: functions/pagebuilder/modules/progress-bar.php:311
+#: functions/pagebuilder/modules/progress-bar.php:320
+msgid "Color for activated part"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:267
+msgid "Subtitle"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:268
+msgid "Subtitle for this item"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:276
+#: functions/theme/options/options-config.php:502
+#: functions/theme/shortcode/tinymce/ux-sc.php:33
+msgid "Icon"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:284
+msgid "Number of Icons"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:285
+msgid "How many icons you want to show in this module"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:293
+msgid "Number of Active Icons"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:294
+msgid "How many icons should be highlighted"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:302
+msgid "Percentage Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:310
+msgid "Active Icons Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:319
+msgid "Number Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:328
+msgid "Show Background Color"
+msgstr ""
+
+#: functions/pagebuilder/modules/progress-bar.php:329
+msgid "Enable it to show background color"
+msgstr ""
+
+#: functions/pagebuilder/modules/promote.php:54
+#: functions/pagebuilder/pagebuilder-modules.php:22
+msgid "Promote"
+msgstr ""
+
+#: functions/pagebuilder/modules/promote.php:57
+msgid "Enter the text you want to show in a largger size."
+msgstr ""
+
+#: functions/pagebuilder/modules/promote.php:61
+msgid "Background Color By Default"
+msgstr ""
+
+#: functions/pagebuilder/modules/promote.php:65
+msgid "Background Color Mouseover"
+msgstr ""
+
+#: functions/pagebuilder/modules/promote.php:73
+#: functions/theme/shortcode/tinymce/config.php:274
+msgid "Open Link in New Tab"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:54
+msgid "Shadow"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:73
+#: functions/pagebuilder/pagebuilder-modules.php:24
+msgid "Single Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:81
+msgid "Select a style for the image"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:86
+msgid "Algin"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:92
+msgid "Mouseover Effect"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:98
+msgid "Lightbox"
+msgstr ""
+
+#: functions/pagebuilder/modules/single-image.php:99
+msgid "Enable the Lightbox"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:140
+msgid "Fade"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:141
+msgid "Slide"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:145
+msgid "Content Slider"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:146
+msgid "Flex Slider"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:159
+#: functions/pagebuilder/pagebuilder-modules.php:25
+msgid "Slider"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:161
+msgid "Slider Type"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:162
+msgid "Select the slider type"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:168
+msgid "The post under the category you selected would be shown in this slider."
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:187
+msgid "Number to Show"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:188
+msgid "How many posts(slides) you want to show in the slider."
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:196
+msgid "Animation"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:197
+msgid "Choose an animation effect for the slider"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:206
+msgid "Show Navigation Hint(dot)"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:207
+msgid "Turn on if you want to show the Nav Hint"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:216
+msgid "Show Previous/Next Button"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:217
+msgid "Turn on if you want to show the Nav Button"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:226
+msgid "Speed (second)"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:227
+msgid "Enter a speed for the animation"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:284
+msgid "LayerSlider"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:295
+msgid "LayerSlider Alias"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:296
+msgid ""
+"The right hand dropdown menu would be enabled after you have create at least "
+"1 slider by LayerSlider plugin."
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:334
+msgid "Revolution Slider"
+msgstr ""
+
+#: functions/pagebuilder/modules/slider.php:345
+msgid "Revolution Slider Alias"
+msgstr ""
+
+#: functions/pagebuilder/modules/tabs.php:65
+msgid "Horizontal Tabs"
+msgstr ""
+
+#: functions/pagebuilder/modules/tabs.php:66
+msgid "Vertical Tabs"
+msgstr ""
+
+#: functions/pagebuilder/modules/tabs.php:78
+#: functions/pagebuilder/pagebuilder-modules.php:26
+msgid "Tabs"
+msgstr ""
+
+#: functions/pagebuilder/modules/tabs.php:81
+msgid "Select a layout for the Tabs module"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:148
+msgid "Large Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:149
+msgid "Medium Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:150
+msgid "Small Image"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:162
+#: functions/pagebuilder/pagebuilder-modules.php:27
+#: functions/theme/theme-register.php:174
+msgid "Team"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:169
+msgid "Spacer Between Items"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:174
+#: functions/pagebuilder/modules/testimonials.php:127
+msgid "Show Position"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:175
+msgid "Show the team number's position in the module"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:180
+msgid "Show Email"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:181
+msgid "Show the team number's email in the module"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:186
+msgid "Show Phone Number"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:187
+msgid "Show the team number's phone number in the module"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:192
+msgid "Show Social Network"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:193
+msgid "show the team number's social medias in the module"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:198
+#: functions/theme/post/post-meta.php:485
+msgid "Number"
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:199
+msgid ""
+"How many items should be displayed in this module, leave it empty to show "
+"all items."
+msgstr ""
+
+#: functions/pagebuilder/modules/team.php:203
+msgid "Team Category"
+msgstr ""
+
+#: functions/pagebuilder/modules/testimonials.php:106
+#: functions/pagebuilder/pagebuilder-modules.php:28
+#: functions/theme/theme-register.php:213
+msgid "Testimonials"
+msgstr ""
+
+#: functions/pagebuilder/modules/testimonials.php:108
+msgid "Testimonials Category"
+msgstr ""
+
+#: functions/pagebuilder/modules/testimonials.php:109
+msgid ""
+"The testimonials under the category you selected would be shown in this "
+"module"
+msgstr ""
+
+#: functions/pagebuilder/modules/testimonials.php:121
+msgid "Show Avatar"
+msgstr ""
+
+#: functions/pagebuilder/modules/testimonials.php:133
+msgid "Show Link"
+msgstr ""
+
+#: functions/pagebuilder/modules/text-block.php:52
+#: functions/pagebuilder/pagebuilder-modules.php:29
+msgid "Text Block"
+msgstr ""
+
+#: functions/pagebuilder/modules/text-block.php:55
+msgid "Select the Background Color for Text Block."
+msgstr ""
+
+#: functions/pagebuilder/modules/text-block.php:60
+msgid "Enter some content for this Text Block."
+msgstr ""
+
+#: functions/pagebuilder/modules/text-list.php:54
+#: functions/pagebuilder/pagebuilder-modules.php:30
+#: functions/theme/shortcode/tinymce/ux-sc.php:35
+msgid "Text List"
+msgstr ""
+
+#: functions/pagebuilder/modules/text-list.php:69
+msgid "Enter content for this Text List"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:58
+#: functions/theme/post/post-meta.php:17
+msgid "4:3"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:59
+#: functions/theme/post/post-meta.php:18
+msgid "16:9"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:60
+#: functions/theme/post/post-meta.php:19
+msgid "Custom"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:74
+msgid "Embed Code"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:75
+msgid "You could find the embed code on the source video page"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:79
+#: functions/theme/post/post-meta.php:338
+msgid "Ratio"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:80
+msgid "Set the appropriate ratio can remove the black border of the video"
+msgstr ""
+
+#: functions/pagebuilder/modules/video.php:92
+msgid "Cover for Video"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:5
+#: functions/pagebuilder/pagebuilder-modules.php:70
+msgid "+ Module"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:6
+#: functions/pagebuilder/pagebuilder-modules.php:71
+msgid "Setting"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:7
+#: functions/pagebuilder/pagebuilder-ajax.php:24
+#: functions/pagebuilder/pagebuilder-interface.php:181
+#: functions/pagebuilder/pagebuilder-modules.php:72
+msgid "Choose Module"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:23
+#: functions/pagebuilder/pagebuilder-ajax.php:79
+#: functions/pagebuilder/pagebuilder-ajax.php:92
+msgid "1/1"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:74
+#: functions/pagebuilder/pagebuilder-ajax.php:134
+#: functions/pagebuilder/pagebuilder-modules.php:154
+msgid "Edit"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:220
+msgid "Select Template"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-ajax.php:263
+msgid "Template Name"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:5
+#: functions/pagebuilder/pagebuilder-config.php:51
+msgid "Fade In"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:6
+msgid "Zoom In"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:7
+msgid "Zoom Out"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:8
+#: functions/pagebuilder/pagebuilder-config.php:52
+msgid "Fade In Left"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:9
+#: functions/pagebuilder/pagebuilder-config.php:53
+msgid "Fade In Right"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:10
+msgid "Fade In Top"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:11
+msgid "Fade In Bottom"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:12
+#: functions/pagebuilder/pagebuilder-config.php:56
+msgid "Bounce In Left"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:13
+#: functions/pagebuilder/pagebuilder-config.php:57
+msgid "Bounce In Right"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:14
+msgid "Bounce In Top"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:15
+msgid "Bounce In Bottom"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:16
+#: functions/pagebuilder/pagebuilder-config.php:60
+msgid "Flip X"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:17
+#: functions/pagebuilder/pagebuilder-config.php:61
+msgid "Flip Y"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:18
+#: functions/pagebuilder/pagebuilder-config.php:62
+msgid "Rotate In DownLeft"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:19
+#: functions/pagebuilder/pagebuilder-config.php:63
+msgid "Rotate In DownRight"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:50
+msgid "Scroll in Animation"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:51
+msgid "enable to select Scroll in animation effect"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:60
+msgid "Scroll in Animation Effect"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-animation.php:61
+msgid "animation effect when the module enter the scene"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:13
+#: functions/theme/post/post-meta.php:25
+msgid "Please Select"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:16
+#: functions/theme/post/post-meta.php:28
+msgid "ID"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:17
+#: functions/theme/post/post-meta.php:29
+msgid "Modified"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:19
+#: functions/theme/post/post-meta.php:31
+msgid "Comment count"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:23
+#: functions/theme/post/post-meta.php:35
+msgid "Ascending"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:24
+#: functions/theme/post/post-meta.php:36
+msgid "Descending"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:28
+msgid "No Margin"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:36
+#: functions/pagebuilder/pagebuilder-config.php:45
+msgid "Fade in"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:37
+msgid "Fade in and zoom in"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:38
+msgid "Fade in from left"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:39
+msgid "Fade in from right"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:40
+msgid "Fade in from top"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:41
+msgid "Fade in from bottom"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:54
+msgid "Fade In Up"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:55
+msgid "Fade In Down"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:58
+msgid "Bounce In Up"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-config.php:59
+msgid "Bounce In Down"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:35
+msgid "Unit:"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:98
+#: functions/pagebuilder/pagebuilder-fields.php:649
+#: functions/pagebuilder/pagebuilder-fields.php:681
+#: functions/theme/options/options-fields.php:196
+msgid "Upload Image"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:99
+#: functions/pagebuilder/pagebuilder-fields.php:650
+#: functions/pagebuilder/pagebuilder-fields.php:682
+#: functions/theme/nav-menu/ux-class/nav-menu.php:215
+#: functions/theme/options/options-fields.php:197
+msgid "Remove"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:121
+msgid "Tab "
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:124
+#: functions/pagebuilder/pagebuilder-fields.php:127
+msgid "Tab 1"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:167
+#: functions/theme/theme-ajax.php:18
+msgid "Font Awesome"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:169
+#: functions/theme/theme-ajax.php:20
+msgid "User Uploaded Icons"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:203
+msgid "Add"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:208
+msgid "Check"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:209
+msgid "Arrow"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:210
+msgid "Don't Show Icon"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:232
+msgid "New Item"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:264
+#: functions/pagebuilder/pagebuilder-fields.php:300
+msgid "Item "
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:376
+msgid "All Categories"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:386
+#: functions/theme/options/options-fields.php:498
+msgid "No Categories"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:505
+#: functions/theme/options/options-fields.php:233
+#: functions/theme/options/options-fields.php:446
+#: functions/theme/post/post-meta.php:237
+#: functions/theme/shortcode/tinymce/config.php:246
+#: functions/theme/shortcode/tinymce/config.php:288
+msgid "Select Images"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:633
+#, php-format
+msgid "You Need to install the %s %s"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-fields.php:633
+msgid ""
+"WordPress plugin and setup your Twitter API before working with this module.!"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:6
+msgid "Switch to Page Builder"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:7
+msgid "Classic Editor"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:69
+msgid "Page Builder"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:154
+#: functions/theme/theme-options.php:142
+msgid "Close"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:155
+#: functions/pagebuilder/pagebuilder-interface.php:156
+msgid "Saving..."
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:155
+msgid "Save"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:156
+msgid "Save Item"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:157
+msgid "Loading..."
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:157
+msgid "Load Template"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:158
+msgid "Deleting..."
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:158
+msgid "Delete Template"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:169
+msgid "Wrap"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:171
+msgid "General Wrap"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:172
+msgid "FullWidth Wrap"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:192
+msgid "Template"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:194
+msgid "Save Current Layout as a Template"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:195
+msgid "Load a Template"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:429
+msgid "..."
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-interface.php:437
+msgid "LOAD MORE"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-register.php:51
+msgid "Modules (PageBuilder)"
+msgstr ""
+
+#: functions/pagebuilder/pagebuilder-register.php:52
+msgid "Module Template (PageBuilder)"
+msgstr ""
+
+#: functions/theme/customize/customize-options.php:30
+msgid "select scheme"
+msgstr ""
+
+#: functions/theme/customize/customize-options.php:47
+msgid "Color Scheme"
+msgstr ""
+
+#: functions/theme/customize/customize-options.php:60
+msgid "Select a predefined color scheme"
+msgstr ""
+
+#: functions/theme/nav-menu/nav-menu-anchor.php:38
+msgid "Anchor"
+msgstr ""
+
+#: functions/theme/nav-menu/nav-menu-anchor.php:41
+msgid "None"
+msgstr ""
+
+#: functions/theme/nav-menu/nav-menu-anchor.php:43
+msgid "The top of this page"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: functions/theme/nav-menu/ux-class/nav-menu.php:84
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: functions/theme/nav-menu/ux-class/nav-menu.php:88
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:101
+msgid "sub item"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:116
+msgid "Move up"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:129
+msgid "Move down"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:131
+#: functions/theme/nav-menu/ux-class/nav-menu.php:133
+msgid "Edit Menu Item"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:142
+#: functions/theme/post/post-meta.php:303
+#: functions/theme/post/post-meta.php:393
+#: functions/theme/post/post-meta.php:447
+msgid "URL"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:149
+msgid "Navigation Label"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:155
+msgid "Title Attribute"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:162
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:167
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:173
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:182
+#: functions/theme/shortcode/tinymce/config.php:308
+msgid "Description"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:184
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:190
+msgid "Move"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:191
+msgid "Up one"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:192
+msgid "Down one"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:195
+msgid "To the top"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:202
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: functions/theme/nav-menu/ux-class/nav-menu.php:216
+msgid "Cancel"
+msgstr ""
+
+#: functions/theme/options/options-config.php:32
+msgid "Select menu"
+msgstr ""
+
+#: functions/theme/options/options-config.php:72
+msgid "Visit Facebook page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:79
+msgid "Visit Twitter page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:82
+msgid "Google+"
+msgstr ""
+
+#: functions/theme/options/options-config.php:86
+msgid "Visit Google Plus page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:89
+msgid "Youtube"
+msgstr ""
+
+#: functions/theme/options/options-config.php:93
+msgid "Visit Youtube page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:96
+msgid "Vimeo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:100
+msgid "Visit Vimeo page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:107
+msgid "Visit Tumblr page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:110
+msgid "RSS"
+msgstr ""
+
+#: functions/theme/options/options-config.php:114
+msgid "Visit Rss"
+msgstr ""
+
+#: functions/theme/options/options-config.php:121
+msgid "Visit Pinterest page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:128
+msgid "Visit Linkedin page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:131
+msgid "Instagram"
+msgstr ""
+
+#: functions/theme/options/options-config.php:135
+msgid "Visit Instagram page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:138
+msgid "Github"
+msgstr ""
+
+#: functions/theme/options/options-config.php:142
+msgid "Visit Github page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:145
+msgid "Xing"
+msgstr ""
+
+#: functions/theme/options/options-config.php:149
+msgid "Visit Xing page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:152
+msgid "Flickr"
+msgstr ""
+
+#: functions/theme/options/options-config.php:156
+msgid "Visit Flickr page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:159
+msgid "VK"
+msgstr ""
+
+#: functions/theme/options/options-config.php:163
+msgid "Visit VK page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:166
+msgid "Weibo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:170
+msgid "Visit Weibo page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:173
+msgid "Renren"
+msgstr ""
+
+#: functions/theme/options/options-config.php:177
+msgid "Visit Renren page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:180
+msgid "Bitbucket"
+msgstr ""
+
+#: functions/theme/options/options-config.php:184
+msgid "Visit Bitbucket page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:187
+msgid "Foursquare"
+msgstr ""
+
+#: functions/theme/options/options-config.php:191
+msgid "Visit Foursquare page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:194
+#: functions/theme/options/options-config.php:198
+msgid "Skype"
+msgstr ""
+
+#: functions/theme/options/options-config.php:201
+msgid "Dribbble"
+msgstr ""
+
+#: functions/theme/options/options-config.php:205
+msgid "Visit Dribbble page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:295
+msgid "Default Demo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:312
+msgid "Transparent Menu"
+msgstr ""
+
+#: functions/theme/options/options-config.php:313
+msgid "Hidden menu"
+msgstr ""
+
+#: functions/theme/options/options-config.php:317
+msgid "Navigation On Left"
+msgstr ""
+
+#: functions/theme/options/options-config.php:318
+msgid "Navigation On Top"
+msgstr ""
+
+#: functions/theme/options/options-config.php:340
+#: functions/theme/options/options-interface.php:4
+msgid "Theme Options"
+msgstr ""
+
+#: functions/theme/options/options-config.php:345
+#: functions/theme/options/options-config.php:348
+msgid "Import Demo Data"
+msgstr ""
+
+#: functions/theme/options/options-config.php:347
+msgid ""
+"if you are new to WordPress or have problems creating posts or pages that "
+"look like the theme demo, you could import dummy posts and pages here that "
+"will definitely help to understand how those tasks are done"
+msgstr ""
+
+#: functions/theme/options/options-config.php:349
+msgid "Loading data, don&acute;t close the page please."
+msgstr ""
+
+#: functions/theme/options/options-config.php:353
+msgid ""
+"The demo content will be import including post/pages and sliders, the images "
+"in sliders could only be use as placeholder and could not be use in your "
+"finally website due to copyright reasons."
+msgstr ""
+
+#: functions/theme/options/options-config.php:362
+msgid "export your current data to a file and save it on your computer"
+msgstr ""
+
+#: functions/theme/options/options-config.php:363
+msgid "Export Current Data"
+msgstr ""
+
+#: functions/theme/options/options-config.php:370
+msgid "import a data file you have saved"
+msgstr ""
+
+#: functions/theme/options/options-config.php:371
+msgid "Import My Saved Data"
+msgstr ""
+
+#: functions/theme/options/options-config.php:381
+msgid "FrontPage"
+msgstr ""
+
+#: functions/theme/options/options-config.php:382
+msgid ""
+"select which page to display on your FrontPage, if left blank the Blog will "
+"be displayed"
+msgstr ""
+
+#: functions/theme/options/options-config.php:389
+msgid "Generate New Thumbs for This Theme"
+msgstr ""
+
+#: functions/theme/options/options-config.php:390
+msgid ""
+"if you have many posts and had assigned some Featured Image for them before "
+"using this theme, this button could help you adapt these feature images to "
+"appropriate size for this theme"
+msgstr ""
+
+#: functions/theme/options/options-config.php:391
+msgid "Generate New Thumbnails"
+msgstr ""
+
+#: functions/theme/options/options-config.php:392
+msgid "Processing, don&acute;t close the page please."
+msgstr ""
+
+#: functions/theme/options/options-config.php:401
+msgid "General Settings"
+msgstr ""
+
+#: functions/theme/options/options-config.php:406
+#: functions/theme/options/options-config.php:649
+msgid "Logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:410
+msgid "Enable Plain Text Logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:417
+msgid "Logo Text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:426
+msgid "Custom Logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:427
+msgid ""
+"the container for custom logo is 160px(width) * 80px(hight), you could "
+"upload a double size logo image to meet the needs of retina screens"
+msgstr ""
+
+#: functions/theme/options/options-config.php:434
+msgid "Custom Logo For Loading Page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:442
+msgid "Custom Footer Logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:455
+msgid "Comment Title"
+msgstr ""
+
+#: functions/theme/options/options-config.php:456
+msgid "Comments in posts"
+msgstr ""
+
+#: functions/theme/options/options-config.php:462
+msgid "Comment Box Placeholder"
+msgstr ""
+
+#: functions/theme/options/options-config.php:469
+msgid "Comment Submit Button Name"
+msgstr ""
+
+#: functions/theme/options/options-config.php:472
+msgid "Send"
+msgstr ""
+
+#: functions/theme/options/options-config.php:479
+#: functions/theme/options/options-config.php:910
+msgid "Copyright"
+msgstr ""
+
+#: functions/theme/options/options-config.php:483
+msgid "Copyright Information"
+msgstr ""
+
+#: functions/theme/options/options-config.php:484
+msgid ""
+"enter the copyright information, it would be placed on the bottom of the "
+"pages"
+msgstr ""
+
+#: functions/theme/options/options-config.php:491
+#: functions/theme/options/options-config.php:495
+msgid "Track Code"
+msgstr ""
+
+#: functions/theme/options/options-config.php:506
+msgid "Custom Favicon"
+msgstr ""
+
+#: functions/theme/options/options-config.php:507
+msgid ""
+"upload the favicon for your website, it would be shown on the tab of the "
+"browser"
+msgstr ""
+
+#: functions/theme/options/options-config.php:513
+msgid "Custom Mobile Icon"
+msgstr ""
+
+#: functions/theme/options/options-config.php:514
+msgid "upload the icon for the shortcuts on mobile devices"
+msgstr ""
+
+#: functions/theme/options/options-config.php:520
+msgid "Effects"
+msgstr ""
+
+#: functions/theme/options/options-config.php:525
+msgid "Enable Fade-in Loading Effect"
+msgstr ""
+
+#: functions/theme/options/options-config.php:534
+#: functions/theme/options/options-config.php:536
+msgid "Custom CSS"
+msgstr ""
+
+#: functions/theme/options/options-config.php:540
+msgid "Please enter your Custom CSS (Optional)"
+msgstr ""
+
+#: functions/theme/options/options-config.php:548
+#: functions/theme/post/post-meta.php:615
+msgid "Social Networks"
+msgstr ""
+
+#: functions/theme/options/options-config.php:553
+msgid "Your Social Media Links"
+msgstr ""
+
+#: functions/theme/options/options-config.php:557
+msgid "Enable Social Media Links"
+msgstr ""
+
+#: functions/theme/options/options-config.php:571
+msgid "Show Social Icons in header"
+msgstr ""
+
+#: functions/theme/options/options-config.php:580
+msgid "Show Social Icons in footer"
+msgstr ""
+
+#: functions/theme/options/options-config.php:590
+msgid "Share Buttons For Post"
+msgstr ""
+
+#: functions/theme/options/options-config.php:594
+msgid "Enable Share Buttons for Posts"
+msgstr ""
+
+#: functions/theme/options/options-config.php:612
+msgid "Schemes"
+msgstr ""
+
+#: functions/theme/options/options-config.php:617
+msgid "Color Setting"
+msgstr ""
+
+#: functions/theme/options/options-config.php:621
+msgid "Select a predefined color scheme "
+msgstr ""
+
+#: functions/theme/options/options-config.php:628
+#: functions/theme/options/options-config.php:981
+msgid "Global"
+msgstr ""
+
+#: functions/theme/options/options-config.php:632
+msgid "Highlight Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:640
+msgid "Auxiliary Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:653
+msgid "Logo Text Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:654
+msgid "color for plain text logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:661
+msgid "Logo Text Color for Footer"
+msgstr ""
+
+#: functions/theme/options/options-config.php:673
+#: functions/theme/options/options-config.php:898
+msgid "Menu"
+msgstr ""
+
+#: functions/theme/options/options-config.php:677
+msgid "Menu Item Text Colour"
+msgstr ""
+
+#: functions/theme/options/options-config.php:678
+msgid "color for menu item text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:685
+msgid "Activated Item Text Colour"
+msgstr ""
+
+#: functions/theme/options/options-config.php:686
+msgid "color for text of menu item linked the curren"
+msgstr ""
+
+#: functions/theme/options/options-config.php:693
+msgid "Submenu Text Colour"
+msgstr ""
+
+#: functions/theme/options/options-config.php:694
+#: functions/theme/options/options-config.php:702
+msgid "color for submenu item text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:701
+msgid "Submenu Bg Colour"
+msgstr ""
+
+#: functions/theme/options/options-config.php:712
+msgid "Posts & Pages"
+msgstr ""
+
+#: functions/theme/options/options-config.php:716
+msgid "Heading Text Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:717
+msgid "the color for post/archive title text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:724
+msgid "Content Text Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:725
+msgid "the color for content text "
+msgstr ""
+
+#: functions/theme/options/options-config.php:732
+msgid "Auxiliary Text Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:733
+msgid "the color for auxiliary content text, such as meta of a post"
+msgstr ""
+
+#: functions/theme/options/options-config.php:740
+msgid "Selected Text Bg Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:741
+msgid "the color for selected text background"
+msgstr ""
+
+#: functions/theme/options/options-config.php:748
+msgid "Page/Post Bg Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:749
+msgid "background color for the page area"
+msgstr ""
+
+#: functions/theme/options/options-config.php:757
+#: functions/theme/post/post-meta.php:106
+#: functions/theme/post/post-meta.php:454
+#: functions/theme/post/post-meta.php:574
+msgid "Sidebar"
+msgstr ""
+
+#: functions/theme/options/options-config.php:761
+msgid "Page/Post Sidebar Widget Title Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:762
+msgid "color for sidebar widget title text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:769
+msgid "Page/Post Sidebar Widget Content Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:777
+#: functions/theme/options/options-config.php:1026
+msgid "Footer"
+msgstr ""
+
+#: functions/theme/options/options-config.php:781
+msgid "Footer Text Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:790
+msgid "Footer Widget Title Colour"
+msgstr ""
+
+#: functions/theme/options/options-config.php:798
+msgid "Footer Widget Content Color"
+msgstr ""
+
+#: functions/theme/options/options-config.php:809
+msgid "Font Settings"
+msgstr ""
+
+#: functions/theme/options/options-config.php:814
+msgid "Synchronous"
+msgstr ""
+
+#: functions/theme/options/options-config.php:819
+msgid "Update to new Google Font Data"
+msgstr ""
+
+#: functions/theme/options/options-config.php:820
+msgid "Updating ..."
+msgstr ""
+
+#: functions/theme/options/options-config.php:831
+msgid "Heading Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:832
+msgid "font for titles"
+msgstr ""
+
+#: functions/theme/options/options-config.php:842
+msgid "Main Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:843
+msgid "menu, button, meta, sidebar, footer"
+msgstr ""
+
+#: functions/theme/options/options-config.php:871
+msgid "Logo Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:872
+msgid "font for plaint text logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:921
+msgid "Post/Page Title Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:922
+msgid "font for post/page title text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:928
+msgid "Post/Page Content Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:929
+msgid "font for post/page content text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:935
+msgid "Post/Page Meta Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:936
+msgid "font for post/page meta text"
+msgstr ""
+
+#: functions/theme/options/options-config.php:942
+msgid "Post/Page Widget Title Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:949
+msgid "Post/Page Widget Content Font"
+msgstr ""
+
+#: functions/theme/options/options-config.php:960
+msgid "Icons"
+msgstr ""
+
+#: functions/theme/options/options-config.php:965
+msgid "Upload Icons"
+msgstr ""
+
+#: functions/theme/options/options-config.php:969
+msgid ""
+"select images for your icons from Media Library, it is recommended to upload "
+"48*48 images"
+msgstr ""
+
+#: functions/theme/options/options-config.php:985
+msgid "Navigation Bar"
+msgstr ""
+
+#: functions/theme/options/options-config.php:992
+msgid "Enable Search Button"
+msgstr ""
+
+#: functions/theme/options/options-config.php:999
+msgid "Header"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1018
+msgid "Enable Search Field"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1030
+msgid "Enable Footer Logo"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1037
+msgid "Enable Copyright"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1044
+msgid "Enable Menu For Footer"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1051
+msgid "Select Menu"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1059
+msgid "Enable Foot WPML"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1060
+msgid ""
+"the WPML switcher (flags) would be shown on menu bar when this option is on"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1066
+msgid "Enable RTL"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1074
+msgid "Page/Post"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1078
+msgid "Show Summary of Content (Archive List Page)"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1085
+msgid "Words to Show on List (Archive List Page)"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1094
+msgid "Show Meta On Post Content Page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1108
+msgid "Show Author Information On Post Content page"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1115
+msgid "Enable Footer Widget For Post Content Pages"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1122
+msgid "Footer Widget For Post Content Pages"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1133
+msgid "Mobile"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1138
+msgid "Responsive"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1142
+msgid "Enable Mobile Layout"
+msgstr ""
+
+#: functions/theme/options/options-config.php:1143
+msgid "disable this option if you want to display the same with PC end"
+msgstr ""
+
+#: functions/theme/options/options-fields.php:274
+#: functions/theme/theme-ajax.php:132
+msgid "-- Select Font --"
+msgstr ""
+
+#: functions/theme/options/options-fields.php:344
+#: functions/theme/options/options-fields.php:368
+#: functions/theme/widget/widget-social-network-icons.php:87
+#: functions/theme/widget/widget-social-network-icons.php:112
+msgid "Enter the social media url"
+msgstr ""
+
+#: functions/theme/options/options-fields.php:345
+#: functions/theme/options/options-fields.php:369
+msgid "Social media name"
+msgstr ""
+
+#: functions/theme/options/options-interface.php:10
+#: functions/theme/options/options-interface.php:95
+msgid "Restore Defaults"
+msgstr ""
+
+#: functions/theme/options/options-interface.php:95
+msgid ""
+"All the settings you have done will be cover write to the default settings, "
+"are you sure you want to continue?"
+msgstr ""
+
+#: functions/theme/options/options-interface.php:95
+msgid "Documentation"
+msgstr ""
+
+#: functions/theme/options/options-interface.php:95
+msgid "Support Forum"
+msgstr ""
+
+#: functions/theme/options/options-interface.php:97
+msgid "Please waitting..."
+msgstr ""
+
+#: functions/theme/options/options-interface.php:97
+msgid "Save Options"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:5
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:6
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:7
+msgid "Without Sidebar"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:10 functions/theme/theme-ajax.php:178
+msgid "Select a slider"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:13
+msgid "Self Hosted Audio"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:14
+msgid "Soundcloud"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:41
+msgid "Big"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:42
+msgid "Long"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:47
+msgid "Layout 1"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:48
+msgid "Layout 2"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:49
+msgid "Layout 3"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:50
+msgid "Layout 4"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:54
+msgid "Load More Button"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:85
+msgid "Page Options"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:92
+msgid "Enable Slide Page Template"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:128
+msgid "Select Blog Category"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:136
+msgid "Order"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:144
+msgid "Disable Mouse Scroll Animation Effect"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:151
+msgid "Show Post Navigation On Sidebar"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:152
+msgid "Works for \"Navigation on Left\" layout"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:169
+msgid "Show Page Title"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:176
+msgid "Show Excerpt"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:183
+msgid "Enable Footer Widget"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:190
+msgid "Select Footer Widget"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:198
+msgid "Show Top Spacer"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:205
+msgid "Show Bottom Spacer"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:212
+msgid "Enable Archive Template"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:219
+msgid "Enable Onepage"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:254
+msgid "Images Settings"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:272
+msgid "Audio Settings"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:280
+msgid "Audio Type"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:290
+msgid "Artist"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:298
+msgid "MP3"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:308
+msgid "Code for WP"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:311
+msgid ""
+"*Format: https://soundcloud.com/imam-lepast-konyol/maher-zain-always-be-"
+"there-1"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:320
+msgid "Video Settings"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:328
+msgid "You could find the embed code on the source video page."
+msgstr ""
+
+#: functions/theme/post/post-meta.php:332
+msgid "Embeded Code"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:356
+msgid "Quote Settings"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:364
+msgid "The Quote"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:365
+msgid "Write your quote in this field."
+msgstr ""
+
+#: functions/theme/post/post-meta.php:370
+msgid "Cite"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:380
+msgid "Link Settings"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:388
+msgid "Link Item"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:402
+msgid "Post Options"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:409
+msgid "Featured Color"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:415
+msgid "Thumbnail Size"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:416
+msgid "Optional, for the Page Builder > Portfolio Module > List Type: Brick"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:425
+msgid "Read Length"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:426
+msgid "The number of minutes spent reading this article"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:434
+msgid "List Layout Builder"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:442
+msgid "Property"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:472
+msgid "Jobs Meta"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:479
+msgid "Location"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:496
+msgid "Testimonials Meta"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:503
+msgid "Testimonial Cite"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:509
+#: functions/theme/post/post-meta.php:597
+msgid "Position"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:534
+msgid "Clients Meta"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:541
+msgid "Client Link"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:552
+msgid "Team Meta"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:559
+msgid "use team template"
+msgstr ""
+
+#: functions/theme/post/post-meta.php:609
+msgid "Phone Number"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:87
+#: functions/theme/shortcode/tinymce/config.php:177
+#: functions/theme/shortcode/tinymce/ux-sc.php:34
+msgid "Text"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:88
+msgid "Add the button's text"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:94
+msgid "Add the button's url eg http://example.com"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:99
+msgid "Select the button's color"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:107
+msgid "Insert Button Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:115
+msgid "Main words"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:116
+msgid "Add the main words"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:121
+msgid "Word 1"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:127
+msgid "Word 2"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:133
+msgid "Word 3"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:134
+#: functions/theme/shortcode/tinymce/config.php:140
+#: functions/theme/shortcode/tinymce/config.php:146
+msgid "It is optional"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:139
+msgid "Word 4"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:145
+msgid "Word 5"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:150
+#: functions/theme/shortcode/tinymce/config.php:183
+#: functions/theme/shortcode/tinymce/config.php:204
+msgid "Size"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:151
+msgid "Select the words size"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:156
+msgid "Insert Switching Word"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:164
+msgid "Letter"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:169
+msgid "Insert First Letter Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:189
+msgid "Insert Text Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:198
+msgid "Select icon"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:199
+#: functions/theme/shortcode/tinymce/config.php:227
+msgid "Add the icon"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:214
+msgid "Insert Face Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:224
+msgid "List Icon"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:232
+msgid "List Content"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:238
+msgid "Insert Text List Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:247
+#: functions/theme/shortcode/tinymce/config.php:289
+msgid "Add the image's url"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:251
+msgid "Image Width"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:252
+msgid "Select the style"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:262
+msgid "Show Caption"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:263
+msgid "Add the image's Caption, it is optional"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:268
+msgid "Image Link URL"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:269
+msgid "Add the image's link url, it is optional."
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:280
+#: functions/theme/shortcode/tinymce/config.php:300
+msgid "Insert Image Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:294
+msgid "Show Caption When Mouseover"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:295
+msgid "Add the image's name, it is optional"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:309
+msgid "The blank shortcode would clear float"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:314
+msgid "Insert Blank Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:323
+msgid "Select the Line's colour"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:338
+msgid "Select the Line's type"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:348
+#: functions/theme/shortcode/tinymce/config.php:485
+msgid "Width"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:349
+msgid "Add the Line's width eg 95%"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:353
+#: functions/theme/shortcode/tinymce/config.php:416
+msgid "Insert Line Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:363
+msgid "Please enter the words height-lighted"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:367
+msgid "Insert Height-light Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:381
+msgid "With Line"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:393
+msgid "Line-height"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:399
+msgid "Letter-space"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:404
+msgid "Text-align"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:411
+msgid "Font color"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:423
+msgid "Insert Columns Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:431
+msgid "Column Type"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:432
+msgid "Select the type, ie width of the column."
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:461
+msgid "Column Content"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:462
+msgid "Add the column content."
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:466
+msgid "Add a new Column"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:476
+msgid "Insert Fixed Columns Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:486
+msgid "e.g. 300px"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:491
+msgid "Margin Top"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:492
+msgid "Column spacing on the top, e.g. 20px"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:497
+msgid "Margin Left"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:498
+msgid "Column spacing on the left, e.g. 20px"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:503
+msgid "Margin Bottom"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:504
+msgid "Column spacing on the bottom, e.g. 20px"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:509
+msgid "Margin Right"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:510
+msgid "Column spacing on the right, e.g. 20px"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/config.php:520
+msgid "Add Fixed Columns"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:22
+msgid "Choose a Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:24
+msgid "Line"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:26
+msgid "Highlight"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:27
+msgid "Blank"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:30
+msgid "Dropcap"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:32
+msgid "Fixed Width Columns"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:36
+msgid "Switching Word"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:42
+msgid "Choose Shortcode"
+msgstr ""
+
+#: functions/theme/shortcode/tinymce/ux-sc.php:65
+msgid "Insert Shortcode"
+msgstr ""
+
+#: functions/theme/theme-options.php:143
+msgid "Insert"
+msgstr ""
+
+#: functions/theme/theme-options.php:144
+msgid "Agree"
+msgstr ""
+
+#: functions/theme/theme-post.php:106
+msgid " ago"
+msgstr ""
+
+#: functions/theme/theme-post.php:107
+msgid "Reply"
+msgstr ""
+
+#: functions/theme/theme-post.php:117
+msgid "Your comment is awaiting moderation"
+msgstr ""
+
+#: functions/theme/theme-register.php:176
+#: functions/theme/theme-register.php:195
+#: functions/theme/theme-register.php:215
+#: functions/theme/theme-register.php:234
+#: functions/theme/theme-register.php:253
+msgid "Add New"
+msgstr ""
+
+#: functions/theme/theme-register.php:177
+msgid "Add New Team Member"
+msgstr ""
+
+#: functions/theme/theme-register.php:178
+msgid "Edit Team Member"
+msgstr ""
+
+#: functions/theme/theme-register.php:179
+msgid "New Team Member"
+msgstr ""
+
+#: functions/theme/theme-register.php:180
+msgid "View Team Member"
+msgstr ""
+
+#: functions/theme/theme-register.php:181
+msgid "No Team Member found."
+msgstr ""
+
+#: functions/theme/theme-register.php:182
+msgid "No Team Member found in Trash."
+msgstr ""
+
+#: functions/theme/theme-register.php:183
+msgid "Search Team Member"
+msgstr ""
+
+#: functions/theme/theme-register.php:184
+msgid "team_cat"
+msgstr ""
+
+#: functions/theme/theme-register.php:185
+msgid "Team Categories"
+msgstr ""
+
+#: functions/theme/theme-register.php:187
+#: functions/theme/theme-register.php:206
+#: functions/theme/theme-register.php:224
+#: functions/theme/theme-register.php:226
+#: functions/theme/theme-register.php:245
+#: functions/theme/theme-register.php:264
+msgid "Categories"
+msgstr ""
+
+#: functions/theme/theme-register.php:193
+msgid "Clients"
+msgstr ""
+
+#: functions/theme/theme-register.php:196
+msgid "Add New Client"
+msgstr ""
+
+#: functions/theme/theme-register.php:197
+msgid "Edit Client"
+msgstr ""
+
+#: functions/theme/theme-register.php:198
+msgid "New Client"
+msgstr ""
+
+#: functions/theme/theme-register.php:199
+msgid "View Client"
+msgstr ""
+
+#: functions/theme/theme-register.php:200
+msgid "No Client found."
+msgstr ""
+
+#: functions/theme/theme-register.php:201
+msgid "No Client found in Trash."
+msgstr ""
+
+#: functions/theme/theme-register.php:202
+msgid "Search Client"
+msgstr ""
+
+#: functions/theme/theme-register.php:203
+msgid "client_cat"
+msgstr ""
+
+#: functions/theme/theme-register.php:204
+msgid "Client Categories"
+msgstr ""
+
+#: functions/theme/theme-register.php:216
+msgid "Add New Testimonial"
+msgstr ""
+
+#: functions/theme/theme-register.php:217
+msgid "Edit Testimonial"
+msgstr ""
+
+#: functions/theme/theme-register.php:218
+msgid "New Testimonial"
+msgstr ""
+
+#: functions/theme/theme-register.php:219
+msgid "View Testimonial"
+msgstr ""
+
+#: functions/theme/theme-register.php:220
+msgid "No Testimonial found."
+msgstr ""
+
+#: functions/theme/theme-register.php:221
+msgid "No Testimonial found in Trash."
+msgstr ""
+
+#: functions/theme/theme-register.php:222
+msgid "Search Testimonial"
+msgstr ""
+
+#: functions/theme/theme-register.php:223
+msgid "testimonial_cat"
+msgstr ""
+
+#: functions/theme/theme-register.php:235
+msgid "Add New Job"
+msgstr ""
+
+#: functions/theme/theme-register.php:236
+msgid "Edit Job"
+msgstr ""
+
+#: functions/theme/theme-register.php:237
+msgid "New Job"
+msgstr ""
+
+#: functions/theme/theme-register.php:238
+msgid "View Job"
+msgstr ""
+
+#: functions/theme/theme-register.php:239
+msgid "No Job found."
+msgstr ""
+
+#: functions/theme/theme-register.php:240
+msgid "No Job found in Trash."
+msgstr ""
+
+#: functions/theme/theme-register.php:241
+msgid "Search Job"
+msgstr ""
+
+#: functions/theme/theme-register.php:242
+msgid "job_cat"
+msgstr ""
+
+#: functions/theme/theme-register.php:243
+msgid "Job Categories"
+msgstr ""
+
+#: functions/theme/theme-register.php:251
+msgid "FAQs"
+msgstr ""
+
+#: functions/theme/theme-register.php:254
+msgid "Add New Question"
+msgstr ""
+
+#: functions/theme/theme-register.php:255
+msgid "Edit Question"
+msgstr ""
+
+#: functions/theme/theme-register.php:256
+msgid "New Question"
+msgstr ""
+
+#: functions/theme/theme-register.php:257
+msgid "View Question"
+msgstr ""
+
+#: functions/theme/theme-register.php:258
+msgid "No Question found."
+msgstr ""
+
+#: functions/theme/theme-register.php:259
+msgid "No Question found in Trash."
+msgstr ""
+
+#: functions/theme/theme-register.php:260
+msgid "Search Question"
+msgstr ""
+
+#: functions/theme/theme-register.php:261
+msgid "question_cat"
+msgstr ""
+
+#: functions/theme/theme-register.php:262
+msgid "Topics"
+msgstr ""
+
+#: functions/theme/theme-register.php:343
+msgid "Sidebar 1 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:344
+msgid "Sidebar 2 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:345
+msgid "Sidebar 3 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:346
+msgid "Sidebar 4 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:347
+msgid "Sidebar 5 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:348
+msgid "Sidebar 6 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:349
+msgid "Sidebar 7 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:350
+msgid "Sidebar 8 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:351
+msgid "Sidebar 9 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:352
+msgid "Sidebar 10 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:359
+msgid "widgets for sidebar"
+msgstr ""
+
+#: functions/theme/theme-register.php:370
+msgid "Footer 1 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:371
+msgid "Footer 2 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:372
+msgid "Footer 3 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:373
+msgid "Footer 4 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:374
+msgid "Footer 5 for Post/Page"
+msgstr ""
+
+#: functions/theme/theme-register.php:381
+msgid "No more than 3 widgets could be shown"
+msgstr ""
+
+#: functions/theme/widget/widget-facebook.php:14
+msgid "Shows facebook profile in your blog"
+msgstr ""
+
+#: functions/theme/widget/widget-facebook.php:15
+msgid "Facebook Widget"
+msgstr ""
+
+#: functions/theme/widget/widget-facebook.php:46
+msgid "Enter your facebook username"
+msgstr ""
+
+#: functions/theme/widget/widget-social-network-icons.php:6
+msgid "Shows Social Network Icons in your blog"
+msgstr ""
+
+#: functions/theme/widget/widget-social-network-icons.php:7
+msgid "Social Network Icons"
+msgstr ""
+
+#: functions/theme/widget/widget-social-network-icons.php:88
+#: functions/theme/widget/widget-social-network-icons.php:113
+msgid "Tip for mouseover"
+msgstr ""
+
+#: functions/theme/wordpress-importer/parsers.php:42
+#: functions/theme/wordpress-importer/parsers.php:72
+#: functions/theme/wordpress-importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: functions/theme/wordpress-importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: functions/theme/wordpress-importer/parsers.php:84
+#: functions/theme/wordpress-importer/parsers.php:89
+#: functions/theme/wordpress-importer/parsers.php:279
+#: functions/theme/wordpress-importer/parsers.php:468
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: functions/theme/wordpress-importer/wordpress-importer.php:1130
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+
+#: searchform.php:1 template/global/aside-navi.php:55
+msgid "Search"
+msgstr ""
+
+#: template/archive/loop.php:24
+msgid "Sorry, no articles"
+msgstr ""
+
+#: template/global/search-popup.php:1
+msgid "Enter a Key Word Here"
+msgstr ""
+
+#: template/page/content-archive.php:3
+msgid "lAST 10 POSTS"
+msgstr ""
+
+#: template/page/content-archive.php:7
+msgid "ARCHIVES BY MONTH"
+msgstr ""
+
+#: template/page/content-archive.php:12
+msgid "ARCHIVES BY CATEGORY"
+msgstr ""
+
+#: template/single/format-gallery.php:31
+msgid "More about this project"
+msgstr ""
+
+#: template/single/type-team_item.php:22
+msgid "POSITION"
+msgstr ""
+
+#: template/single/type-team_item.php:34
+msgid "PHONE NUMBER"
+msgstr ""
+
+#, fuzzy
+#~ msgid "CONTACT US"
+#~ msgstr "联系我们"

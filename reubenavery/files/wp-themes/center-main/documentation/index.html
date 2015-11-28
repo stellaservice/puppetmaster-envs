@@ -1,0 +1,788 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Center Wordpress Theme Documentation</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Bwsm/UIUEUX Studio">
+	<meta name="copyright" content="Bwsm/UIUEUX Studio">
+	<meta name="generator" content="Documenter v1.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-01-31T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+    <link rel="stylesheet" href="assets/lightbox/themes/default/jquery.lightbox.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/lightbox/jquery.lightbox.min.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>
+        document.createElement('section');var duration='500',easing='swing';
+        $(document).ready(function() {
+           $('.lightbox').lightbox();
+        });    
+    </script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#fff;color:#666;}
+		h1,h2,h3,h4,h5,h6{ color:#28282e;}
+		::-moz-selection{background:#204E5E;color:#ccc;}
+		::selection{background:#204E5E;color:#ccc;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{ color:#5d7ec8;}
+		.btn {
+			color:#666;
+			border-color:#ddd;
+		}
+		
+		hr{border-top:1px solid #111111;border-bottom:1px solid #313139;}
+		#documenter_sidebar, #documenter_sidebar ul a{ background-color:#313139;color: }
+		#documenter_sidebar ul{ }
+		#documenter_sidebar ul a{ font-weight:300; border-bottom:1px solid #313139; border-top:none; color:#ccc;}
+		#documenter_sidebar ul a:hover,
+		#documenter_sidebar ul a.current{ ;color:#ea735f;}
+		#documenter_copyright{display:block !important;visibility:visible !important; color:#ccc;}
+		.red{ color: #ff8571; }
+		.right,.right a{ margin-top:0; font-size:10px; color:#666; }
+		#documenter_content section{ font-size:14px; font-weight: 300;}
+        .ima-wrap { 
+            position: relative; display: inline-block; 
+            -webkit-transform: opacity .5s;
+            -moz-transform: opacity .5s;
+            transform: opacity .5s;
+        }
+        .lightbox { display: block; width: 100%; height: 100%; }
+        .lightbox:before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.3); opacity: 0; }
+        .lightbox:hover:before{ opacity: 1; }
+        .quick_links_container{width:30%;}
+        .bold_text{color:#28282e; font-weight:500;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start up</a></li>
+            <li><a href="#quick_links">Quick Links</a></li>
+			<li><a href="#installation">Installation</a></li>	
+			<li><a href="#setting_up" title="Setting Up">Setting Up</a></li>
+			<li><a href="#adding_content" title="Adding Content: post page...">Adding Content</a></li>
+            <li><a href="#slider_template" title="Slider Template">Slider Template</a></li>
+			<li><a href="#page_builder" title="Page Builder">Work With Page Builder</a></li>
+            <li><a href="#one_page" title="One Page">Build a One Page Site</a></li>
+			<li><a href="#short_code" title="Short Code">Short Code</a></li>
+			<li><a href="#Translation" title="Translation">Translation</a></li>
+            <li><a href="#theme_options" title="Theme Options">Theme Options</a></li>
+            <li><a href="#included_files" title="Included Files: js css">Included Files</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright <a href="http://rxa.li/documenter" target="_blank">UIUEUX</a> 2015<p class="right">
+		made with the <a href="http://rxa.li/documenter" target="_blank">Documenter v2.0</a></p>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Center</h1><h4>Wordpress Theme Documentation</h4>
+	
+	<div id="documenter_buttons">
+		<a href="http://uiueux.com/forums" class="btn btn-primary btn-large">Support Forum</a> <a href="http://twitter.com/uiueux" class="btn btn-large">Follow Us</a> 
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 2/4/2015</li>
+	<li>Latest Update: 3/11/2014</li>
+	<li>By: Bwsm / UIUEUX Studio</li>
+	<li><a href=""></a></li>
+	
+	</ul>
+	<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to publish your question <a href="http://uiueux.com/forums">here</a>. <br>Thanks so much!</p>
+	</section>
+	
+
+
+    
+    <section id="quick_links">
+      <!--<h3>Quick Links</h3><hr class="notop">-->
+      <div class="quick_links_container">
+        <ul>
+            <li>Install The Theme</li>
+            <li>Update The Theme</li>
+            <li>How do I set up the homepage?</li>
+            <li>Upload my logo image</li>
+            <li>Set up the AD area for pages/posts</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+	<section id="installation">
+	<h3>Installation</h3><hr class="notop">
+<p> To use a WordPress theme you must have a working version of Wordpress already installed. For information in regard to installing the WordPress platform, please refer to the WordPress Codex <a href="http://codex.wordpress.org/Installing%20WordPress">here</a></p>
+		
+<ol>
+    <li class="bold_text">Extract the package file</li>
+    
+    <p style="margin-left:35px;">After extract the main zip file, you'll see these folders and files:</p>
+        <ul style="margin-left:35px;">
+            <li><span class="bold_text">Center folder</span> - main theme folder</li>
+		    <li><span class="bold_text">Center.zip</span> - zipped theme</li>
+            <li><span class="bold_text">Documentation folder</span> - help file</li>
+            <li><span class="bold_text">Log folder</span></li>
+            <li><span class="bold_text">Center-child.zip</span> - zipped child theme</li>
+	    </ul>
+
+    <li class="bold_text">Install theme file</li>
+    <p style="margin-left:35px;">This template works well for WordPress 4.1, update yours if needed.
+<br>
+Installing the theme can be done in two ways. You can upload the theme ZIP file using the built in WordPress theme upload, or copy the files through an FTP client.</p>
+        <ul style="margin-left:35px;">
+            <li><span class="bold_text">Using the Envato WordPress Toolkit plugin:</span> 
+                Please <a href="http://premium.wpmudev.org/blog/how-to-update-themeforest-themes-with-the-envato-wordpress-toolkit/">refer this post</a>. <br>
+                Note: How to get the API Key of themeforest(new version)? <a href="http://www.uiueux.com/forums/topic/how-to-get-the-apikey-of-themeforet-net/">Refer this post</a>. <p></p>
+            </li>
+            <li><span class="bold_text">Using WordPress Theme Upload: </span> <br><span class="red">Be sure to extract the file "Center.zip" from the ThemeForest download before uploading. Using the ThemeForest ZIP file directly will result in a "Missing Style Sheet" error.</span>
+				<ul>
+					<li>Login to your WordPress admin.</li>
+					<li>In the "<span class="red">Appearance > Themes</span>" menu click the tab "Install Themes".</li>
+					<li>At the top of the page click, "Upload", then click the file input to select a file.</li>
+                    <li>Select the zipped theme file, "Center.zip", and click "Install Now".</li>
+					<li>After installation you will receive a success message confirming your new install.</li>
+					<li>Click the link "Activate".</li>
+				</ul>
+            </li>
+		    <li> <span class="bold_text">Using FTP: </span>
+				<ul>
+					<li>Login to your FTP server and navigate to your WordPress themes directory. </li>
+					<li>Normally this would be "wp-content/themes".</li>
+					<li>Extract folder "Center" from the zipped theme.</li>
+                    <li>Copy the folder "Center" to your themes directory.</li>
+					<li>After the files finish uploading, login to your WordPress admin.</li>
+					<li>In the "Appearance" menu click "Themes".</li>
+                    <li>Click "Activate" for the theme "Center Responsive Retina Ready Multi-Purpose WP Theme".</li>
+				</ul>
+            </li>
+	    </ul>
+    <li class="bold_text">Theme update</li>    
+    <p style="margin-left:35px;">Please download the theme file from themeforest.net</p>
+    <ul style="margin-left:35px;">
+        <li><span class="bold_text">Using the Envato WordPress Toolkit plugin:</span> 
+                Please <a href="http://premium.wpmudev.org/blog/how-to-update-themeforest-themes-with-the-envato-wordpress-toolkit/">refer this post</a>.<br><br></li>
+        <li><span class="bold_text">Using WordPress Theme Upload: </span> <br>
+            <ul>
+                <li>Remove the installed Minds theme</li>
+                <li>Install the theme again(upload the latest Minds.zip)</li>
+            </ul>
+        </li>
+        <li><span class="bold_text">Using FTP: </span> <br>
+            <ul>
+                <li>Unzip Minds.zip, get minds folder</li>
+                <li>Upload/replace minds folder by ftp</li>
+            </ul>
+        </li>
+    </ul>
+
+</ol>
+</section>
+	
+    
+    
+<section id="setting_up">
+	<div class="page-header"><h3>Setting Up</h3><hr class="notop"></div>
+	
+
+    <h4>1. Recommended Plugins</h4>
+    <p style="margin-left:20px;">After activating the theme, you would notice the message box on the top of admin  pages to ask you install/activate some plugins, you could use them for free or cancel the messages.
+    </p><br>
+	
+
+	<h4>2. Logo</h4>
+	<p style="margin-left:20px;"><span class="bold_text">Set up logo:</span>
+        <ol>
+            <li>Go to the WordPress Admin Dashboard.</li>
+            <li>Click on the left sidebar item named "Center" to open the ThemeOptions panel.</li>
+            <li>Go to <span class="red">ThemeOptions > General Settings > Logo</span> section, here you could upload a logo image or input logo text.</li>
+        </ol>
+    </p>
+    <p style="margin-left:20px;">The logo size recommended smaller than 160px(width) * 60px(hight), if you want to the logo is displayed clearly in retina screen, please upload a double size image logo(e.g. 320 x 120).
+    </p><br>
+    
+
+    <h4 id="menu">3. Navigation</h4>
+    <p style="margin-left:20px;"><span class="bold_text">Set up navigation layout:</span>
+        <ol>
+            <li>Go to the WordPress Admin Dashboard.</li>
+            <li>Click on the left sidebar item named "Center" to open the ThemeOptions panel.</li>
+            <li>Go to <span class="red">ThemeOptions > Layout > Header > Layout</span> options and choose a layout.</li>
+        </ol>
+    </p>
+    <br>
+
+
+    <h4 id="menu">4. Footer</h4>
+    <p style="margin-left:20px;"><span class="bold_text">Set up footer layout:</span>
+        <ol>
+            <li>Go to the WordPress Admin Dashboard.</li>
+            <li>Click on the left sidebar item named "Center" to open the ThemeOptions panel.</li>
+            <li>Go to <span class="red">ThemeOptions > Layout > Footer</span> section.</li>
+        </ol>
+    </p>
+    <br>
+
+
+    <h4>5. Skin</h4>
+    <p style="margin-left:20px;">10 predefined colour scheme for your website, pleas go to <span class="red">ThemeOptions > Styling</span></p>
+    <p style="margin-left:20px;"><img src="assets/color_scheme.png" ></p>
+    <p style="margin-left:20px;">There are many detail colour setting options for every scheme, you could define your own style base on the given scheme setting. You could also click on the small icon "?" on the right side description for every item to learn detail explanation for the option.</p>
+    <p><br></p>
+    
+
+    <h4>6. Frontpage</h4>
+	<p style="margin-left:20px;">To set up the homepage, you need to create a page which you want to use it as homepage, after that, go to <span class="red">ThemeOptions > FrontPage </span>section to select the page from drop-down menu.</p>
+    <p style="margin-left:20px;"><img src="assets/frontpage.png"></p>
+    <p><br></p>
+
+
+    <h4>7. Generate New Thumbs for This Theme</h4>
+    <p style="margin-left:20px;">If there have been some images in your site already, please click the button. It will generate the right size thumbs for the images.</p>
+    <p style="margin-left:20px;"><img src="assets/thumbnails-crop.jpg" ></p> 
+    
+
+    <h4 id="menu">8. Menu</h4>
+	<p style="margin-left:20px;">Before building your custom menu, you need to create your pages first, then navigate to <span class="red">Appearance > Menus</span>, it is recommended to create you menu from Pages or Links.</p>
+    <p style="margin-left:20px;">Anchor: You could link a menu item to a particular section in a page, and this feature makes it possible to build an one-page website. Following is how to use Anchor:</p>
+        <ol>
+            <li>Build the target page and edit the content with PageBuilder (important). Use the fullwidth wrap for section of one page. Enter the archor name in Fullwidth wrap(<a href="#fullwrap">check Fullwidth wrap section</a>)</li>
+            <li>In menu panel, eelect the page and click the "Add to menu" button, there is the meun item shown in right column. </li>
+            <li>Edit the menu item in right column, select a archor name in archer selector.<br><br>
+            <img src="assets/menu-archor-1.png" width="400px;"></li>
+            <li>Add the same page to a new menu item, select anoter archor.</li>
+            <li>Save Menu.</li>
+        </ol>
+    </p>
+</section>
+
+
+
+
+<section id="adding_content">
+	<div class="page-header"><h3>Adding Content</h3><hr class="notop"></div>
+	
+	<h4>7 Post Formats</h4>
+        <p style="margin-left:20px;">Center provide 7 formats for your post, theses formats would affect the style of your post in list and content page.</p>
+        <p style="margin-left:20px;"><img src="assets/post_format.png"></p>
+    <p><br></p>
+
+
+
+    <h4>5 Post Types</h4>
+    <p>The content for post types could be presented to web pages with Page Builder</p>
+    <h5>1. Team</h5>
+        <p style="margin-left:20px;">You could add/manage your team members with the Team type post. </p>
+        <p style="margin-left:20px;"><img src="assets/team_newteam.png"></p>
+        <p style="margin-left:20px;">To add a new team member, please go to <span class="red">Team > Add New</span></p>
+        <p style="margin-left:20px;"><span class="bold_text">To show the team members on webpage</span>, you need to use the "Team" module from Page Builder:</p>
+        <ol>
+            <li>Add at least 1 team member, assign a team category and upload a featured image(photo, required) for every team member.</li>
+            <li>Create a page and enable the Page Builder.</li>
+            <li>Insert a “Team” module to the page.</li>
+            <li>Edit the “Team” module, choose a team category you want to show in page.</li>
+            <p>
+        </ol>
+    <p><br></p>
+    
+    <h5>2. Clients</h5>
+        <p style="margin-left:20px;">You could add/manage your client information with the Clients type post with the similar interactions to Team. </p>
+        <p style="margin-left:20px;">To add a new client, please go to <span class="red">Client > Add New</span>
+        <br>Upload the client’s logo image to Featured Image.</p>
+        <p style="margin-left:20px;"><span class="bold_text">Show clients logo on webpage:</span></p>
+        <ol>
+            <li>Add several clients you want to show, and set a client category for every client.</li>
+            <li>Create a page and enable the Page Builder.</li>
+            <li>Insert a “Client” module to the page.</li>
+            <li>Edit the “Client” module, choose a client category you want to show in page</li>
+            <p>
+        </ol>
+    <p><br></p>
+    
+    
+    <h5>3. Testimonials</h5>
+        <p style="margin-left:20px;">You could add/manage your testimonials information with the Testimonials type post with the similar interactions to Team. </p>
+        <p style="margin-left:20px;">To add a new testimonial, please go to <span class="red">Testimonials > Add New</span></p>
+        <p style="margin-left:20px;"><span class="bold_text">Show testimonials on webpage:</span></p>
+        <ol>
+            <li>Add at least one testimonial you want to show, and set a testimonial category for every item.</li>
+            <li>Create a page and enable the Page Builder.</li>
+            <li>Insert a “Testimonials” module to the page.</li>
+            <li>Edit the “Testimonials” module, choose a client category you want to show in page</li>
+            <p>
+        </ol>
+    <p><br></p>
+        
+    
+    <h5>4. Jobs</h5>
+        <p style="margin-left:20px;">You could add/manage your opening positions with the Jobs type post. </p>
+        <p style="margin-left:20px;">To add a new position, please go to <span class="red">Jobs > Add New</span></p>
+        <p style="margin-left:20px;"><span class="bold_text">Show jobs on webpage:</span></p>
+        <ol>
+            <li>Add at least one job post, and set a category for every item.</li>
+            <li>Create a page and enable the Page Builder.</li>
+            <li>Insert a “Jobs” module to the page.</li>
+            <li>Edit the “Jobs” module, choose a client category you want to show in page</li>
+            <p>
+        </ol>
+    <p><br></p>
+    
+    
+    <h5>5. FAQs</h5>
+        <p style="margin-left:20px;">You could add/manage your frequently asked questions with the FAQs type post. </p>
+        <p style="margin-left:20px;">To add a new question, please go to <span class="red">FAQs > Add New</span>
+        <p style="margin-left:20px;"><span class="bold_text">Show your FAQs on webpage:</span></p>
+        <ol>
+            <li>Add at least one question post, and set a category for every item.</li>
+            <li>Create a page and enable the Page Builder.</li>
+            <li>Insert a “FQAs” module to the page.</li>
+            <li>Edit the “FQAs” module, choose a client category you want to show in page</li>
+            <p>
+        </ol>
+    <p><br></p>    
+
+<!--
+    <h4 id="bmslider">BM slider</h4>
+    <p style="margin-left:20px;">Navigation to BM Slider>Add new, You could create a top slider for page. In this panel, you could set the background image or video, add slider elements indlued: text(H1-H6), blur text, image, button and divide. You could select the slider in <a href="#pageoption">page option</a>.</p>
+    <p style="margin-left:20px;"><img src="assets/bmslider.png"></p>
+    <p>If you want to use blur text, please set "Content Animation" as "none"</p>
+-->
+
+</section>
+
+<section id="slider_template">
+    <div class="page-header"><h3>Slider Template</h3><hr class="notop"></div>
+    <p>The Slide template is a big feature of Center. The option "Enable Slide Page Template" should be activated in page.</p>
+    <img src="assets/slider_template.jpg" width="400">
+    <p><a href="https://www.youtube.com/watch?v=oIIOXny9020">Check video guide</a></p>
+</section>
+
+
+<section id="page_builder">
+	<div class="page-header"><h3>Work With Page Builder</h3><hr class="notop"></div>
+
+    <p>Center provide drag &amp; drop page builder for your pages and posts, press the button "Switch to Page Builder" to enable it. Following is a brief introduction for the page builder:</p>
+    <h5 id="wraps">1. Wraps</h5>
+        <p style="margin-left:20px;">The modules could be placed directly into the panel or be dragged into a wrap, depending on your layout. A standard wrap have the same width with page content.</p>
+        <p style="margin-left:20px;"><img src="assets/wraps.png"></p>
+		<h6>Fullwidth Wrap</h6>
+        <p style="margin-left:20px;">A fullwidth wrap have the following features: </p>
+        <ul style="">
+			<li>A wider width than the page content, such as to be full-width to outer container, it could be used for your full-width sections.</li>
+			<li>Support background color/image/video, IE 8/9 and touch devices do not support the video background, you need to upload a Atl Image for them.</li>
+			<li>Parallax effect for image background/Foreground, the effect do not support touch devices.</li>
+			<li>Support tabs.</li>
+            <li>If you set the dark background color, please active the "Shift Text Color for Dark Background", the  font color of this fullwidth wrap is set as white forcibly.</li>
+            <li>If you want the content of fullwith wrap filled to full width of screen(no left/right padding), please active the "Fit Content to Fullwidth".</li>
+            <li id="fullwrap">One page:
+            <br>
+            The onepage layout is composed by the Fullwidth wrap. Set a archor name(Fullwidth Wrap / Setting / Advanced Settings / Anchor Name) for each fullwidth wrap. You'll select the archor name in <a href="#menu">menu</a> editing panle.<br><br>
+            <div class="ima-wrap"><a href="assets/fullwrap-archor.png" class="lightbox"><img src="assets/fullwrap-archor.png" width="300"></a>
+                <p>Note: please use lowercase letters, do not use spaces and other characters.</p></div>
+            <p>
+                Each section could be set in one Fullwidth wrap.</p>
+                <div class="ima-wrap"><a href="assets/fullwidth-onepage.png" class="lightbox"><img src="assets/fullwidth-onepage.png" width="400"></a></div></li>
+        </ul>
+        <p>&nbsp; </p>
+
+        
+        
+    <h5>2. Modules</h5>
+		<ul>
+			<li>Text Block
+                <p>You could set up a background color for the text block, leave it empty if you don't want to show any background color.</p>
+                <p><img src="assets/text_block.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+			<li>Icon Box
+                <p>Icon on Left</p>
+                <p><img src="assets/iconbox_icon_left.jpg" width="400"></p>
+                <p>Icon on Top</p>
+                <p><img src="assets/iconbox_icon_top.png" width="400"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+			<li>Image Box
+                <p><img src="assets/image_box.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+            <li>Text List
+                <p>You could set a bullet icon for every item</p>
+                <p><img src="assets/textlist.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+            <li>Button
+                <p>You could create a button and customise the size and colour.</p>
+                <p><img src="assets/button.jpg"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+            <li>Portfolio
+                <p>Portfolio module is designed for you to showcase your portfolio post, on flip mouseover effect, the portfolio images could be previewed when mouse rollover.</p>
+                <p><img src="assets/portfolio.jpg" width="400"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Gallery
+                <p>Gallery is a image list to show a gallery from image post (featured image) or a set of library images, click the image it would open a beautiful light-box or go to a particular link. </p>
+                <p><img src="assets/gallery.png" width="400"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Single Image
+                <p>Single Image module is to enter a single image to your post/page.</p>
+                <p><img src="assets/singleimage.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Message Box
+                <p>This module could create 4 types of message box: Success, Warning, Error, Information</p>
+                <p><img src="assets/messagebox.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Accordion / Toggle
+                <p>Accordion and Toggle has the same style in front end, you could expand only one item in Accordion mode and could expand multiple items in Toggle mode.</p>
+                <p><img src="assets/toggle.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Tabs
+                <p>Horizontal Tabs</p>
+                <p><img src="assets/tabs1.png"></p>
+                <p>Vertical Tabs</p>
+                <p><img src="assets/tabs2.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Testimonial
+                <p>To show a testimonial module in page, you need to create testimonials from the left hand navigation: <span class="red">Testimonial > Add New</span>, and assign every testimonial post a category, then when build the module, choose the category you want to use.</p>
+                <p><img src="assets/add_new_testimonial.png"></p>
+                <p><img src="assets/testimonial.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Blog
+                <p>The Blog module could display the blogs in all  format.</p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Client
+                <p>The usage is similar with Testimonial module</p>
+                <p><img src="assets/client.png" width="595" height="65"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Divider
+                <p>Divider module is to place a spacer or lines in the vertical dimension. </p>
+                <p><img src="assets/devider.png"></p>
+                <p>&nbsp;</p>
+            </li>
+            
+            <li>Team
+                <p>The Team Meta information would be hidden on mobile mode</p>
+                <p><img src="assets/team.jpg"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Jobs
+                <p>The usage is similar with Testimonial module</p>
+                <p><img src="assets/jobs.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>FAQ
+                <p>The usage is similar with Testimonial module, and have a same style with jobs.</p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Contact Form
+                <p>Center support the famous plugin "Contact Form 7", once you install it to your WordPress, the Contact Form 7 option would appear in the Form Type drop-down menu. Following image is the standard Contact Form module looks like in front end.</p>
+                <p><img src="assets/contact.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Video
+                <p>To enter a video to the page, you need to copy and paste the embeded code of the video, a example with Vimeo video:</p>
+               
+                <p><img src="assets/vimeo2.png" width="540" height="359"></p>
+              <p>Supported video:</p>
+                <ul>
+                    <li>Vimeo</li>
+                    <li>Youtube</li>
+                    <li>and other embeded videos from video sites</li>
+                </ul>
+              <p>For Vimeo and Youtube video, you could directly copy/paste the link of the video:</p>
+              <p><img src="assets/vimeo3.png" width="537" height="352"></p>
+              <p>&nbsp; </p>
+            </li>
+            
+            <li>Promote
+                <p>It is a section to place a slogan or other words with a mouseover background color and link.</p>
+                <p><img src="assets/promote.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Google Map
+                <p>The Google Map module need you provide the name of your location.</p>
+                <p><img src="assets/map1.png"></p>
+                <p>If you want to use Google Map Style, please go to <a href="http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html?utm_medium=twitter">this page</a> to edit the map style.</p>
+                <p><img src="assets/map-edit-1.jpg"></p>
+            </li>
+            
+            <li>Price
+                <p>Build your price block by Price module, by now it support not more than 4 price blocks, and it is recommended to make the module fullwidth(1/1).</p>
+                <p><img src="assets/price.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Slider
+                 <p>It is supported Layerslider, Slider Revolution Content slider and Flexslider.</p>
+                <p>The Layerslider and Slider Revolution are commercial plugins, you could buy it on <a href="http://codecanyon.net/" target="_blank">Codecanyon</a>.</p>
+                <p><img src="assets/slider.jpg"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            <li>Infographic
+                <p>Progress bar:</p>
+                <p><img src="assets/infographic-bar.png"></p>
+                <p>Pictorial:</p>
+                <p><img src="assets/pictorial.png"></p>
+                <p>Pie:</p>
+                <p><img src="assets/pie-doughnut.png"></p>
+                <p>Column:</p>
+                <p><img src="assets/column.png"></p>
+                <p>Big Number:</p>
+                <p><img src="assets/bignumber.png"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+            <li>Carousel
+                <p>The carousel module support the list be horizontal scrolled</p>
+                <p><img src="assets/carousel.jpg"></p>
+                <p>&nbsp; </p>
+            </li>
+            
+            
+            <li>Count Down
+                <p>The Count Down module allow you assign a deadline and to create a timer automatically on front-end. </p>
+                <p><img src="assets/count-down.png"></p>
+                <p>&nbsp; </p>
+            </li>
+          </ul>
+		
+		
+        
+    
+    <h5>3. Save and Load templates</h5>
+        <p style="margin-left:20px;">Once you have build a layout via the page builder, and you want to clone them to other page/posts, you could save the current layout to a template and load then in the other page/post page builder section.</p>
+        <p style="margin-left:20px;"><img src="assets/template.png"></p>
+    
+    
+</section>
+
+
+
+<section id="one_page">
+    <div class="page-header"><h3>Build a One Page Site</h3><hr class="notop"></div>
+    <p>The OnePage site including a page with several sections and a menu for this page at least.</p>
+    <h5 id="wraps">1. Create a page with Page Builder, and seperate the content into several sections with Fullwidth Wrap</h5>
+
+    <h5 id="wraps">2. Give a Anchor name for every section:</h5>
+        <ul style="">
+            <li>Open the Fullwidth Wrap editing panel</li>
+            <li id="fullwrap">Turn on Advanced Settings</li>
+            <li id="fullwrap">Enter a name for this section and save
+            <br><br>
+            <div class="ima-wrap"><a href="assets/fullwrap-archor.png" class="lightbox"><img src="assets/fullwrap-archor.png" width="300"></a>
+                <p>Note: please use lowercase letters, do not use spaces and other characters.</p></div></li>
+        </ul>
+        <p>&nbsp; </p>
+
+    <h5 id="wraps">3. Create a menu and link menu items to the page sections:</h5>
+        <ul style="">
+            <li>Go to <span class="red">Appearance > Menus</span>, choose a menu or edit the current menu</li>
+            <li id="fullwrap">Choose the page from left Page panel and Add to Menu</li>
+            <li id="fullwrap">In Menu Structure panel on the right, edit the menu item, choose a anchor for the item. All the sections you have named would be listed in the Anchor drop-down menu. Redo this step for the others menu items
+            <br><br><div class="ima-wrap"><a href="assets/menu-archor-1.png" class="lightbox"><img src="assets/menu-archor-1.png" width="400"></a></div></li>
+            <br>
+            <li id="fullwrap">You could also create a menu item link to other page</li>
+
+        </ul>
+        <p>&nbsp; </p>
+
+
+</section>
+
+
+
+<section id="short_code">
+	<div class="page-header"><h3>Short Code</h3><hr class="notop"></div>
+    <p>When you  edit the text via a text editor, you could use Short Code to add some advanced elements to your page/post:</p>
+    <p><img src="assets/texteditor.png"></p>
+    <p>Following are the short-code elements this theme support:</p>
+    <ul>
+    <li>1. Button</li>
+    <li>2. Line</li>
+    <li>3. Title</li>
+    <li>4. Highlight</li>
+    <li>5. Blank</li>
+    <li>6. Image</li>
+    <li>7. Gallery</li>
+    <li>8. Dropcap</li>
+    <li>9. Columns</li>
+    <li>10. Fixed Width Columns</li>
+    <li>11. Icon</li>
+    <li>12. Text</li>
+    <li>13. Text List</li> 
+    </ul>
+
+</section>
+<section id="Translation">
+	<div class="page-header"><h3>Translation</h3><hr class="notop"></div>
+<div>
+<p>Center is translatable and multi-language ready, it is recommend to use the popular <a href="http://wpml.org">WPML wp plugin</a>.</p>
+
+<p>To translate the copyright information on footer, emails and address on hidden bar, please:</p>
+
+<ol>
+<li>Install the plugin <a href="http://wpml.org/download/wpml-string-translation/">WPML String Translation</a>.</li>
+<li>Go to left menu: WPML/String translation</li>
+<li>Find the following string:</li>
+<p><code><pre  style="padding-left:50px;">
+[ux_theme_option]theme_option_copyright
+[ux_theme_option]theme_option_hidden_bar_email
+[ux_theme_option]theme_option_hidden_bar_phone
+[ux_theme_option]theme_option_hidden_bar_address
+</pre></code>
+</p>
+<li>Click on the “translations” on the right side of every string item, enter the target translated words, check on “Translation is complete" and save it.</li>
+</ol>
+<p>&nbsp; </p>
+<p>To translate the static strings, it is recommended to download PO Edit <a href="http://www.poedit.net/">here</a>. After installing the PO Edit please follow the following steps:</p>
+<ol>
+<li>Open the /Center/languages/ folder and duplicate the default.po file, then rename it to your desired language code. For example, for German you need to rename it as de_DE.po for Spanish es_ES.po for Turkish tr_TR.po etc. You could find all the codes <a href="http://codex.wordpress.org/WordPress_in_Your_Language">here</a>.</li>
+<li>Open the .po file in PO Edit, you will see all strings that need to be translated. Type the translation of a string into the "Translation" column. Do not delete or edit "Original string" part.</li>
+<li>After finish translating, save the file, an .mo file would be created in the same directory.</li>
+<li>Upload the new files into the languages folder of the theme /wp-content/themes/pinpoint/languages/ and then follow this guide: http://codex.wordpress.org/Installing_WordPress_in_Your_Language#Single-Site_Installations.</li>
+</ol>
+<p style="margin-left:20px;">Note: You will notice the content of "default.po"" is very complex, you could use the reduced version named "defaule_frontend.po" to edit necessary strings which will be show on front end.</p>
+</div>
+</section>
+
+
+
+<section id="theme_options">
+	<div class="page-header"><h3>Theme Options</h3><hr class="notop"></div>
+        <p>On admin panel the left hand, click "Center" to enter Theme Options</p>
+        <p><img src="assets/theme_option.png"></p>
+        <p>From Theme Options, you could:</p>
+    	<ul>
+			<li><span class="bold_text">Import Demo Data to your website</span> - Theme Options > Import Demo Data</li>
+			<li><span class="bold_text">Export Demo Data</span> - Theme Options > Export Current Data</li>
+            <li><span class="bold_text">Setup Front Page</span> - Theme Options > Front Page</li>
+            <li><span class="bold_text">Setup Website Logo</span> - Theme Options > General Settings > Logo</li>
+            <li><span class="bold_text">Setup Fixed Sidebar or Floating Sidebar</span> - Theme Options > Layout Settings</li>
+            <li><span class="bold_text">Setup Social Media</span> - Theme Options > Social Networks</li>
+            <li><span class="bold_text">Setup the Colour and background for Website</span> - Theme Options > Schemes</li>
+            <li><span class="bold_text">Setup the fonts for Website</span> - Theme Options > Font Settings</li>
+		</ul>
+</section>
+
+
+<section id="included_files">
+	<div class="page-header"><h3>Included Files</h3><hr class="notop"></div>
+
+<ol>
+    <li><strong>Javascript files</strong>
+		<ol>
+			<li><a href="http://twitter.github.com/bootstrap/javascript.html#transitions">Bootstrap 2.3.1</a> -  styles/bootstrap.js - Some js for Bootstrap layout</li>
+
+			<li>main.js - main js plugins: Waypoints v2.0.4, <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider v2.2</a>, <a href="http://isotope.metafizzy.co" target="_blank">isotope</a>, <a href="http://modernizr.com/download/#-touch-shiv-cssclasses-teststyles-prefixes-load" target="_blank">Modernizr 2.7.1</a>, <a href="https://github.com/louisremi/jquery-smartresize">debouncedresize</a>, <a href="http://www.osvaldas.info">DoubleTapToGo</a>, <a href="http://imagesloaded.desandro.com/">imagesLoaded v3.1.6</a>, SmoothScroll v1.2.1, <a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup v0.9.9</a></li> 
+			
+            <li><a href="http://www.jplayer.org" target="_blank">jquery.jplayer.min.js</a> - js/jquery.jplayer.min.js -  HTML5 media player plugin</li>
+			
+            <li><a href="http://www.uiueux.com">infographic.js</a> -  js/infographic.js - For infographic of pagebuilder, included: <a href="http://www.egrappler.com">bar</a>, <a href="https://github.com/aterrien/jQuery-Knob">Knob v1.2</a>, animateNumbers</li>
+            
+            <li><a href="http://keith-wood.name/countdown.html" target="_blank">jquery.countdown.min.js</a> - js/jquery.countdown.min.js -  For Count Down module of pagebuilder</li>
+            
+            <li><a href="http://github.com/davist11/jQuery-One-Page-Nav">One Page Nav</a> - js/jquery.onepagenav.js -  Onepage navigation</li>
+            
+            <li><a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/">Queryloader v2 </a> - js/jquery.queryloader2.js -  Page loading</li>
+
+            <li><a href="http://www.codrops.com">Hoverdir v1.1.1</a> - js/jquery.hoverdir.js -  Portfolio moudle of pagebuilder mouseover effect / mask</li>
+
+            <li><a href="http://www.frebsite.nl">carouFredSel 6.2.1</a> - js/jquery.caroufredsel.js - For Carousel </li>
+
+            <li> Gray - js/jquery.gray.min.js -  Portfolio moudle of pagebuilder, make the thumbnails gray </li>
+           
+            <li><a href="http://www.uiueux.com" target="_blank">theme.pagebuilder.js</a> - functions/pagebuilder/js/theme.pagebuilder.js -  Center pagebuilder main js</li>
+			
+            <li><a href="http://www.uiueux.com" target="_blank">custom.theme.js</a> - js/custom.theme.js -  Center theme main js</li>
+		</ol>	
+	</li>
+
+	 <li><strong>CSS files</strong>
+		<ol>
+			<li><a href="https://github.com/twbs/bootstrap">Bootstrap 2.3.1</a> - styles/bootstrap.css -  Bootstrap layout</li>
+			<li><a href="http://www.uiueux.com">Center Pagebuild css</a> - styles/pagebuild.css -  Pagebuild layout and module style</li>
+			<li><a href="http://codecanyon.net/item/jquery-lightbox-evolution/115655?ref=aeroalquimia">styles/magnific-popup.css</a> -  -  Lightbox jquery plugin css</li>
+			<li><a href="http://www.uiueux.com">style.css</a> - style.css -  Center theme main css</li>
+		</ol>	
+	</li>
+</ol>
+		
+</section>
+
+
+
+<section id="Thanks again">
+	 
+<div>
+<hr class="notop"></div>
+<p>
+Once again, thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to publish your question <a href="http://uiueux.com/forums">here</a>.
+</p>
+<p>
+Thanks,<br>
+uiueux studio
+</p>
+</div>
+
+</section>
+
+
+
+</div>
+</body>
+</html>

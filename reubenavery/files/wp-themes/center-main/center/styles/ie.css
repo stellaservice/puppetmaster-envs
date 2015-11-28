@@ -1,0 +1,7 @@
+/*For IE 9 */
+.mouse-icon { display: none; }
+.tagcloud { text-align:justify\9; }
+.fullwrap-video video { display:none; }
+.search-form_header input[type="text"] { padding-top: 0; }
+.page-loading {display: none!important; } 
+.fullwrap-half .fullwrap-video .video-cover { top: 0; width: 100%; height: 600px!important; min-height: none; }
