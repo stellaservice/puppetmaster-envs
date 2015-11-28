@@ -6,15 +6,16 @@ class reubenavery::www::sites::reubenavery::wp_themes(
   include sys::unzip
 
   $theme_dir = "$docroot/wp-content/themes"
-  $theme_src_dir = "$home/wp-themes.puppet-managed"
+  $theme_src_dir = "$home/wp-themes"
+  $theme_src_dir_managed = "$home/wp-themes/puppet-managed"
 
-  file { $theme_dir:
+  file { [$theme_dir, $theme_src_dir]:
     ensure   => directory,
     owner    => $www_user,
     group    => $www_user,
   }
-
-  file { $theme_src_dir:
+  ->
+  file { $theme_src_dir_managed:
     ensure   => directory,
     recurse  => true,
     source   => 'puppet:///modules/reubenavery/wp-themes',
@@ -28,6 +29,5 @@ class reubenavery::www::sites::reubenavery::wp_themes(
     command => "unzip $theme_src_dir/center-main/center.zip",
     path    => '/bin:/usr/bin',
     user    => $www_user,
-    require => File[$theme_dir],
   }
 }
