@@ -22,7 +22,7 @@ class reubenavery::www::sites::reubenavery::wp_themes(
     group    => $www_user,
     mode     => '0755',
   }
-
+  ->
   exec { 'extract-center-main':
     cwd     => $theme_dir,
     command => "unzip $theme_src_dir/center-main/center.zip",
