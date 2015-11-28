@@ -20,6 +20,7 @@ class reubenavery::www::sites::reubenavery::wp_themes(
     source   => 'puppet:///modules/reubenavery/wp-themes',
     owner    => $www_user,
     group    => $www_user,
+    mode     => '0755',
   }
 
   file { "$theme_src_dir/center-main":
