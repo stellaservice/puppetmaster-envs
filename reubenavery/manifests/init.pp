@@ -7,10 +7,7 @@ class reubenavery(
 ) inherits reubenavery::params {
 
   include apt
-
-  package { ['build-essential', 'unzip']:
-    ensure => installed,
-  }
+  include sys::ubuntu
 
   class { '::mysql::server':
     root_password           => $db_root_pw,
