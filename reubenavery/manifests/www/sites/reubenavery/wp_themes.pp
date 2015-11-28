@@ -16,7 +16,7 @@ class reubenavery::www::sites::reubenavery::wp_themes(
 
   file { $theme_src_dir:
     ensure   => directory,
-    recurse  => remote,
+    recurse  => true,
     source   => 'puppet:///modules/reubenavery/wp-themes',
     owner    => $www_user,
     group    => $www_user,
