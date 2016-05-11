@@ -16,7 +16,7 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/vcsrepo'
 
 mod 'saz/ssh'
-mod 'sas/rsyslog'
+mod 'saz/rsyslog'
 mod 'saz/timezone'
 mod 'arnoudj/sudo'
 mod 'jethrocarr/hostname'
