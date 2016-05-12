@@ -4,4 +4,7 @@
 #   class { '::bitswarm::users': }
 # }
 #
-# import 'nodes/*.pp'
+
+hiera_include('classes')
+
+import 'nodes/*.pp'
