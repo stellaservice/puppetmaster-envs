@@ -33,3 +33,4 @@ mod 'gentoo/portage'
 mod 'puppet/puppetboard'
 mod 'jamtur01/httpauth'
 
+mod 'stankevich/python'
