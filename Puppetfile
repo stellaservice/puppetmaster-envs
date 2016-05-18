@@ -14,4 +14,5 @@ mod 'puppetlabs/vcsrepo'
 mod 'maestrodev/wget'
 mod 'zanloy/ohmyzsh'
 
+mod 'rtyler/jenkins'
 
