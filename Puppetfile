@@ -1,3 +1,5 @@
+moduledir 'dist'
+
 mod 'puppetlabs/apache'
 
 mod 'puppetlabs/concat'

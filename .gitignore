@@ -1,2 +1,2 @@
 # Ignoring r10k managed directory
-dist
+dist/
