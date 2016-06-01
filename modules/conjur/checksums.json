@@ -1,0 +1,22 @@
+{
+  "CHANGELOG": "53c66cf5d03cf86b21c99f2e6aae2fce",
+  "Gemfile": "dbc1a15e3a264c03878028240cfc5d89",
+  "README.md": "7fca8f1653d0f7ddc165d9cc9d1b3462",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "files/create-host-identity.rb": "700c38fed169f8a24b8adc69292a87f7",
+  "files/example.pem": "a900c970126a39e3f102c8b771fdcfa7",
+  "lib/puppet/parser/functions/conjur_variable.rb": "340c31fa48ed4b2c9ed34e32a1f9dcf5",
+  "lib/puppet/provider/conjurize_file/permanent.rb": "4a8c5b5adee9a1dcd0f2f089e79f981e",
+  "lib/puppet/provider/package/conjur_gem.rb": "3b502afd6b73eb478091463666bcb376",
+  "lib/puppet/type/conjurize_file.rb": "1fcd4124d04526bd89dc9870b1623f03",
+  "manifests/client.pp": "83cf9f60d76beac76428cc9fb2484f65",
+  "manifests/config.pp": "92d40c38a756518998cefc2c752cf6be",
+  "manifests/example.pp": "5cfef3416ce5e21f4959bdcb3a4e716d",
+  "manifests/host_identity.pp": "439b8a9add6a83934f269b2330d13dd9",
+  "manifests/init.pp": "7937812a5fbf793ccbc50bf00576d57d",
+  "metadata.json": "3e6c1f7cadcf67b116908f07491d2453",
+  "spec/classes/init_spec.rb": "01ea6b9861675c2bb2a7a190dfe69bf1",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "templates/netrc_entry.erb": "f3125a42e107d1aa31aa45414b7f0deb",
+  "tests/init.pp": "3de8603bf78661d7c9b894d859dbfaa5"
+}

@@ -1,0 +1,11 @@
+20150128 - v0.2.2
+  Correctly set TTL to integer
+20150128 - v0.2.1
+  Correct puppet pathing
+20150127 - v0.2.0
+  Add systemd support
+  Move script out of init script
+20150105 - v0.1.1
+  Add acceptance tests
+20141112 - v0.1.0
+  Initial release

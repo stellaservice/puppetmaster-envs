@@ -1,0 +1,8 @@
+HOSTNAME=<%= @hostname %>
+DOMAIN=<%= @domain %>
+ZONE=<%= @zone %>
+TTL=<%= @ttl %>
+TYPE=<%= @type %>
+TARGET=<%= @target %>
+AWS_ACCESS_KEY=<%= @aws_key %>
+AWS_SECRET_KEY=<%= @aws_secret %>

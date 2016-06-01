@@ -1,0 +1,22 @@
+{
+  "CHANGELOG": "8c4df41e6a8c843c74df195a90bdee1d",
+  "CONTRIBUTING.md": "d79047a80632b9dc47f699e986216ab1",
+  "CONTRIBUTORS": "72633924d160264cf35738b3fbd064ef",
+  "Gemfile": "0e74a7a0696cbc7293c905adc3958535",
+  "Gemfile.lock": "f2d4e2f268511334b0bf164ef554e8ac",
+  "Guardfile": "3ae8d9a61b870350cc1c8e0d6a9a36e7",
+  "LICENSE": "47bbee59c4c1cb14cc3667035a227be0",
+  "README.markdown": "99034eed5aba570a8d4f8a8f46933b02",
+  "Rakefile": "8ee667025ed2392b133b92f1ef1311cd",
+  "manifests/script.pp": "62f590ec4c6391c45def9eae52240b58",
+  "metadata.json": "5969fd995e06ee725a0e9de76746856a",
+  "spec/acceptance/class_spec.rb": "414e43886d9db0b79f96c2d2e7610953",
+  "spec/acceptance/nodesets/centos-64-x64.yml": "7ad72bad9087a52f30c6f7d5600b68dd",
+  "spec/acceptance/nodesets/default.yml": "1091bb0897dc8ee94a391ab1d8e45132",
+  "spec/acceptance/nodesets/ubuntu-server-12042-x64.yml": "1091bb0897dc8ee94a391ab1d8e45132",
+  "spec/classes/coverage_spec.rb": "5b6dfa0dd426aca0ccfae23c0a629f0b",
+  "spec/defines/script_spec.rb": "eddbf4f0ea6964b2879c14c826627a71",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "spec/spec_helper_acceptance.rb": "2875759f014fb5a83b6da193062c0560",
+  "tests/init.pp": "29a0dc68f45a1337c4ccf35fdd502d2f"
+}

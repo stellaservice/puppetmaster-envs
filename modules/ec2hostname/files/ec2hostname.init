@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+# ec2hostname Startup script for ec2hostname
+# chkconfig: 35 99 01
+# description: EC2 host Route53 DNS registration
+# processname: ec2hostname
+### END INIT INFO
+
+# Source function library.
+. /etc/init.d/functions
+
+prog = ec2hostname
+exec=/usr/local/sbin/${prog}
+
+# Source config
+if [ -f /etc/sysconfig/${prog} ] ; then
+    . /etc/sysconfig/${prog}
+fi
+
+start() {
+    [ -x $exec ] || exit 5
+    [ -f /etc/sysconfig/${prog} ] || exit 7
+
+    echo -n "Registering hostname with Route53"
+    ${exec} start
+    RETVAL=$?
+    echo
+    return ${RETVAL}
+}
+stop() {
+    echo -n "Deregistering hostname with Route53: "
+    ${exec} stop
+    echo
+    RETVAL=$?
+    return $RETVAL
+}
+status() {
+    ${exec} status
+}
+restart() {
+    ${exec} restart
+}
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+        restart
+        ;;
+  status)
+        status
+        ;;
+  *)
+        echo $"Usage: $0 {start|stop|restart|status}"
+        exit 3
+esac
+
+exit $?
