@@ -7,8 +7,12 @@ class bsl_core::puppetmaster {
   include 'ruby'
   include 'python'
 
-  include 'bsl_bootstrap::puppetmaster::setup'
-  include 'bsl_bootstrap::puppetmaster::done'
-
-  include 'bsl_infrastructure::aws'
+  if defined('bsl_bootstrap') {
+    include 'bsl_bootstrap::puppetmaster::setup'
+    include 'bsl_bootstrap::puppetmaster::done'
+  }
+  
+  if defined('bsl_infrastructure::aws') {
+    include 'bsl_infrastructure::aws'
+  }
 }
