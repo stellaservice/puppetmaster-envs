@@ -11,8 +11,14 @@ class bsl_core::puppetmaster {
     include 'bsl_bootstrap::puppetmaster::setup'
     include 'bsl_bootstrap::puppetmaster::done'
   }
-  
+  else {
+    err 'bsl_bootstrap not available for bsl_core::puppetmaster'
+  }
+
   if defined('bsl_infrastructure::aws') {
     include 'bsl_infrastructure::aws'
+  }
+  else {
+    err 'bsl_infrastructure not available for bsl_core::puppetmaster'
   }
 }
