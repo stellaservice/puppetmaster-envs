@@ -1,0 +1,5 @@
+# Ignoring r10k managed directory
+dist/
+
+# Ignoring local development 'scratch' directory
+scratch/
