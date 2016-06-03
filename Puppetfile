@@ -8,7 +8,7 @@ mod 'bitswarmlabs/bsl_account',
 
 mod 'abrader/gms'
 mod 'arnoudj/sudo'
-mod 'bryana/ec2tagfacts', :latest
+mod 'bryana/ec2tagfacts'
 mod 'compete/hiera_yamlgpg'
 mod 'croddy/make'
 mod 'evenup/ec2hostname'
@@ -29,8 +29,7 @@ mod 'puppetlabs/concat'
 mod 'puppetlabs/firewall'
 mod 'puppetlabs/gcc'
 mod 'puppetlabs/git'
-mod 'puppetlabs/inifile', :latest
-mod 'puppetlabs/inifile', :latest
+mod 'puppetlabs/inifile'
 mod 'puppetlabs/java'
 mod 'puppetlabs/ntp'
 mod 'puppetlabs/pe_gem'
@@ -38,14 +37,13 @@ mod 'puppetlabs/postgresql'
 mod 'puppetlabs/puppetdb'
 mod 'puppetlabs/reboot'
 mod 'puppetlabs/ruby'
-mod 'puppetlabs/stdlib', :latest
+mod 'puppetlabs/stdlib'
 mod 'puppetlabs/vcsrepo'
 mod 'rtyler/jenkins'
 mod 'saz/rsyslog'
 mod 'saz/ssh'
 mod 'saz/timezone'
 mod 'stahnma/epel'
-mod 'stahnma/epel', :latest
 mod 'stankevich/python'
 mod 'theforeman/foreman'
 mod 'theforeman/puppet'
