@@ -1,5 +1,7 @@
-class bsl_core::puppetmaster {
-  notify { '## hello from environments/core bsl_core::puppetmaster': }
+class bsl_core::puppetmaster(
+  $manage_infrastructure = 'false',
+) {
+  notify { '## hello from CORE (environments/core) bsl_core::puppetmaster': }
 
   if $::osfamily == 'Debian' {
     include apt
@@ -18,11 +20,15 @@ class bsl_core::puppetmaster {
     err('bsl_bootstrap not available for bsl_core::puppetmaster')
   }
 
-  if defined('bsl_infrastructure::aws') {
-    include 'bsl_infrastructure::aws'
-  }
-  else {
-    notify { 'bsl_infrastructure not available for bsl_core::puppetmaster': }
-    err('bsl_infrastructure not available for bsl_core::puppetmaster')
+  if str2bool($manage_infrastructure) {
+    notify { "## managing infrastructure": }
+
+    if defined('bsl_infrastructure') {
+      include 'bsl_infrastructure'
+    }
+    else {
+      notify { 'bsl_infrastructure not available for bsl_core::puppetmaster': }
+      err('bsl_infrastructure not available for bsl_core::puppetmaster')
+    }
   }
 }
