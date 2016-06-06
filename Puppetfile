@@ -28,7 +28,9 @@ mod 'herculesteam/augeasproviders_ssh'
 
 mod 'jethrocarr/hostname'
 
-mod 'puppetlabs/aws'
+mod 'puppetlabs/aws',
+    :git => 'https://github.com/puppetlabs/puppetlabs-aws.git'
+
 mod 'evenup/ec2hostname'
 mod 'jdowning/awscli'
 mod 'bryana/ec2tagfacts', :latest
