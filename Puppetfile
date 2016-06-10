@@ -20,7 +20,7 @@ mod 'zack/r10k'
 mod 'puppetlabs/pe_gem'
 mod 'puppet/puppetboard'
 mod 'jamtur01/httpauth'
-mod 'abrader/gms'
+mod 'abrader/gms', '1.0.3'
 mod 'croddy/make'
 
 mod 'herculesteam/augeasproviders_core'
