@@ -6,7 +6,6 @@ mod 'bitswarmlabs/bsl_puppet',
 mod 'bitswarmlabs/bsl_account',
     :git => 'https://github.com/bitswarmlabs/puppet-bsl_account.git'
 
-mod 'abrader/gms'
 mod 'arnoudj/sudo'
 mod 'bryana/ec2tagfacts'
 mod 'compete/hiera_yamlgpg'
