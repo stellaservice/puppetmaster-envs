@@ -1,10 +1,13 @@
 ---
 classes:
+  - bitswarm
   - reubenavery::www::sites::reubenavery
   - reubenavery::www::sites::wonderland_works
   - reubenavery::www::sites::reubidium
   - reubenavery::www::sites::endarus
   - reubenavery::aws
+
+hostname::domain: bitswarm.internal
 
 wordpress::version: '4.3.1'
 drupal_php::server::apache::default_vhost_docroot: '/srv/wonderland-works-www/drupal'

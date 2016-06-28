@@ -1,5 +1,3 @@
 ---
-classes:
-  - bitswarm
-
-hostname::domain: bitswarm.internal
+hello_worlds:
+  - "hello from environments/production/hieradata/defaults.yaml"
