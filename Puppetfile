@@ -12,9 +12,9 @@ mod 'bitswarmlabs/bsl_infrastructure',
 mod 'bitswarmlabs/bsl_account',
   :git    => 'https://github.com/bitswarmlabs/puppet-bsl_account.git'
 
-mod 'bitswarmlabs/aws',
-  :git => 'https://github.com/bitswarmlabs/puppetlabs-aws.git'
-
+mod 'puppetlabs/aws',
+  :git => 'https://github.com/bitswarmlabs/puppetlabs-aws.git',
+``
 mod 'evenup/ec2hostname', '0.2.2'
 mod 'jdowning/awscli', '1.3.0'
 
