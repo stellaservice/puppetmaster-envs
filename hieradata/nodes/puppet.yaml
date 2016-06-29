@@ -1,0 +1,287 @@
+---
+classes:
+  - bsl_core::puppetmaster
+#  - bsl_infrastructure::debug
+
+hello_worlds:
+  - "hello from environments/core/hieradata/nodes/puppet.yaml"
+
+default_admin_acct_name: 'ops'
+default_admin_acct_pass: 'allurbase'
+hostname: 'puppet'
+domain: 'bitswarm.internal'
+internal_fqdn: 'puppet.bitswarm.internal'
+external_fqdn: 'puppetmaster.bitswarm.io'
+
+bsl_core::debug::message: 'environments/core/hieradata/node/puppet node won'
+bsl_core::puppetmaster::manage_infrastructure: false
+
+# github.com/reubenavery user token "Bitswarm Puppetmaster"
+github_api_token: 'fd9bba0cb8eca080169f36c7737b4a3213ecc8c3'
+
+bsl_puppet::config::manage_puppetboard: 'true'
+bsl_puppet::config::manage_r10k_webhooks: 'true'
+#bsl_puppet::config::r10k_webhook_user: 'ops'
+bsl_puppet::config::r10k_webhook_pass: 'A9a83iHx*%d'
+#bsl_puppet::config::puppetboard_user: 'ops'
+#bsl_puppet::config::puppetboard_pass: 'allurbase'
+
+#bsl_puppet::config::server_hostname: 'puppet'
+#bsl_puppet::config::server_domain: 'bitswarm.internal'
+#bsl_puppet::config::server_certname: 'puppet.bitswarm.internal'
+
+bsl_puppet::config::r10k_sources:
+ core:
+   provider: 'github'
+   remote: 'git@github.com:bitswarmlabs/puppet-bitswarmlabs-core.git'
+   basedir: "/etc/puppetlabs/code/infrastructure"
+   project: 'bitswarmlabs/puppet-bitswarmlabs-core'
+   manage_deploy_key: true
+
+ site:
+   provider: 'github'
+   remote: 'git@github.com:bitswarmlabs/puppet-bitswarmlabs-site.git'
+   basedir: "/etc/puppetlabs/code/environments"
+   project: 'bitswarmlabs/puppet-bitswarmlabs-site'
+   manage_deploy_key: true
+
+bsl_infrastructure::aws::config::domain: 'bitswarm.internal'
+bsl_infrastructure::aws::config::vpc_name: 'bitswarm.internal vpc'
+bsl_infrastructure::aws::config::primary_subnet_name: 'us-east-1b.bitswarm.internal'
+bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
+bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
+
+bsl_infrastructure::accounts:
+  bitswarmlabs:
+    account_id: 'bitswarmlabs'
+    tenant_id: 'bitswarmlabs'
+    type: 'tenant'
+
+    internal_domain: 'bitswarm.internal'
+    puppetmaster: 'puppet.bitswarm.internal'
+
+    providers:
+      aws:
+        purge: 'false'
+        config:
+          services:
+#            puppetmaster:
+#              ami: 'ami-59cd3d34'
+#              iam_profile_name: 'puppetmaster'
+#              vpc: 'default'
+#              region: 'us-east-1'
+#              availability_zone: 'us-east-1c'
+#              elastic_ip: 'puppetmaster'
+#              security_groups:
+#                - default
+#                - puppetmaster
+
+          zones:
+            bitswarm.io:
+              type: 'public'
+              vpcs:
+                - 'bitswarm.internal'
+                - 'bitswarmlabs_us_east-1'
+
+            bitswarmlabs.com:
+              type: 'public'
+              vpcs:
+                - 'bitswarmlabs_us_east-1'
+
+            bitswarm.internal:
+              type: 'private'
+              vpcs:
+                - 'default'
+                - 'bitswarm.internal'
+                - 'bitswarmlabs_us_east-1'
+          vpcs:
+#            default:
+#              region: 'us-east-1'
+#
+#              security_groups:
+#                default:
+#                  ingress:
+#                    all_port_80:
+#                      protocol: 'tcp'
+#                      port: 80,
+#                      cidr: '0.0.0.0/0'
+#
+#                    all_port_443:
+#                      protocol: 'tcp'
+#                      port: 443,
+#                      cidr: '0.0.0.0/0'
+#
+#                    ravery_port_22:
+#                      protocol: 'tcp'
+#                      port: 22,
+#                      cidr: '184.152.51.170/32'
+#
+#                    vpc-internal-default:
+#                      security_group: 'default'
+#
+#                puppetmaster:
+#                  ingress:
+#                    all_port_80:
+#                      protocol: 'tcp'
+#                      port: 80,
+#                      cidr: '0.0.0.0/0'
+#
+#                    all_port_443:
+#                      protocol: 'tcp'
+#                      port: 443,
+#                      cidr: '0.0.0.0/0'
+#
+#                    private_port_8080_puppetboard:
+#                      protocol: 'tcp'
+#                      port: 8080,
+#                      security_group: 'default'
+#
+#                    github_port_8088_webhook:
+#                      protocol: 'tcp'
+#                      port: 8080,
+#                      cidr: '192.30.252.0/22'
+#
+#                    private_port_8140_puppetserver:
+#                      protocol: 'tcp'
+#                      port: 8140,
+#                      security_group: 'default'
+#
+#                    vpc-internal-default:
+#                      security_group: 'default'
+
+#            primary:
+#              name: 'bitswarmlabs_us-east-1'
+#              cidr_block: '172.16.0.0/16'
+#              region: 'us-east-1'
+#
+#              security_groups:
+#                sg_bitswarmlabs_us-east-1_default:
+#                  ingress:
+#                    all_port_80:
+#                      protocol: 'tcp'
+#                      port: 80,
+#                      cidr: '0.0.0.0/0'
+#
+#                    all_port_443:
+#                      protocol: 'tcp'
+#                      port: 443,
+#                      cidr: '0.0.0.0/0'
+#
+#                    ravery_port_22:
+#                      protocol: 'tcp'
+#                      port: 22,
+#                      cidr: '184.152.51.170/32'
+#
+#                    vpc-internal-default:
+#                      security_group: 'default'
+#
+#                sg_bitswarmlabs_us-east-1_puppetmaster:
+#                  ingress:
+#                    all_port_80:
+#                      protocol: 'tcp'
+#                      port: 80,
+#                      cidr: '0.0.0.0/0'
+#
+#                    all_port_443:
+#                      protocol: 'tcp'
+#                      port: 443,
+#                      cidr: '0.0.0.0/0'
+#
+#                    private_port_8080_puppetboard:
+#                      protocol: 'tcp'
+#                      port: 8080,
+#                      security_group: 'default'
+#
+#                    github_port_8088_webhook:
+#                      protocol: 'tcp'
+#                      port: 8080,
+#                      cidr: '192.30.252.0/22'
+#
+#                    private_port_8140_puppetserver:
+#                      protocol: 'tcp'
+#                      port: 8140,
+#                      security_group: 'default'
+#
+#                    vpc-internal-default:
+#                      security_group: 'default'
+#
+#              subnets:
+#                us_east_1c:
+#                  name: 'us-east-1c.bitswarmlabs.bitswarm.internal'
+#                  availability_zone: 'us-east-1c'
+#                  cidr_block: '172.16.0.0/20'
+#
+#                us_east_1d:
+#                  name: 'us-east-1d.bitswarmlabs.bitswarm.internal'
+#                  availability_zone: 'us-east-1d'
+#                  cidr_block: '172.16.16.0/20'
+#
+#                us_east_1e:
+#                  name: 'us-east-1e.bitswarmlabs.bitswarm.internal'
+#                  availability_zone: 'us-east-1e'
+#                  cidr_block: '172.16.32.0/20'
+#
+#                us_east_1b:
+#                  name: 'us-east-1b.bitswarmlabs.bitswarm.internal'
+#                  availability_zone: 'us-east-1b'
+#                  cidr_block: '172.16.48.0/20'
+
+#          security_groups:
+#            create-resources-group:
+#              description: Security group for create resources example
+#              region: us-west-1
+#
+#          instances:
+#            create-resources-example:
+#              image_id: ami-696e652c
+#              instance_type: t1.micro
+#              region: us-west-1
+#              security_groups:
+#                - create-resources-group
+#
+#          images:
+#            puppetmaster:
+#              name: 'puppetmaster'
+#              version: '0.3.0'
+#
+#              versions:
+#                puppetmaster-0.4.0-ubuntu-trusty:
+#                  ami_id: 'ami-e3e7158e'
+#                  operatingsystem: 'Ubuntu'
+#                  operatingsystemmajrelease: '14.04'
+#                  operatingsystemrelease: '14.04'
+#
+#                puppetmaster-0.3.0-ubuntu-trusty:
+#                  ami_id: 'ami-59cd3d34'
+#                  operatingsystem: 'Ubuntu'
+#                  operatingsystemmajrelease: '14.04'
+#                  operatingsystemrelease: '14.04'
+#
+#                puppetmaster-0.2.1-ubuntu-trusty:
+#                  ami_id: 'ami-471ef02a'
+#                  operatingsystem: 'Ubuntu'
+#                  operatingsystemmajrelease: '14.04'
+#                  operatingsystemrelease: '14.04'
+#                  deprecated: 'true'
+#
+#                puppetmaster-0.1.0-ubuntu-trusty:
+#                  ami_id: 'ami-c98c63a4'
+#                  operatingsystem: 'Ubuntu'
+#                  operatingsystemmajrelease: '14.04'
+#                  operatingsystemrelease: '14.04'
+#                  deprecated: 'true'
+#
+#              private: 'true'
+#              restricted: 'true'
+#
+#            base:
+#              name: 'bitswarmlabs-base'
+#              version: '0.4.1'
+#
+#              versions:
+#                bitswarmlabs-base-0.4.1-ubuntu-trusty:
+#                  ami_id: 'ami-ebb64b86'
+#                  operatingsystem: 'Ubuntu'
+#                  operatingsystemmajrelease: '14.04'
+#                  operatingsystemrelease: '14.04'
+
