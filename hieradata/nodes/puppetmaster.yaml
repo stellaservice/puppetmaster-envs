@@ -4,7 +4,7 @@ classes:
 #  - bsl_infrastructure::debug
 
 hello_worlds:
-  - "hello from environments/production/hieradata/nodes/puppet.yaml"
+  - "hello from environments/production/hieradata/nodes/puppetmaster.yaml"
 
 default_admin_acct_name: 'ops'
 default_admin_acct_pass: 'allurbase'
@@ -13,7 +13,7 @@ domain: 'bitswarm.internal'
 internal_fqdn: 'puppet.bitswarm.internal'
 external_fqdn: 'puppetmaster.bitswarm.io'
 
-bsl_core::debug::message: 'environments/production/hieradata/node/puppet node won'
+bsl_core::debug::message: 'puppetmaster node won (environments/production)'
 bsl_core::puppetmaster::manage_infrastructure: false
 
 # github.com/reubenavery user token "Bitswarm Puppetmaster"
