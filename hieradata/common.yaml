@@ -1,0 +1,3 @@
+---
+hello_worlds:
+  - "hello from environments/common/hieradata/common.yaml"
