@@ -1,3 +1,7 @@
 ---
+classes:
+  - awscli
+  - ec2tagfacts
+
 hello_worlds:
   - "hello from environments/core/hieradata/common.yaml"
