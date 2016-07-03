@@ -21,4 +21,15 @@ class bsl_core::puppetmaster(
       err('bsl_infrastructure not available for bsl_core::puppetmaster')
     }
   }
+
+  class { 'aws_scheduler':
+    tag                   => 'schedule',
+    exclude               => '[]',
+    default               => '{"mon": {"start": 5, "stop": 18},"tue": {"start": 5, "stop": 18},"wed": {"start": 5, "stop": 18},"thu": {"start": 5, "stop": 18}, "fri": {"start": 5, "stop": 18}}',
+    time                  => 'gmt',
+    script_path           => '/usr/sbin',
+    cron_minute           => '10',
+    cron_hour             => '*',
+    log                   => '/var/log/aws-scheduler_cron.log',
+  }
 }
