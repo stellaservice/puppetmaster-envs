@@ -21,7 +21,7 @@ bsl_core::puppetmaster::manage_infrastructure: false
 bsl_puppet::server: 'true'
 bsl_puppet:::manage_puppetboard: 'true'
 bsl_puppet::manage_r10k_webhooks: 'true'
-bsl_puppet::manage_hostname: 'false'
+#bsl_puppet::manage_hostname: 'false'
 bsl_puppet::manage_dependencies: 'false'
 
 bsl_puppet::r10k_sources:
