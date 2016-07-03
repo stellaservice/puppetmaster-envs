@@ -20,6 +20,7 @@ bsl_core::puppetmaster::manage_infrastructure: false
 
 bsl_puppet::config::manage_puppetboard: 'true'
 bsl_puppet::config::manage_r10k_webhooks: 'true'
+bsl_puppet::config::manage_hostname: 'false'
 
 bsl_puppet::config::r10k_sources:
  core:
