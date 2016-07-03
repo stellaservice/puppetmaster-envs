@@ -1,6 +1,6 @@
 moduledir 'dist'
 
-mod 'abrader/gms', '1.0.2'
+mod 'abrader/gms', '1.0.3'
 mod 'adrien/alternatives', '0.3.0'
 mod 'arnoudj/sudo', '1.3.0'
 mod 'bitswarmlabs/ohmyzsh', :latest
