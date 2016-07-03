@@ -1,3 +1,0 @@
-class bsl_core {
-
-}
