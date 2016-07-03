@@ -5,7 +5,7 @@ classes:
 #  - bsl_infrastructure::debug
 
 hello_worlds:
-  - "hello from environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml"
+  - "hello from environments/core/hieradata/nodes/puppet.yaml"
 
 jvm_min_heap_size: '2G'
 jvm_max_heap_size: '2G'
