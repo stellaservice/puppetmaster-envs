@@ -1,3 +1,0 @@
----
-hello_worlds:
-  - "hello from environments/production/hieradata/nodes/puppet.bitswarm.internal.yaml"
