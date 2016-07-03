@@ -18,12 +18,13 @@ external_fqdn: 'puppetmaster.bitswarm.io'
 bsl_core::debug::message: 'puppetmaster node won'
 bsl_core::puppetmaster::manage_infrastructure: false
 
-bsl_puppet::config::manage_puppetboard: 'true'
-bsl_puppet::config::manage_r10k_webhooks: 'true'
-bsl_puppet::config::manage_hostname: 'false'
-bsl_puppet::config::manage_dependencies: 'false'
+bsl_puppet::serer: 'true'
+bsl_puppet:::manage_puppetboard: 'true'
+bsl_puppet::manage_r10k_webhooks: 'true'
+bsl_puppet::manage_hostname: 'false'
+bsl_puppet::manage_dependencies: 'false'
 
-bsl_puppet::config::r10k_sources:
+bsl_puppet::r10k_sources:
  core:
    provider: 'github'
    remote: 'git@github.com:bitswarmlabs/puppet-bitswarmlabs-core.git'
