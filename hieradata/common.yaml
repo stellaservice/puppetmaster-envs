@@ -1,6 +1,5 @@
 ---
 classes:
-  - awscli
   - ec2tagfacts
 
 hello_worlds:
