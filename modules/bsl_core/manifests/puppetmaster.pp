@@ -7,18 +7,8 @@ class bsl_core::puppetmaster(
     include apt
   }
 
-  include 'java'
-  include 'ruby'
-  include 'python'
-
-  if defined('bsl_bootstrap') {
-    include 'bsl_bootstrap::puppetmaster::setup'
-    include 'bsl_bootstrap::puppetmaster::done'
-  }
-  else {
-    notify { 'bsl_bootstrap not available for bsl_core::puppetmaster': }
-    err('bsl_bootstrap not available for bsl_core::puppetmaster')
-  }
+  # Relying on configuration via Hiera
+  include '::bsl_puppet'
 
   if str2bool($manage_infrastructure) {
     notify { "## managing infrastructure": }
