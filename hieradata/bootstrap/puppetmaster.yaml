@@ -1,9 +1,5 @@
 ---
 bsl_core::debug::message: 'bootstrap (core) won'
 
-bsl_bootstrap::puppetmaster::config::hostname: 'puppet'
-bsl_bootstrap::puppetmaster::config::domain: 'bitswarm.internal'
-bsl_puppet::server::certname: 'puppet.bitswarm.internal'
-
 hello_worlds:
   - "hello from environments/core/hieradata/bootstrap/puppetmaster"

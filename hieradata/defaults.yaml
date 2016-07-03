@@ -1,3 +1,6 @@
 ---
+puppetmaster: 'puppet.bitswarm.internal'
+domain: 'bitswarm.internal'
+
 hello_worlds:
   - "hello from environments/core/hieradata/defaults.yaml"
