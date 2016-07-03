@@ -3,7 +3,9 @@ moduledir 'dist'
 mod 'abrader/gms', '1.0.2'
 mod 'adrien/alternatives', '0.3.0'
 mod 'arnoudj/sudo', '1.3.0'
-mod 'bitswarmlabs/ohmyzsh', :git => 'https://github.com/bitswarmlabs/puppet-ohmyzsh.git'
+mod 'bitswarmlabs/ohmyzsh', :latest
+mod 'camptocamp/systemd', '0.2.2'
+mod 'counsyl/sys', '0.9.20'
 mod 'bryana/ec2tagfacts', :latest
 mod 'conjur/conjur', '0.0.4'
 mod 'croddy/make', '0.0.5'
