@@ -18,7 +18,7 @@ external_fqdn: 'puppetmaster.bitswarm.io'
 bsl_core::debug::message: 'puppetmaster node won'
 bsl_core::puppetmaster::manage_infrastructure: false
 
-bsl_puppet::serer: 'true'
+bsl_puppet::server: 'true'
 bsl_puppet:::manage_puppetboard: 'true'
 bsl_puppet::manage_r10k_webhooks: 'true'
 bsl_puppet::manage_hostname: 'false'
