@@ -1,4 +1,4 @@
-node default {
-  class { '::bsl_core': }
-}
+class { '::bsl_core': }
+
+hiera_include('classes')
 
