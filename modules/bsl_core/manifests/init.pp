@@ -19,8 +19,13 @@ class bsl_core(
   if !empty($::ec2_metadata['iam']['info']) {
     $iam_info = parsejson($::ec2_metadata['iam']['info'])
     $iam_arn = $iam_info['InstanceProfileArn']
+    $iam_id = $iam_info['InstanceProfileId']
     $iam_profile = regsubst($iam_arn, '^.*\/', '')
-    notify { $iam_arn: }
-    notify { $iam_profile: }
+    notify { "## iam profile arn: $iam_arn": }
+    notify { "## iam profile id: $iam_id": }
+    notify { "## iam profile name: $iam_profile": }
+  }
+  else {
+    notify { "## iam profile not found in metadata: ${$::ec2_metadata['iam']['info']}"}
   }
 }
