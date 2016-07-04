@@ -194,7 +194,7 @@ bsl_jenkins::plugins:
   'violations':
     version: '0.7.11'
 
- 'ws-cleanup':
+  'ws-cleanup':
     version: '0.29'
 
   'xunit':
