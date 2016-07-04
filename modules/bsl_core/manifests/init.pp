@@ -24,6 +24,10 @@ class bsl_core(
     notify { "## iam profile arn: $iam_arn": }
     notify { "## iam profile id: $iam_profile_id": }
     notify { "## iam profile name: $iam_profile_name": }
+    file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
+      ensure => file,
+      content => template('bsl_core/bitswarm-ec2.yaml.erb')
+    }
   }
   else {
     notify { "## iam profile not found in metadata: ${::ec2_metadata['iam']['info']}": }
