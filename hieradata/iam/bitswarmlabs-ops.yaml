@@ -108,7 +108,7 @@ bsl_jenkins::plugins:
 
   'git':
     # requires: scm-api
-    version: '2.4.0'
+    version: '2.5.1'
 
   'git-client':
     # requires: ssh-credentials
@@ -128,6 +128,13 @@ bsl_jenkins::plugins:
 
   'github-api':
     version: '1.76'
+
+  'github-oauth':
+    version: '0.23'
+    # requires: mailer, git, github-api
+  'github-sqs-plugin':
+    version: '1.5'
+    # requires: git, github, multiple-scms, github-api
 
   'gradle':
     version: '1.24'
@@ -154,6 +161,9 @@ bsl_jenkins::plugins:
   'monitoring':
     version: '1.57.0'
 
+  'multiple-scms':
+    version: '0.6'
+    
   'node-iterator-api':
     version: '1.5.0'
 
