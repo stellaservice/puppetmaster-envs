@@ -4,6 +4,6 @@ iam_profile_name: '<%= @iam_profile_name %>'
 iam_profile_id: '<%= @iam_profile_id %>'
 <%- end -%>
 ec2_instance_id: '<%= @ec2_instance_id %>'
-if <%- @puppetmaster_fqdn -%>
+<%- if @puppetmaster_fqdn -%>
 puppetmaster: '<%= @puppetmaster_fqdn %>'
 <%- end -%>
