@@ -1,3 +1,0 @@
-class reubenavery::www::sites {
-
-}
