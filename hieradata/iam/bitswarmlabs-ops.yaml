@@ -6,10 +6,11 @@ hello_worlds:
   - "greetings from iam/bitswarmlabs-ops.yaml!"
 
 bsl_jenkins::plugins:
-  'antisamy-markup-formatter':
-    # OWASP Markup Formatter Plugin
-    # core bundled
-    version: '1.5'
+# disabled due to its being core module and pinned and causing unecessary jenkins service restarts
+#  'antisamy-markup-formatter':
+#    # OWASP Markup Formatter Plugin
+#    # core bundled
+#    version: '1.5'
 
   'all-changes':
     # requires: maven-plugin
@@ -143,11 +144,12 @@ bsl_jenkins::plugins:
     # requires: maven-plugin
     version: '2.12'
 
-  'maven-plugin':
-    # core bundled
-    # requires: javadoc mailer junit
-    # dependency of: all-changes
-    version: '2.13'
+# disabled due to its being core module and pinned and causing unecessary jenkins service restarts
+#  'maven-plugin':
+#    # core bundled
+#    # requires: javadoc mailer junit
+#    # dependency of: all-changes
+#    version: '2.13'
 
   'monitoring':
     version: '1.57.0'
