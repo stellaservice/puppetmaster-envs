@@ -1,7 +1,7 @@
 # First-priority hiera data source
 ---
 classes:
-  - bsl_core::debug
+#  - bsl_core::debug
   - ec2tagfacts
 
 hello_worlds:
