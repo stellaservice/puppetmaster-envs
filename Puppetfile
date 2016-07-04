@@ -15,11 +15,3 @@ mod 'bitswarmlabs/bsl_account',
 mod 'bitswarmlabs/aws',
   :git => 'https://github.com/bitswarmlabs/puppetlabs-aws.git',
   :tag => '1.4.0'
-
-mod 'evenup/ec2hostname', '0.2.2'
-mod 'jdowning/awscli', '1.3.0'
-
-mod 'compete/hiera_yamlgpg', '1.1.0'
-mod 'gene1wood/credstash', '0.6.3'
-
-mod 'puppetlabs/cloudformation', :latest
