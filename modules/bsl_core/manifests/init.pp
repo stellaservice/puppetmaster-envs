@@ -9,7 +9,7 @@ class bsl_core(
   ohmyzsh::install { $service_acct: set_sh => true, disable_update_prompt => true }
 
   package { 'pygmentize':
-    ensure => installed,
+    ensure   => installed,
     provider => gem,
   }
 
@@ -34,4 +34,11 @@ class bsl_core(
   }
 
   hiera_include('classes')
+
+  if !empty($::ec2_tag_hostname) {
+    class { 'hostname':
+      hostname => $::ec2_tag_hostname,
+      domain   => hiera('domain', $::domain),
+    }
+  }
 }
