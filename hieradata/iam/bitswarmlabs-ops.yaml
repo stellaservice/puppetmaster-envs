@@ -9,7 +9,7 @@ bsl_jenkins::plugins:
   'antisamy-markup-formatter':
     # OWASP Markup Formatter Plugin
     # core bundled
-    version: '1.3'
+    version: '1.5'
 
   'all-changes':
     # requires: maven-plugin
@@ -147,7 +147,7 @@ bsl_jenkins::plugins:
     # core bundled
     # requires: javadoc mailer junit
     # dependency of: all-changes
-    version: '2.12.1'
+    version: '2.13'
 
   'monitoring':
     version: '1.57.0'
