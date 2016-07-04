@@ -143,6 +143,12 @@ bsl_jenkins::plugins:
     # requires: maven-plugin
     version: '2.12'
 
+  'maven-plugin':
+    # core bundled
+    # requires: javadoc mailer junit
+    # dependency of: all-changes
+    version: '2.12.1'
+
   'monitoring':
     version: '1.57.0'
 
