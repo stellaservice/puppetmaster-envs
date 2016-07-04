@@ -36,8 +36,6 @@ class bsl_core(
     require => File['/etc/facter/facts.d'],
   }
 
-  hiera_include('classes')
-
   if !empty($::ec2_tag_hostname) {
     class { 'hostname':
       hostname => $::ec2_tag_hostname,
