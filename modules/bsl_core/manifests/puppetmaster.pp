@@ -22,15 +22,15 @@ class bsl_core::puppetmaster(
     }
   }
 
-  class { '::aws_scheduler':
-    aws_access_key_id     => $::bsl_puppet::config::server_aws_api_key,
-    aws_secret_access_key => $::bsl_puppet::config::server_aws_api_secret,
-    aws_region            => $::bsl_puppet::config::server_aws_default_region,
-    tag                   => 'schedule',
-    exclude               => '[]',
-    default               => '{"mon": {"start": 9, "stop": 18},"tue": {"start": 9, "stop": 18},"wed": {"start": 9, "stop": 18},"thu": {"start": 9, "stop": 18}, "fri": {"start": 9, "stop": 18}}',
-    time                  => 'local',
-    log                   => '/var/log/aws-scheduler_cron.log',
-    require               => Class['::bsl_puppet']
-  }
+  # class { '::aws_scheduler':
+  #   aws_access_key_id     => $::bsl_puppet::config::server_aws_api_key,
+  #   aws_secret_access_key => $::bsl_puppet::config::server_aws_api_secret,
+  #   aws_region            => $::bsl_puppet::config::server_aws_default_region,
+  #   tag                   => 'schedule',
+  #   exclude               => '[]',
+  #   default               => '{"mon": {"start": 9, "stop": 18},"tue": {"start": 9, "stop": 18},"wed": {"start": 9, "stop": 18},"thu": {"start": 9, "stop": 18}, "fri": {"start": 9, "stop": 18}}',
+  #   time                  => 'local',
+  #   log                   => '/var/log/aws-scheduler_cron.log',
+  #   require               => Class['::bsl_puppet']
+  # }
 }
