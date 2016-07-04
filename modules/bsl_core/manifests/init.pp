@@ -16,10 +16,6 @@ class bsl_core(
   ohmyzsh::plugins { ['root', $service_acct]: plugins => ['gitfast', 'colorize'] }
   ohmyzsh::theme { ['root', $service_acct]: }
 
-  file { '/etc/facter/facts.d/bsl_core':
-    ensure => absent, force => true,
-  }
-
   $ec2_instance_id = $::ec2_metadata['instance-id']
   $puppetmaster_fqdn = hiera('puppetmaster', 'puppet')
 
@@ -28,18 +24,16 @@ class bsl_core(
     $iam_arn = $iam_info['InstanceProfileArn']
     $iam_profile_id = $iam_info['InstanceProfileId']
     $iam_profile_name = regsubst($iam_arn, '^.*\/', '')
-    # notify { "## iam profile arn: $iam_arn": }
-    # notify { "## iam profile id: $iam_profile_id": }
-    # notify { "## iam profile name: $iam_profile_name": }
-
   }
-  else {
-    notify { "## iam profile not found in metadata: ${::ec2_metadata['iam']['info']}": }
+
+  file { ['/etc/facter', '/etc/facter/facts.d']:
+    ensure => directory,
   }
 
   file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
-    ensure => file,
+    ensure  => file,
     content => template('bsl_core/bitswarm-ec2.yaml.erb'),
+    require => File['/etc/facter/facts.d'],
   }
 
   hiera_include('classes')
