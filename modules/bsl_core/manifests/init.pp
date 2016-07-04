@@ -26,6 +26,6 @@ class bsl_core(
     notify { "## iam profile name: $iam_profile": }
   }
   else {
-    notify { "## iam profile not found in metadata: ${$::ec2_metadata['iam']['info']}"}
+    notify { "## iam profile not found in metadata: ${$::ec2_metadata['iam']['info']}": }
   }
 }
