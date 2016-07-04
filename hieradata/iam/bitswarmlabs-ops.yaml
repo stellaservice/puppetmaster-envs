@@ -1,6 +1,7 @@
 ---
 classes:
-  - jenkins
+  - bsl_jenkins
 
 hello_worlds:
   - "greetings from iam/bitswarmlabs-ops.yaml!"
+
