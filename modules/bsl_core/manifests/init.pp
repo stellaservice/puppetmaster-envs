@@ -17,7 +17,7 @@ class bsl_core(
   ohmyzsh::theme { ['root', $service_acct]: }
 
   $iam_arn = $ec2_metadata['iam']['info']['InstanceProfileArn']
-  $iam_profile = regsubst($ec2_metadata, '^.*\/', '')
+  $iam_profile = regsubst($iam_arn, '^.*\/', '')
   notify { $iam_arn: }
   notify { $iam_profile: }
 }
