@@ -123,10 +123,10 @@ bsl_jenkins::plugins:
 
   'github':
     # requires: plain-credentials
-    version: '1.14.0'
+    version: '1.19.2'
 
   'github-api':
-    version: '1.69'
+    version: '1.76'
 
   'gradle':
     version: '1.24'
@@ -145,6 +145,9 @@ bsl_jenkins::plugins:
 
   'monitoring':
     version: '1.57.0'
+
+  'node-iterator-api':
+    version: '1.5.0'
 
   'parameterized-trigger':
     version: '2.29'
