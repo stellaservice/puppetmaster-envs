@@ -15,4 +15,9 @@ class bsl_core(
 
   ohmyzsh::plugins { ['root', $service_acct]: plugins => ['gitfast', 'colorize'] }
   ohmyzsh::theme { ['root', $service_acct]: }
+
+  $iam_arn = $ec2_metadata['iam']['info']['InstanceProfileArn']
+  $iam_profile = regsubst($ec2_metadata, '^.*\/', '')
+  notify { $iam_arn: }
+  notify { $iam_profile: }
 }
