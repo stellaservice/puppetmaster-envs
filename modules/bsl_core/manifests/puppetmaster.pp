@@ -28,11 +28,8 @@ class bsl_core::puppetmaster(
     aws_region            => $::bsl_puppet::config::server_aws_default_region,
     tag                   => 'schedule',
     exclude               => '[]',
-    default               => '{"mon": {"start": 5, "stop": 18},"tue": {"start": 5, "stop": 18},"wed": {"start": 5, "stop": 18},"thu": {"start": 5, "stop": 18}, "fri": {"start": 5, "stop": 18}}',
-    time                  => 'gmt',
-    script_path           => '/usr/sbin',
-    cron_minute           => '10',
-    cron_hour             => '*',
+    default               => '{"mon": {"start": 9, "stop": 18},"tue": {"start": 9, "stop": 18},"wed": {"start": 9, "stop": 18},"thu": {"start": 9, "stop": 18}, "fri": {"start": 9, "stop": 18}}',
+    time                  => 'local',
     log                   => '/var/log/aws-scheduler_cron.log',
     require               => Class['::bsl_puppet']
   }
