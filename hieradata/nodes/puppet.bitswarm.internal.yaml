@@ -25,20 +25,6 @@ bsl_puppet::manage_r10k_webhooks: 'true'
 bsl_puppet::manage_dependencies: 'false'
 
 bsl_puppet::r10k_sources:
-  core:
-    provider: 'github'
-    remote: 'git@github.com:bitswarmlabs/puppet-bitswarmlabs-core.git'
-    basedir: "/etc/puppetlabs/code/infrastructure"
-    project: 'bitswarmlabs/puppet-bitswarmlabs-core'
-    manage_deploy_key: true
-
-  site:
-    provider: 'github'
-    remote: 'git@github.com:bitswarmlabs/puppet-bitswarmlabs-site.git'
-    basedir: "/etc/puppetlabs/code/environments"
-    project: 'bitswarmlabs/puppet-bitswarmlabs-site'
-    manage_deploy_key: true
-
   private:
     remote: 'git@github.com:bitswarmlabs/puppetmaster-private.git'
     basedir:  '/etc/puppetlabs/code/private'
