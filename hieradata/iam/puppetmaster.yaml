@@ -1,6 +1,6 @@
 ---
 classes:
-  bsl_core::derp
+  - bsl_core::derp
 
 hello_worlds:
   - "greetings from iam/puppetmaster.yaml!"
