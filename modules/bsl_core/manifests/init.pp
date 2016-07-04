@@ -17,7 +17,7 @@ class bsl_core(
   ohmyzsh::theme { ['root', $service_acct]: }
 
   file { '/etc/facter/facts.d/bsl_core':
-    ensure => directory
+    ensure => absent, force => true,
   }
 
   if !empty($::ec2_metadata['iam']['info']) {
@@ -29,17 +29,15 @@ class bsl_core(
     # notify { "## iam profile id: $iam_profile_id": }
     # notify { "## iam profile name: $iam_profile_name": }
 
-    file { '/etc/facter/facts.d/bsl_core/bitswarm-ec2.yaml':
+    file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
       ensure => file,
       content => template('bsl_core/bitswarm-ec2.yaml.erb'),
-      require => File['/etc/facter/facts.d/bsl_core']
     }
   }
   else {
     notify { "## iam profile not found in metadata: ${::ec2_metadata['iam']['info']}": }
-    file { '/etc/facter/facts.d/bsl_core/bitswarm-ec2.yaml':
+    file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
       ensure => absent,
-      require => File['/etc/facter/facts.d/bsl_core']
     }
   }
 
