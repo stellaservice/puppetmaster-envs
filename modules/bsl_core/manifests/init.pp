@@ -20,6 +20,8 @@ class bsl_core(
     ensure => absent, force => true,
   }
 
+  $ec2_instance_id = $::ec2_metadata['instance-id']
+
   if !empty($::ec2_metadata['iam']['info']) {
     $iam_info = parsejson($::ec2_metadata['iam']['info'])
     $iam_arn = $iam_info['InstanceProfileArn']
@@ -29,16 +31,14 @@ class bsl_core(
     # notify { "## iam profile id: $iam_profile_id": }
     # notify { "## iam profile name: $iam_profile_name": }
 
-    file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
-      ensure => file,
-      content => template('bsl_core/bitswarm-ec2.yaml.erb'),
-    }
   }
   else {
     notify { "## iam profile not found in metadata: ${::ec2_metadata['iam']['info']}": }
-    file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
-      ensure => absent,
-    }
+  }
+
+  file { '/etc/facter/facts.d/bitswarm-ec2.yaml':
+    ensure => file,
+    content => template('bsl_core/bitswarm-ec2.yaml.erb'),
   }
 
   hiera_include('classes')

@@ -1,3 +1,6 @@
 ---
+<%- if @iam_profile_name -%>
 iam_profile_name: '<%= @iam_profile_name %>'
 iam_profile_id: '<%= @iam_profile_id %>'
+<%- end -%>
+ec2_instance_id: '<%= @ec2_instance_id %>'
