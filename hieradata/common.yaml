@@ -1,4 +1,0 @@
-# Lowest priority common.yaml, include things here which ought to be overridden easily
----
-hello_worlds:
-  - "hello from environments/common/hieradata/common.yaml"
