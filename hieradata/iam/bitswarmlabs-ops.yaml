@@ -14,7 +14,7 @@ bsl_jenkins::plugins:
 
   'all-changes':
     # requires: maven-plugin
-    version: '1.5'
+    version: '1.4'
 
   'analysis-collector':
     # requires: dashboard-view tasks matrix-project analysis-core
@@ -30,7 +30,7 @@ bsl_jenkins::plugins:
   'async-http-client':
     version: '1.7.24.1'
     # dependency of dockerhub-notification
-    
+
   'audit-trail':
     version: '2.2'
 
@@ -125,13 +125,14 @@ bsl_jenkins::plugins:
   'findbugs':
     # dependency of analysis-collector
     version: '4.65'
+
   'git':
     # requires: scm-api
     version: '2.5.1'
 
   'git-client':
     # requires: ssh-credentials
-    version: '1.19.0'
+    version: '1.19.6'
 
   'git-parameter':
     # requires: git
