@@ -13,7 +13,7 @@ mod 'bitswarmlabs/bsl_account',
   :git    => 'https://github.com/bitswarmlabs/puppet-bsl_account.git'
 
 mod 'bitswarmlabs/bsl_jenkins',
-  :git    => 'https://github.com/bitswarmlabs/bsl_jenkins.git'
+  :git    => 'https://github.com/bitswarmlabs/puppet-bsl_jenkins.git'
 
 mod 'bitswarmlabs/aws',
   :git => 'https://github.com/bitswarmlabs/puppetlabs-aws.git',
