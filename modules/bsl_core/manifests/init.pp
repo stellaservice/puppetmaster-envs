@@ -3,7 +3,7 @@ class bsl_core(
 ) inherits bsl_core::params {
   include '::awscli'
   include '::ec2tagfacts'
-  include 'bsl_core::credstash'
+  include '::bsl_secrets'
 
   class { 'ohmyzsh::config': theme_hostname_slug => '%M' }
 
