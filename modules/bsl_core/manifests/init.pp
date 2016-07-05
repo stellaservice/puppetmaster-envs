@@ -2,10 +2,10 @@ class bsl_core(
   $service_acct = $bsl_core::params::service_acct
 ) inherits bsl_core::params {
   # include '::awscli'
-  class { '::ec2tagfacts':
-    manage_awscli => false,
-  }
-  include 'bsl_core::credstash'
+  # class { '::ec2tagfacts':
+  #   manage_awscli => false,
+  # }
+  # include 'bsl_core::credstash'
 
   class { 'ohmyzsh::config': theme_hostname_slug => '%M' }
 
