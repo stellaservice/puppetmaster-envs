@@ -23,6 +23,7 @@ mod 'hunner/hiera', '2.0.1'
 mod 'jamtur01/httpauth', '0.0.3'
 mod 'jdowning/awscli', '1.3.0'
 mod 'jethrocarr/hostname', '1.0.2'
+mod 'jfryman/nginx', '0.3.0'
 mod 'maestrodev/wget', '1.7.3'
 mod 'meltwater/cpan', :latest
 mod 'nanliu/staging', '1.0.3'
