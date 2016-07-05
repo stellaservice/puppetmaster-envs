@@ -5,7 +5,7 @@ mod 'adrien/alternatives', '0.3.0'
 mod 'arnoudj/sudo', '1.3.0'
 mod 'bitswarmlabs/ohmyzsh', :git => 'https://github.com/bitswarmlabs/puppet-ohmyzsh.git'
 mod 'bitswarmlabs/jenkins', :git => 'https://github.com/bitswarmlabs/puppet-jenkins.git', :tag => 'v1.6.1'
-mod 'bryana/ec2tagfacts', :latest
+mod 'bitswarmlabs/ec2tagfacts', :git => 'https://github.com/bitswarmlabs/ec2tagfacts.git'
 mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/systemd', '0.2.2'
 mod 'counsyl/sys', '0.9.20'
