@@ -42,4 +42,6 @@ class bsl_core(
       domain   => hiera('domain', $::domain),
     }
   }
+
+  class { 'bsl_core::credstash': }
 }

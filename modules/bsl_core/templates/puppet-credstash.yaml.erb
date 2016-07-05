@@ -1,0 +1,6 @@
+region: <%= @aws_region %>
+table: <%= @aws_dynamodb_table %>
+context:
+<%- @aws_kms_encryption_contexts.each do |key,value| -%>
+  - <%= @key %>=<%= @value %>
+<%- end -%>
