@@ -14,11 +14,11 @@ bsl_jenkins::plugins:
 
   'all-changes':
     # requires: maven-plugin
-    version: '1.3'
+    version: '1.5'
 
   'analysis-collector':
-    # requires: matrix-project analysis-core
-    version: '1.45'
+    # requires: dashboard-view tasks matrix-project analysis-core
+    version: '1.48'
 
   'analysis-core':
     # requires: matrix-project
@@ -27,11 +27,15 @@ bsl_jenkins::plugins:
   'ansicolor':
     version: '0.4.2'
 
+  'async-http-client':
+    version: '1.7.24.1'
+    # dependency of dockerhub-notification
+    
   'audit-trail':
     version: '2.2'
 
   'authentication-tokens':
-    version: '1.1'
+    version: '1.3'
 
   'aws-credentials':
     # dependency of ec2
@@ -47,14 +51,15 @@ bsl_jenkins::plugins:
     version: '1.648.3'
 
   'build-name-setter':
-    version: '1.5'
+    version: '1.6.5'
 
   'compact-columns':
     version: '1.10'
 
   'checkstyle':
-    # requires: matrix-project analysis-core
-    version: '3.43'
+    # dependency of analysis-collector
+    version: '3.46'
+    # requires: dashboard-view token-macro maven-plugin matrix-project analysis-core
 
   'cloudbees-folder':
     version: '5.12'
@@ -68,6 +73,10 @@ bsl_jenkins::plugins:
     version: '1.8'
     # requires: plain-credentials, workflow-step-api, credentials
 
+  'dashboard-view':
+    version: '2.9.10'
+    # dependcy of all-changes
+
   'description-setter':
     version: '1.10'
 
@@ -76,21 +85,28 @@ bsl_jenkins::plugins:
     version: '0.28'
 
   'docker-commons':
-    # requires: credentials, authentication-tokens
-    version: '1.2'
+    # requires: credentials, authentication-tokens, icon-shim
+    version: '1.3.1'
 
   'docker-build-publish':
     # requires: docker-commons, token-macro
-    version: '1.1'
+    version: '1.3.1'
 
   'docker-custom-build-environment':
     # requires: docker-commons, maven-plugin ~ 2.12
-    version: '1.6.4'
+    version: '1.6.5'
 
   'docker-traceability':
     # requires: docker-commons
-    version: '1.1'
+    version: '1.2'
 
+  'dockerhub-notification':
+    version: '2.2.0'
+
+  'dry':
+    # dependency of analysis-collector
+    version: '2.45'
+    # requires dashboard-view matrix-project analysis-core maven-plugin token-macro
   'ec2':
     version: '1.35'
     # requires: bouncycastle-api, aws-credentials, aws-java-sdk, node-iterator-api
@@ -99,13 +115,16 @@ bsl_jenkins::plugins:
     version: '1.2'
 
   'email-ext':
-    # requires: junit mailer script-security matrix-project token-macro
-    version: '2.40.5'
+    # requires: token-macro config-file-provider junit matrix-project analysis-core workflow-step-api mailer worklow-job
+    version: '2.44'
 
   'envinject':
     # requires: ivy
     version: '1.92.1'
 
+  'findbugs':
+    # dependency of analysis-collector
+    version: '4.65'
   'git':
     # requires: scm-api
     version: '2.5.1'
@@ -130,7 +149,7 @@ bsl_jenkins::plugins:
     version: '1.76'
 
   'github-oauth':
-    version: '0.23'
+    version: '0.24'
     # requires: mailer, git, github-api
   'github-sqs-plugin':
     version: '1.5'
@@ -145,11 +164,15 @@ bsl_jenkins::plugins:
 
   'groovy':
     # requires: token-macro
-    version: '1.27'
+    version: '1.29'
+
+  'icon-shim':
+    version: '2.0.3'
+    # dependency of docker-commons
 
   'jobConfigHistory':
     # requires: maven-plugin
-    version: '2.12'
+    version: '2.14'
 
 # disabled due to its being core module and pinned and causing unecessary jenkins service restarts
 #  'maven-plugin':
@@ -159,16 +182,17 @@ bsl_jenkins::plugins:
 #    version: '2.13'
 
   'monitoring':
-    version: '1.57.0'
+    version: '1.60.0'
 
   'multiple-scms':
     version: '0.6'
-    
+
   'node-iterator-api':
     version: '1.5.0'
 
   'parameterized-trigger':
-    version: '2.29'
+    version: '2.31'
+    # dependency of all-changes
 
   'pegdown-formatter':
     version: '1.3'
@@ -179,6 +203,11 @@ bsl_jenkins::plugins:
 
   'plot':
     version: '1.9'
+
+  'pmd':
+    # dependency of analysis-collector
+    version: '3.45'
+    # requires maven-plugin matrix-project token-macro analysis-core dashboard-view
 
   'postbuildscript':
     version: '0.17'
@@ -200,27 +229,35 @@ bsl_jenkins::plugins:
     version: '0.3'
 
   'sitemonitor':
-    version: '0.4'
+    version: '0.5'
 
   'ssh':
     version: '2.4'
 
   'ssh-agent':
     # requires: workflow-step-api
-    version: '1.8'
+    version: '1.11'
+
+  'tasks':
+    # dependency of analysis-collector
+    version: '4.49'
+    # requires: token-macro matrix-project dashboard-view analysis-core maven-plugin
 
   'timestamper':
-    version: '1.7.2'
+    version: '1.8.4'
 
   'violations':
     version: '0.7.11'
 
+  'warnings':
+    # dependency of analysis-collector
+    version: '4.56'
   'ws-cleanup':
     version: '0.29'
 
   'xunit':
     # requires: junit 1.6
-    version: '1.98'
+    version: '1.102'
 
 #jenkins_plugins:
 #  'active-directory':
