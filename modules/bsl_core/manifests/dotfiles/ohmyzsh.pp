@@ -6,7 +6,7 @@ class bsl_core::dotfiles::ohmyzsh(
   $incl_root = concat($users, 'root')
 
   if $uninstall_others {
-    ::dotfiles::uninstall($incl_root)
+    ::dotfiles::uninstall{ $incl_root: }
   }
 
   class { 'ohmyzsh::config': theme_hostname_slug => '%M' }
