@@ -1,7 +1,7 @@
 class bsl_core::puppetmaster(
   $manage_infrastructure = 'false',
 ) {
-  include rancher::server
+  include bsl_core::rancher::server
 
   notify { '## hello from CORE (environments/core) bsl_core::puppetmaster': }
 
