@@ -22,6 +22,11 @@ class bsl_core::puppetmaster(
     }
   }
 
+  class { 'docker': }
+  class { 'rancher::server':
+    port => 9090,
+  }
+
   # class { '::aws_scheduler':
   #   aws_access_key_id     => $::bsl_puppet::config::server_aws_api_key,
   #   aws_secret_access_key => $::bsl_puppet::config::server_aws_api_secret,
