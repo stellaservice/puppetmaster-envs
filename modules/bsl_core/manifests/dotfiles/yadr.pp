@@ -1,6 +1,6 @@
 class bsl_core::dotfiles::yadr(
-  $users            = $bsl_core::params::users,
-  $uninstall_others = $bsl_core::params::uninstall_others
+  $users            = $bsl_core::dotfiles::params::users,
+  $uninstall_others = $bsl_core::dotfiles::params::uninstall_others
 ) inherits bsl_core::dotfiles::params {
   include '::dotfiles'
 
