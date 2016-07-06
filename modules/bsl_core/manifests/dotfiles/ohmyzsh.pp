@@ -9,7 +9,9 @@ class bsl_core::dotfiles::ohmyzsh(
     ::dotfiles::uninstall{ $incl_root: }
   }
 
-  class { 'ohmyzsh::config': theme_hostname_slug => '%M' }
+  class { 'ohmyzsh::config':
+    # theme_hostname_slug => '%M'
+  }
 
   package { 'pygmentize':
     ensure   => installed,
