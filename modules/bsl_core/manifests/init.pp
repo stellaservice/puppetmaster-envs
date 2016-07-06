@@ -6,6 +6,7 @@ class bsl_core(
   include '::ec2tagfacts'
   include '::bsl_secrets'
   include '::bsl_core::dotfiles'
+  include '::vim'
 
   $ec2_instance_id = $::ec2_metadata['instance-id']
   $puppetmaster_fqdn = hiera('puppetmaster', 'puppet')
