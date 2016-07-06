@@ -11,15 +11,15 @@ class bsl_core::dotfiles::ohmyzsh(
 
   class { 'ohmyzsh::config': theme_hostname_slug => '%M' }
 
-  # for multiple users in one shot and set their shell to zsh
-  ohmyzsh::install { 'root': set_sh => true, disable_auto_update => true }
-  ohmyzsh::install { $users: set_sh => true, disable_update_prompt => true }
-
   package { 'pygmentize':
     ensure   => installed,
     provider => gem,
   }
 
-  ohmyzsh::plugins { 'root': plugins => $plugins }
-  ohmyzsh::theme { $incl_root: }
+
+  # for multiple users in one shot and set their shell to zsh
+  ohmyzsh::install { 'root': set_sh => true, disable_auto_update => true }
+  ->ohmyzsh::install { $users: set_sh => true, disable_update_prompt => true }
+  ->ohmyzsh::plugins { 'root': plugins => $plugins }
+  ->ohmyzsh::theme { $incl_root: }
 }
