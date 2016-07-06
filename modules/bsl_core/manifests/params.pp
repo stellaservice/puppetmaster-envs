@@ -7,4 +7,6 @@ class bsl_core::params {
       $service_acct = 'ubuntu'
     }
   }
+
+  $rancher_port = 9090
 }

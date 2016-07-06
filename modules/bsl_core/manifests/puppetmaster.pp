@@ -1,6 +1,8 @@
 class bsl_core::puppetmaster(
   $manage_infrastructure = 'false',
 ) {
+  include rancher::server
+
   notify { '## hello from CORE (environments/core) bsl_core::puppetmaster': }
 
   if $::osfamily == 'Debian' {
@@ -22,10 +24,6 @@ class bsl_core::puppetmaster(
     }
   }
 
-  class { 'docker': }
-  class { 'rancher::server':
-    port => 9090,
-  }
 
   # class { '::aws_scheduler':
   #   aws_access_key_id     => $::bsl_puppet::config::server_aws_api_key,
