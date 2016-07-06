@@ -1,6 +1,7 @@
 class bsl_core(
   $service_acct = $bsl_core::params::service_acct
 ) inherits bsl_core::params {
+  include '::sys::git'
   include '::awscli'
   include '::ec2tagfacts'
   include '::bsl_secrets'
