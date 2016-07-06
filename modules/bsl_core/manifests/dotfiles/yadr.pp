@@ -10,5 +10,11 @@ class bsl_core::dotfiles::yadr(
     ::ohmyzsh::uninstall { $incl_root: }
   }
 
+  class { '::dotfiles':
+    manage_git => false,
+  }
+
+  # for multiple users in one shot and set their shell to zsh
+  dotfiles::install { $incl_root: set_sh => true }
 }
 
