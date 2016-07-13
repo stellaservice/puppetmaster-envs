@@ -4,6 +4,8 @@ classes:
   - bsl_core::puppetmaster
 #  - bsl_infrastructure::debug
 
+python::virtualenv: 'present'
+
 hello_worlds:
   - "hello from environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml"
 
