@@ -1,7 +1,15 @@
 class bsl_core::puppetmaster(
   $manage_infrastructure = 'false',
 ) {
-  include bsl_core::rancher::server
+  # class { 'bsl_core::rancher::server':
+  #   port => 9090
+  # }
+  # class { 'bsl_core::puppetmaster::www':
+  #   puppetboard_http_port => 80,
+  #   rancher_http_port => 9090,
+  #   r10k_webhook_port => 8008,
+  #   force_ssl => false,
+  # }
 
   notify { '## hello from CORE (environments/core) bsl_core::puppetmaster': }
 
