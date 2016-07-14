@@ -24,6 +24,7 @@ bsl_puppet::server: 'true'
 bsl_puppet::manage_puppetboard: 'true'
 bsl_puppet::manage_r10k_webhooks: 'true'
 #bsl_puppet::manage_hostname: 'false'
+bsl_puppet::config::use_foreman: 'true'
 bsl_puppet::manage_dependencies: 'false'
 
 bsl_puppet::r10k_sources:
