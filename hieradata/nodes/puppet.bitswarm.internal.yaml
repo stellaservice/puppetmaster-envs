@@ -9,8 +9,8 @@ python::virtualenv: 'present'
 hello_worlds:
   - "hello from environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml"
 
-jvm_min_heap_size: '1G'
-jvm_max_heap_size: '3G'
+jvm_min_heap_size: '512M'
+jvm_max_heap_size: '2G'
 
 hostname: 'puppet'
 domain: 'bitswarm.internal'
@@ -21,10 +21,10 @@ bsl_core::debug::message: 'puppetmaster node won'
 bsl_core::puppetmaster::manage_infrastructure: false
 
 bsl_puppet::server: 'true'
-bsl_puppet::manage_puppetboard: 'true'
+bsl_puppet::manage_puppetboard: 'false'
 bsl_puppet::manage_r10k_webhooks: 'true'
 #bsl_puppet::manage_hostname: 'false'
-bsl_puppet::config::use_foreman: 'true'
+bsl_puppet::config::use_foreman: 'false'
 bsl_puppet::manage_dependencies: 'false'
 
 bsl_puppet::r10k_sources:
