@@ -7,7 +7,7 @@ mod 'bitswarmlabs/awscli', :git => 'https://github.com/bitswarmlabs/puppet-awscl
 mod 'bitswarmlabs/dotfiles', :git => 'https://github.com/bitswarmlabs/puppet-dotfiles.git'
 mod 'bitswarmlabs/ec2tagfacts', :git => 'https://github.com/bitswarmlabs/puppet-ec2tagfacts.git'
 mod 'bitswarmlabs/jenkins', :git => 'https://github.com/bitswarmlabs/puppet-jenkins.git', :tag => 'v1.6.1'
-mod 'bitswarmlabs/ohmyzsh', :git => 'https://github.com/bitswarmlabs/puppet-ohmyzsh.git'
+mod 'bitswarmlabs/ohmyzsh', :latest
 mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/systemd', '0.2.2'
 mod 'counsyl/sys', '0.9.20'
