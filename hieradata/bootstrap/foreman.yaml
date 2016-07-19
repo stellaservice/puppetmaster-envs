@@ -1,0 +1,3 @@
+---
+hello_worlds:
+  - "hello from environments/core/hieradata/bootstrap/foreman"

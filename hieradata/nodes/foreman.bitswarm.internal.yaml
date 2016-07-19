@@ -1,0 +1,51 @@
+# Don't put any secrets here, this is a public repo!
+---
+classes:
+  - bsl_core::foreman
+#  - bsl_infrastructure::debug
+
+#python::virtualenv: 'present'
+
+hello_worlds:
+  - "hello from environments/core/hieradata/nodes/foreman.bitswarm.internal.yaml"
+
+#jvm_min_heap_size: '512M'
+#jvm_max_heap_size: '2G'
+
+hostname: 'foreman'
+puppetmaster: 'foreman.bitswarm.internal'
+domain: 'bitswarm.internal'
+internal_fqdn: 'foreman.bitswarm.internal'
+external_fqdn: 'foreman.bitswarm.io'
+
+bsl_core::debug::message: 'foreman node won'
+bsl_core::foreman::manage_infrastructure: false
+
+bsl_puppet::server: 'false'
+bsl_puppet::manage_puppetboard: 'false'
+bsl_puppet::manage_r10k_webhooks: 'true'
+#bsl_puppet::manage_hostname: 'false'
+bsl_puppet::config::manage_foreman: 'true'
+bsl_puppet::manage_dependencies: 'true'
+
+bsl_puppet::r10k_sources:
+  private:
+    remote: 'git@github.com:bitswarmlabs/puppetmaster-private.git'
+    basedir:  '/etc/puppetlabs/code/private'
+    provider: 'github'
+    project: 'bitswarmlabs/puppetmaster-private'
+#    token: "%{hiera('github_api_token')%"
+    manage_deploy_key: true
+
+  public:
+    remote: 'https://github.com/bitswarmlabs/puppetmaster-envs.git'
+    basedir: "/etc/puppetlabs/code/environments"
+    provider: 'github'
+    project: 'bitswarmlabs/puppetmaster-envs'
+    manage_deploy_key: false
+
+bsl_infrastructure::aws::config::domain: 'bitswarm.internal'
+bsl_infrastructure::aws::config::vpc_name: 'bitswarm.internal vpc'
+bsl_infrastructure::aws::config::primary_subnet_name: 'us-east-1b.bitswarm.internal'
+bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
+bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
