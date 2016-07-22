@@ -1,4 +1,7 @@
 ---
+classes:
+  - bsl_core::debug
+
 puppetmaster: 'puppet.bitswarm.internal'
 domain: 'bitswarm.internal'
 
