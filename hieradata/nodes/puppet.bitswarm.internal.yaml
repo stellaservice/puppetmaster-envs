@@ -2,7 +2,7 @@
 # Don't put any secrets here, this is a public repo!
 ---
 hello_worlds:
-  - "environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml reporting in"
+  - 'environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml reporting in'
 
 hostname: 'puppet'
 internal_fqdn: 'puppet.bitswarm.internal'

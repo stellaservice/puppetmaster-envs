@@ -5,7 +5,7 @@ classes:
   - bsl_core::foreman
 
 hello_worlds:
-  - "environments/core/hieradata/apps/foreman.yaml reporting in"
+  - 'environments/core/hieradata/apps/foreman.yaml reporting in'
 
 jvm_min_heap_size: '2G'
 jvm_max_heap_size: '2G'

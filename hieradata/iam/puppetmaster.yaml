@@ -5,6 +5,6 @@ classes:
   - bsl_core::derp
 
 hello_worlds:
-  - "environments/core/hieradata/iam/puppetmaster.yaml reporting in"
+  - 'environments/core/hieradata/iam/puppetmaster.yaml reporting in'
 
 external_fqdn: 'puppetmaster.bitswarm.io'

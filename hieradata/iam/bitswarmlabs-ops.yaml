@@ -5,7 +5,7 @@ classes:
   - bsl_jenkins
 
 hello_worlds:
-  - "environments/core/hieradata/iam/jenkins.yaml reporting in"
+  - 'environments/core/hieradata/iam/jenkins.yaml reporting in'
 
 bsl_jenkins::plugins:
 # disabled due to its being core module and pinned and causing unecessary jenkins service restarts

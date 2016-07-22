@@ -1,4 +1,4 @@
 # First-priority hiera data source
 ---
 hello_worlds:
-  - "environments/core/hieradata/global.yaml reporting in"
+  - 'environments/core/hieradata/global.yaml reporting in'
