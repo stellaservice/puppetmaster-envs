@@ -1,8 +1,7 @@
+# %{::iam_profile_name} defaults, overrides apps/%{::app_project} but not nodes/%{::trusted.certname}
+# Don't put any secrets here, this is a public repo!
 ---
-classes:
-  - bsl_core::puppetmaster
-
 hello_worlds:
-  - "greetings from iam/puppetmaster.yaml!"
+  - "environments/core/hieradata/apps/puppetmaster.yaml reporting in"
 
 external_fqdn: 'puppetmaster.bitswarm.io'

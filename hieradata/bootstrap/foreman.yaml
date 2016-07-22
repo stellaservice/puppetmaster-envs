@@ -2,7 +2,5 @@
 classes:
   - bsl_core::foreman
 
-bsl_core::debug::message: 'foreman bootstrap (core) won'
-
 hello_worlds:
-  - "hello from environments/core/hieradata/bootstrap/foreman"
+  - "environments/core/hieradata/bootstrap/foreman.yaml reporting in"

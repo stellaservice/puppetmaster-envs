@@ -1,0 +1,22 @@
+# %{::app_project} specific defaults
+# Don't put any secrets here, this is a public repo!
+---
+classes:
+  - bsl_core::puppetmaster
+
+python::virtualenv: 'present'
+
+hello_worlds:
+  - "environments/core/hieradata/apps/puppetmaster.yaml reporting in"
+
+jvm_min_heap_size: '512M'
+jvm_max_heap_size: '2G'
+
+hostname: 'puppet'
+domain: 'bitswarm.internal'
+internal_fqdn: 'puppet.bitswarm.internal'
+
+bsl_puppet::server: 'true'
+bsl_puppet::manage_puppetboard: 'true'
+bsl_puppet::manage_r10k_webhooks: 'true'
+bsl_puppet::manage_dependencies: 'true'

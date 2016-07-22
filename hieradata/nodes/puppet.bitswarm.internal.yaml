@@ -1,22 +1,11 @@
+# Overrides applied atop iam/%{::iam_profile_name} and apps/%{::app_project}
 # Don't put any secrets here, this is a public repo!
 ---
-python::virtualenv: 'present'
-
 hello_worlds:
-  - "hello from environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml"
-
-#jvm_min_heap_size: '512M'
-#jvm_max_heap_size: '2G'
+  - "environments/core/hieradata/nodes/puppet.bitswarm.internal.yaml reporting in"
 
 hostname: 'puppet'
-domain: 'bitswarm.internal'
 internal_fqdn: 'puppet.bitswarm.internal'
-
-bsl_puppet::server: 'true'
-bsl_puppet::manage_puppetboard: 'false'
-bsl_puppet::manage_r10k_webhooks: 'true'
-#bsl_puppet::manage_hostname: 'false'
-bsl_puppet::manage_dependencies: 'false'
 
 bsl_puppet::r10k_sources:
   private:

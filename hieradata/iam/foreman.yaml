@@ -1,10 +1,7 @@
+# %{::iam_profile_name} defaults, overrides apps/%{::app_project} but not nodes/%{::trusted.certname}
+# Don't put any secrets here, this is a public repo!
 ---
-classes:
-  - bsl_core::foreman
-
 hello_worlds:
-  - "greetings from iam/foreman.yaml!"
+  - "environments/core/hieradata/iam/foreman.yaml reporting in"
 
 external_fqdn: 'foreman.bitswarm.io'
-
-bsl_puppet::foreman: 'true'

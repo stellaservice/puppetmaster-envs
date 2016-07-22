@@ -2,8 +2,9 @@
 classes:
   - bsl_core::debug
 
+hello_worlds:
+  - "environments/core/hieradata/defaults.yaml reporting in"
+
 puppetmaster: 'puppet.bitswarm.internal'
 domain: 'bitswarm.internal'
 
-hello_worlds:
-  - "hello from environments/core/hieradata/defaults.yaml"
