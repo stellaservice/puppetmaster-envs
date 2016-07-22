@@ -1,7 +1,7 @@
 # First-priority hiera data source
 ---
-classes:
-  - bsl_core::debug
+#classes:
+#  - bsl_core::debug
 
 hello_worlds:
   - 'environments/core/hieradata/global.yaml reporting in'

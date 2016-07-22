@@ -6,8 +6,6 @@ classes:
 
 python::virtualenv: 'present'
 
-bsl_core::debug::message: 'hello world?'
-
 hello_worlds:
   - 'environments/core/hieradata/apps/puppetmaster.yaml reporting in'
 
