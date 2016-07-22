@@ -2,6 +2,6 @@
 # Don't put any secrets here, this is a public repo!
 ---
 hello_worlds:
-  - "environments/core/hieradata/apps/puppetmaster.yaml reporting in"
+  - "environments/core/hieradata/iam/puppetmaster.yaml reporting in"
 
 external_fqdn: 'puppetmaster.bitswarm.io'
