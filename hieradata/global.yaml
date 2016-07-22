@@ -1,4 +1,4 @@
 # Lowest priority global.yaml, include things here which ought to be overridden easily
 ---
 hello_worlds:
-  - "environments/common/hieradata/global.yaml reporting in"
+  - 'environments/common/hieradata/global.yaml reporting in'
