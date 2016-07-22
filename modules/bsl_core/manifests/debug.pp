@@ -20,6 +20,6 @@ class bsl_core::debug(
   $hello_worlds = hiera_array('hello_worlds', [])
   if !empty($hello_worlds) {
     $joined = join($hello_worlds, "\n  - ")
-    notify { "## bsl_core::debug hello_worlds:\n:  - ${joined}": }
+    notify { "## bsl_core::debug hello_worlds:\n  - ${joined}\n\n": }
   }
 }
