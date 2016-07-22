@@ -1,6 +1,0 @@
----
-#classes:
-#  - bsl_core::puppetmaster
-
-hello_worlds:
-  - "environments/core/hieradata/bootstrap/puppetmaster.yaml reporting in"
