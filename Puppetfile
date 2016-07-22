@@ -47,7 +47,7 @@ mod 'puppetlabs/postgresql', '4.7.1'
 mod 'puppetlabs/puppetdb', '5.1.2'
 mod 'puppetlabs/rancher', :latest
 mod 'puppetlabs/reboot', '1.2.1'
-mod 'puppetlabs/ruby', '0.5.0'
+mod 'puppetlabs/ruby', :git => 'https://github.com/bitswarmlabs/puppetlabs-ruby.git'
 mod 'puppetlabs/stdlib', '4.12.0'
 mod 'puppetlabs/vcsrepo', '1.3.2'
 mod 'puppetlabs/xinetd', '2.0.0'
