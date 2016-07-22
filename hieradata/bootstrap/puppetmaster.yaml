@@ -1,5 +1,8 @@
 ---
-bsl_core::debug::message: 'bootstrap (core) won'
+classes:
+  - bsl_core::puppetmaster
+
+bsl_core::debug::message: 'puppetmaster bootstrap (core) won'
 
 hello_worlds:
   - "hello from environments/core/hieradata/bootstrap/puppetmaster"

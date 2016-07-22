@@ -1,3 +1,10 @@
 ---
+classes:
+  - bsl_core::foreman
+
 hello_worlds:
   - "greetings from iam/foreman.yaml!"
+
+external_fqdn: 'foreman.bitswarm.io'
+
+bsl_puppet::foreman: 'true'

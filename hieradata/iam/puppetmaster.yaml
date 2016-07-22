@@ -1,3 +1,8 @@
 ---
+classes:
+  - bsl_core::puppetmaster
+
 hello_worlds:
   - "greetings from iam/puppetmaster.yaml!"
+
+external_fqdn: 'puppetmaster.bitswarm.io'

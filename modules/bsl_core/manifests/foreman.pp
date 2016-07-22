@@ -17,8 +17,8 @@ class bsl_core::foreman(
       include 'bsl_infrastructure'
     }
     else {
-      notify { 'bsl_infrastructure not available for bsl_core::puppetmaster': }
-      err('bsl_infrastructure not available for bsl_core::puppetmaster')
+      notify { 'bsl_infrastructure not available for bsl_core::foreman': }
+      err('bsl_infrastructure not available for bsl_core::foreman')
     }
   }
 }
