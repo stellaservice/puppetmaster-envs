@@ -2,4 +2,4 @@ classes:
   - docker
 
 hello_worlds:
-  - "environments/production/hieradata/docker.yaml reporting in"
+  - 'environments/production/hieradata/docker.yaml reporting in'
