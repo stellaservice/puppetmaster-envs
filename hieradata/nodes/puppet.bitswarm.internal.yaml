@@ -1,4 +1,4 @@
-# Overrides applied atop iam/%{::iam_profile_name} and apps/%{::app_project}
+# Overrides applied atop iam/$::iam_profile_name and apps/$::app_project
 # Don't put any secrets here, this is a public repo!
 ---
 hello_worlds:

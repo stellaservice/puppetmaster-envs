@@ -1,4 +1,4 @@
-# %{::app_project} specific defaults
+# app_project specific defaults
 # Don't put any secrets here, this is a public repo!
 ---
 classes:

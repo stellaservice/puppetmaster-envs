@@ -1,6 +1,6 @@
 ---
-classes:
-  - bsl_core::foreman
+#classes:
+#  - bsl_core::foreman
 
 hello_worlds:
   - "environments/core/hieradata/bootstrap/foreman.yaml reporting in"
