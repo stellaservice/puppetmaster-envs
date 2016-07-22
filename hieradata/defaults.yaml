@@ -1,7 +1,4 @@
 ---
-classes:
-  - bsl_core::debug
-
 hello_worlds:
   - 'environments/core/hieradata/defaults.yaml reporting in'
 
