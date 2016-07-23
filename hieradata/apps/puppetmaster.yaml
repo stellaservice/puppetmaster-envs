@@ -10,7 +10,7 @@ hello_worlds:
   - 'environments/core/hieradata/apps/puppetmaster.yaml reporting in'
 
 jvm_min_heap_size: '512M'
-jvm_max_heap_size: '2G'
+jvm_max_heap_size: '1800M'
 
 hostname: 'puppet'
 domain: 'bitswarm.internal'

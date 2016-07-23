@@ -31,6 +31,13 @@ bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
 
 bsl_core::puppetmaster::manage_infrastructure: false
 
+bsl_infrastructure::accounts:
+  bitswarmlabs:
+    account_id: 'bitswarmlabs'
+    tenant_id: 'bitswarmlabs'
+    type: 'tenant'
+
+
 #bsl_infrastructure::accounts:
 #  bitswarmlabs:
 #    account_id: 'bitswarmlabs'
