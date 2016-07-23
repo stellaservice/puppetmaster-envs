@@ -43,13 +43,14 @@
 # Copyright 2016 Your name here, unless otherwise noted.
 #
 class bsl_infrastructure(
-  $tenants = {},
+  $tenants = undef,
 ) {
   if $::trusted['certname'] != $::server_facts['servername'] {
     fail("bsl_infrastructure can only be utilized by $::server_facts['servername']")
   }
 
-  if !empty($tenants) {
+  if $tenants {
+    validate_hash($tenants)
     create_resources('bsl_infrastructure::tenant', $tenants)
   }
 }
