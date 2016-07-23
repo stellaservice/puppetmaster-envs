@@ -38,7 +38,7 @@ bsl_infrastructure::tenants:
 
     providers:
       aws:
-
+        ensure: present
 
 #bsl_infrastructure::accounts:
 #  bitswarmlabs:
