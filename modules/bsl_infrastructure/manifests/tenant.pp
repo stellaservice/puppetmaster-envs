@@ -12,15 +12,16 @@ define bsl_infrastructure::tenant(
     tenant_id  => $vpc_tenant_id,
   }
 
-  $defaults = {
-    bsl_account_id  => $bsl_account_id,
-    vpc_tenant_id   => $vpc_tenant_id,
-    internal_domain => $internal_domain,
-    puppetmaster    => $puppetmaster,
-  }
-
   if $providers {
     validate_hash($providers)
+
+    $defaults = {
+      bsl_account_id  => $bsl_account_id,
+      vpc_tenant_id   => $vpc_tenant_id,
+      internal_domain => $internal_domain,
+      puppetmaster    => $puppetmaster,
+    }
+
     create_resources('bsl_infrastructure::provider', $providers, $defaults)
   }
 }
