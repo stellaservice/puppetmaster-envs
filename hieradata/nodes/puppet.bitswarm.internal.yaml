@@ -29,13 +29,15 @@ bsl_infrastructure::aws::config::primary_subnet_name: 'us-east-1b.bitswarm.inter
 bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
 bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
 
-bsl_core::puppetmaster::manage_infrastructure: false
+bsl_core::puppetmaster::manage_infrastructure: true
 
-bsl_infrastructure::accounts:
+bsl_infrastructure::tenants:
   bitswarmlabs:
-    account_id: 'bitswarmlabs'
-    tenant_id: 'bitswarmlabs'
-    type: 'tenant'
+    bsl_account_id: bitswarmlabs
+    vpc_tenant_id: bitswarmlabs
+
+    providers:
+      aws:
 
 
 #bsl_infrastructure::accounts:
