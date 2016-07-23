@@ -45,9 +45,7 @@
 class bsl_infrastructure(
   $tenants = undef,
 ) {
-  if $trusted['certname'] != $servername {
-    fail("bsl_infrastructure can only be utilized by $::server_facts['servername']")
-  }
+  include 'bsl_infrastructure::auth'
 
   if $tenants {
     validate_hash($tenants)

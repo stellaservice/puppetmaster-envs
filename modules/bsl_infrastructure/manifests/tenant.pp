@@ -5,7 +5,7 @@ define bsl_infrastructure::tenant(
   $puppetmaster = hiera('puppetmaster', 'puppet'),
   $providers = undef,
 ) {
-  assert_private("${module_name} is private and cannot be invoked directly")
+  include 'bsl_infrastructure::auth'
 
   bsl_account::verify { $name:
     account_id => $bsl_account_id,

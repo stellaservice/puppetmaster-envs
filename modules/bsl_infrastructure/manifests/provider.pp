@@ -7,8 +7,7 @@ define bsl_infrastructure::provider(
   $puppetmaster = hiera('puppetmaster', 'puppet'),
   $config = [],
 ) {
-  assert_private("${module_name} is private and cannot be invoked directly")
-  # notify { "## hello from bsl_infrastructure::provider for account=$account_id tenant=$tenant_id provider=${name}": }
+  include 'bsl_infrastructure::auth'
 
   if str2bool($purge) {
     $_ensure = 'absent'
