@@ -45,7 +45,7 @@
 class bsl_infrastructure(
   $tenants = undef,
 ) {
-  if $::trusted['certname'] != $::server_facts['servername'] {
+  if $trusted['certname'] != $server_facts['servername'] {
     fail("bsl_infrastructure can only be utilized by $::server_facts['servername']")
   }
 
