@@ -136,6 +136,11 @@ define bsl_infrastructure::resource::aws::service::instance(
     ->Ec2_instance[$instance_title]
   }
 
+  if $security_groups {
+    Ec2_securitygroup[$security_groups]
+    ->Ec2_instance[$instance_title]
+  }
+  
   # read only properties:
   #
   # instance_id
