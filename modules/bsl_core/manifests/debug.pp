@@ -22,8 +22,4 @@ class bsl_core::debug(
     $joined = join($hello_worlds, "\n  - ")
     notify { "## bsl_core::debug hello_worlds:\n  - ${joined}\n\n": }
   }
-
-  notify { "server_facts":
-    message => $server_facts,
-  }
 }
