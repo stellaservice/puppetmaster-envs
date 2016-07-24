@@ -1,4 +1,4 @@
-# bsl_infrastructure::resource::aws::service::ec2_instance
+# bsl_infrastructure::resource::aws::service::instance
 # ========================================================
 #
 # Convenience wrapper for managing EC2 instanes
@@ -15,7 +15,7 @@
 #
 # Reuben Avery <ravery@bitswarm.io>
 #
-define bsl_infrastructure::resource::aws::service::ec2_instance(
+define bsl_infrastructure::resource::aws::service::instance(
   # Required
   $ensure = 'running',
   $region,
@@ -47,7 +47,7 @@ define bsl_infrastructure::resource::aws::service::ec2_instance(
 ) {
   $instance_title = "${vpc_tenant_id}_${name}"
 
-  anchor { "bsl_infrastructure::resource::aws::service::ec2_instance[$title]::begin": }
+  anchor { "bsl_infrastructure::resource::aws::service::instance[$title]::begin": }
 
   validate_re($ensure, ['^present','^absent','^running','^stopped'])
   validate_re($region, ['^us\-east\-1', '^us\-west\-1'])
@@ -93,7 +93,7 @@ define bsl_infrastructure::resource::aws::service::ec2_instance(
     $set_user_data = template($user_data_template)
   }
 
-  Anchor["bsl_infrastructure::resource::aws::service::ec2_instance[$title]::begin"]
+  Anchor["bsl_infrastructure::resource::aws::service::instance[$title]::begin"]
   ->
   ec2_instance { $instance_title:
     name => $name,
@@ -134,5 +134,5 @@ define bsl_infrastructure::resource::aws::service::ec2_instance(
   # kernel_id
 
   Ec2_instance[$instance_title]~>
-  anchor { "bsl_infrastructure::resource::aws::service::ec2_instance[$title]::end": }
+  anchor { "bsl_infrastructure::resource::aws::service::instance[$title]::end": }
 }
