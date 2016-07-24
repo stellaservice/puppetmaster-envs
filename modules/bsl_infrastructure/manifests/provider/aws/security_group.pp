@@ -37,6 +37,6 @@ define bsl_infrastructure::provider::aws::security_group(
   }
 
   if $vpc {
-    Ec2_vpc[$vpc]->Ec2_securitygroup[$name]
+    Ec2_vpc[$vpc]->Ec2_securitygroup[$title]
   }
 }
