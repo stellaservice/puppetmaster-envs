@@ -21,7 +21,6 @@ define bsl_infrastructure::tenant(
       bsl_account_id  => $bsl_account_id,
       vpc_tenant_id   => $vpc_tenant_id,
       internal_domain => $internal_domain,
-      puppetmaster    => $puppetmaster,
     }
 
     create_resources('bsl_infrastructure::tenant::provider', $providers, $defaults)
