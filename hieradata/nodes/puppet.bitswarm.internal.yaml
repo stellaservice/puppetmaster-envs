@@ -38,7 +38,6 @@ bsl_infrastructure::tenants:
 
     providers:
       aws:
-        tenant_id: bitswarmlabs
         config:
           services:
             rancher:
@@ -52,6 +51,7 @@ bsl_infrastructure::tenants:
                   key_name: bitswarmlabs
                   security_groups:
                     - default
+                    - rancher_server
                   tags:
                     profile: docker
                     role: rancherserver
