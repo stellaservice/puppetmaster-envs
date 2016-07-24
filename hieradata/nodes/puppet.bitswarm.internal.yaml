@@ -29,7 +29,7 @@ bsl_puppet::r10k_sources:
 #bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
 #bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
 
-bsl_core::puppetmaster::manage_infrastructure: false
+bsl_core::puppetmaster::manage_infrastructure: true
 
 bsl_infrastructure::tenants:
   bitswarmlabs:
