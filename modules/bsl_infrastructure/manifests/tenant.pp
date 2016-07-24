@@ -1,5 +1,5 @@
 define bsl_infrastructure::tenant(
-  $purge = 'false'
+  $purge = 'false',
   $bsl_account_id = $name,
   $vpc_tenant_id = $name,
   $internal_domain = hiera('domain', $::domain),
