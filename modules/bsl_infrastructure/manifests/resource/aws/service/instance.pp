@@ -103,7 +103,7 @@ define bsl_infrastructure::resource::aws::service::instance(
     instance_type => $instance_type,
     security_groups => $security_groups,
     tags => $tags,
-    tenancy => $tenancy,
+    # no parameter defined? -- tenancy => $tenancy,
     user_data => $set_user_data,
     key_name => $key_name,
     monitoring => $monitoring,
