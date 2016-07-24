@@ -40,6 +40,7 @@ class bsl_infrastructure::provider::aws(
     validate_hash($services)
 
     $service_defaults = {
+      purge           => $purge,
       bsl_account_id  => $bsl_account_id,
       vpc_tenant_id   => $vpc_tenant_id,
       require         => Class['bsl_infrastructure::provider::aws::sdk'],

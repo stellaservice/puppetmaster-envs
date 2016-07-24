@@ -8,7 +8,6 @@ define bsl_infrastructure::resource::aws::service(
     validate_hash($instances)
 
     $ec2_instance_defaults = {
-      purge => $purge,
       bsl_account_id => $bsl_account_id,
       vpc_tenant_id => $vpc_tenant_id,
     }
