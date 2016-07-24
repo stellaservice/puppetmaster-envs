@@ -34,10 +34,11 @@ bsl_core::puppetmaster::manage_infrastructure: true
 bsl_infrastructure::providers:
   aws:
     config:
-#      vpcs:
-#        us-east-1-default:
-#          name: default
-#
+      vpcs:
+        us-east-1-default:
+          name: default
+          region: us-east-1
+
       security_groups:
 #        us-east-1-default:
 #          name: default
