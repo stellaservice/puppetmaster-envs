@@ -38,6 +38,7 @@ bsl_infrastructure::providers:
         us-east-1-default:
           name: 'default sg'
           region: us-east-1
+          cidr_block: '172.31.0.0/16'
 
       security_groups:
 #        us-east-1-default:

@@ -1,6 +1,6 @@
 define bsl_infrastructure::provider::aws::vpc(
-  $region = undef,
-  $cidr_block = undef,
+  $region,
+  $cidr_block,
   $dhcp_options = undef,
   $instance_tenancy = undef,
   $tags = undef,
