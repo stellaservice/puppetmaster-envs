@@ -50,7 +50,7 @@ bsl_infrastructure::tenants:
 #                  monitoring: true
                   key_name: bitswarmlabs
                   security_groups:
-                    - default
+                    - sg-2848d34f
 #                    - rancher_server
                   tags:
                     profile: docker
