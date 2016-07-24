@@ -15,13 +15,8 @@ define bsl_infrastructure::provider(
       validate_hash($config)
 
       class { "bsl_infrastructure::provider::${name}":
-        purge             => $purge,
-        bsl_account_id    => $bsl_account_id,
-        vpc_tenant_id     => $vpc_tenant_id,
-        services          => $config['services'],
-        zones             => $config['zones'],
-        vpcs              => $config['vpcs'],
-        require           => Class["bsl_infrastructure::${name}"],
+        security_groups => $config['security_groups'],
+        require         => Class["bsl_infrastructure::${name}"],
       }
     }
   }
