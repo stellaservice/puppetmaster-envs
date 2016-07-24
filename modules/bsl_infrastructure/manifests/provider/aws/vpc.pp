@@ -18,7 +18,8 @@ define bsl_infrastructure::provider::aws::vpc(
     $set_tags = $default_tags
   }
 
-  ec2_vpc { $name:
+  ec2_vpc { $title:
+    name         => $name,
     region       => $region,
     cidr_block   => $cidr_block,
     dhcp_options => $dhcp_options,
