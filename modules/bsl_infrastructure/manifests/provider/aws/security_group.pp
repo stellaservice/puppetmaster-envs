@@ -11,7 +11,7 @@ define bsl_infrastructure::provider::aws::security_group(
   }
 
   $default_tags = {
-    'Name' => $name,
+    'Name'           => $name,
     'puppet_managed' => 'true',
   }
 
@@ -23,12 +23,16 @@ define bsl_infrastructure::provider::aws::security_group(
     $set_tags = $default_tags
   }
 
+  if $vpc {
+    $vpc_name = Ec2_vpc[$vpc]['name']
+  }
+
   ec2_securitygroup { $name:
-    region => $region,
+    region      => $region,
     description => $description,
-    ingress => $ingress,
-    tags => $set_tags,
-    vpc => $vpc,
+    ingress     => $ingress,
+    tags        => $set_tags,
+    vpc         => $vpc_name,
   }
 
   if $vpc {
