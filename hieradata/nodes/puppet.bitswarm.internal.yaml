@@ -52,18 +52,15 @@ bsl_infrastructure::providers:
           tags:
             name: www
           ingress:
-            - ssh:
-                protocol: tcp
-                port: 22,
-                cidr: '0.0.0.0/0'
-            - http:
-                protocol: tcp
-                port: 80,
-                cidr: '0.0.0.0/0'
-            - https:
-                protocol: tcp
-                port: 443,
-                cidr: '0.0.0.0/0'
+            - protocol: tcp
+              port: 22,
+              cidr: '0.0.0.0/0'
+            - protocol: tcp
+              port: 80,
+              cidr: '0.0.0.0/0'
+            - protocol: tcp
+              port: 443,
+              cidr: '0.0.0.0/0'
 
 bsl_infrastructure::tenants:
   bitswarmlabs:
