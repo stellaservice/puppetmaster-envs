@@ -29,16 +29,34 @@ bsl_infrastructure::aws::config::primary_subnet_name: 'us-east-1b.bitswarm.inter
 bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
 bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
 
-bsl_core::puppetmaster::manage_infrastructure: true
+bsl_core::puppetmaster::manage_infrastructure: false
 
 bsl_infrastructure::tenants:
   bitswarmlabs:
+    purge: false
     bsl_account_id: bitswarmlabs
-    vpc_tenant_id: bitswarmlabs
 
     providers:
       aws:
-        ensure: present
+        tenant_id: bitswarmlabs
+        config:
+          services:
+            rancher:
+              ec2_instances:
+                rancher:
+                  region: us-east-1
+                  availability_zone: us-east-1a
+                  image_id: ami-c8800bdf
+                  instance_type: t1.micro
+                  monitoring: true
+                  key_name: bitswarmlabs
+                  security_groups:
+                    - default
+                  tags:
+                    profile: docker
+                    role: rancherserver
+#              elb_loadbalancer: rancher
+#              rds_instance: rancher
 
 #bsl_infrastructure::accounts:
 #  bitswarmlabs:

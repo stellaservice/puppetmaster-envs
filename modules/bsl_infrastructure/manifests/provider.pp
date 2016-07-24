@@ -1,39 +1,30 @@
 define bsl_infrastructure::provider(
   $purge = 'false',
-  $default = 'false',
-  $account_id,
-  $tenant_id = undef,
-  $internal_domain = hiera('domain', $::domain),
-  $puppetmaster = hiera('puppetmaster', 'puppet'),
-  $config = [],
+  $tenant_id,
+  $internal_domain = undef,
+  $puppetmaster = undef,
+  $config = undef,
 ) {
   include 'bsl_infrastructure::auth'
 
-  if str2bool($purge) {
-    $_ensure = 'absent'
-  }
-  else {
-    $_ensure = 'present'
-  }
-
-  validate_string($account_id)
-  validate_hash($config)
-
   if defined("bsl_infrastructure::provider::${name}") {
-    class { "bsl_infrastructure::${name}": }->
-    class { "bsl_infrastructure::provider::${name}":
-      ensure            => $_ensure,
-      default           => $default,
-      account_id        => $account_id,
-      tenant_id         => $tenant_id,
+    class { "bsl_infrastructure::${name}":
       internal_domain   => $internal_domain,
       puppetmaster      => $puppetmaster,
-      services          => $config['services'],
-      zones             => $config['zones'],
-      vpcs              => $config['vpcs'],
-      require           => Bsl_account::Verify[$account_id],
     }
-    contain("bsl_infrastructure::provider::${name}")
+
+    if $config {
+      validate_hash($config)
+
+      class { "bsl_infrastructure::provider::${name}":
+        purge             => $purge,
+        tenant_id         => $tenant_id,
+        services          => $config['services'],
+        zones             => $config['zones'],
+        vpcs              => $config['vpcs'],
+        require           => Class["bsl_infrastructure::${name}"],
+      }
+    }
   }
   else {
     fail("unknown provider: ${name}")

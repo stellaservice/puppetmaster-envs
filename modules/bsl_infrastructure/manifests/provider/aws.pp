@@ -1,14 +1,11 @@
 class bsl_infrastructure::provider::aws(
-  $ensure = 'present',
-  $bsl_account_id,
-  $vpc_tenant_id,
-  $internal_domain = $bsl_infrastructure::provider::aws::params::domain,
+  $purge = 'false',
+  $tenant_id,
   $services = undef,
   $zones = undef,
   $vpcs = undef,
-  $puppetmaster = hiera('puppetmaster', 'puppet'),
 ) inherits bsl_infrastructure::provider::aws::params {
-  assert_private("${module_name} is private and cannot be invoked directly")
+  assert_private("bsl_infrastructure::provider::aws is private and cannot be invoked directly")
 
   require 'bsl_infrastructure::aws'
 
@@ -41,9 +38,9 @@ class bsl_infrastructure::provider::aws(
     validate_hash($services)
 
     $service_defaults = {
-      ensure          => $ensure,
-      account_id      => $account_id,
-      tenant_id       => $tenant_id,
+      purge      => $purge,
+      account_id => $account_id,
+      tenant_id  => $tenant_id,
     }
 
     create_resources('bsl_infrastructure::aws::resource::ec2::service', $services, $service_defaults)
