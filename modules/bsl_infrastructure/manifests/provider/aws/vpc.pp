@@ -6,7 +6,7 @@ define bsl_infrastructure::provider::aws::vpc(
   $tags = undef,
 ) {
   $default_tags = {
-    'Name' => $name,
+    'Name'           => $name,
     'puppet_managed' => 'true',
   }
 
@@ -19,11 +19,10 @@ define bsl_infrastructure::provider::aws::vpc(
   }
 
   ec2_vpc { $name:
-    region => $region,
-    description => $description,
-    ingress => $ingress,
-    tags => $set_tags,
-    vpc => $vpc,
+    region       => $region,
+    cidr_block   => $cidr_block,
+    dhcp_options => $dhcp_options,
+    tags         => $set_tags,
   }
 
   if $vpc {
