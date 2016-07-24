@@ -15,7 +15,7 @@ class bsl_infrastructure::provider::aws(
 
     create_resources('bsl_infrastructure::provider::aws::vpc', $vpcs, $vpc_defaults)
   }
-  
+
   if $security_groups {
     validate_hash($security_groups)
 
