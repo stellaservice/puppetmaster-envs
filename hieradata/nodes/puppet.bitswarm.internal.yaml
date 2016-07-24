@@ -49,8 +49,6 @@ bsl_infrastructure::providers:
           name: www
           description: 'security group for public web servers in us-east-1'
           region: 'us-east-1'
-          tags:
-            name: www
           ingress:
             - protocol: tcp
               port: 22,
