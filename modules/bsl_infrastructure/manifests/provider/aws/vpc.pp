@@ -7,11 +7,12 @@ define bsl_infrastructure::provider::aws::vpc(
 ) {
   $default_tags = {
     'Name' => $name,
+    'puppet_managed' => 'true',
   }
 
   if $tags {
     validate_hash($tags)
-    $set_tags = merge($default_tags, $tags)
+    $set_tags = merge($tags, $default_tags)
   }
   else {
     $set_tags = $default_tags

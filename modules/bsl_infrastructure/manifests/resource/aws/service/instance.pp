@@ -93,6 +93,19 @@ define bsl_infrastructure::resource::aws::service::instance(
     $set_user_data = template($user_data_template)
   }
 
+  $default_tags = {
+    'Name' => $name,
+    'puppet_managed' => 'true',
+  }
+
+  if $tags {
+    validate_hash($tags)
+    $set_tags = merge($tags, $default_tags)
+  }
+  else {
+    $set_tags = $default_tags
+  }
+
   Anchor["bsl_infrastructure::resource::aws::service::instance[$title]::begin"]
   ->
   ec2_instance { $instance_title:
@@ -102,7 +115,7 @@ define bsl_infrastructure::resource::aws::service::instance(
     image_id => $set_image_id,
     instance_type => $instance_type,
     security_groups => $security_groups,
-    tags => $tags,
+    tags => $set_tags,
     # no parameter defined? -- tenancy => $tenancy,
     user_data => $set_user_data,
     key_name => $key_name,

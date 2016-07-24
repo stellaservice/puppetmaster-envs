@@ -15,6 +15,7 @@ define bsl_infrastructure::provider(
       validate_hash($config)
 
       class { "bsl_infrastructure::provider::${name}":
+        vpcs            => $config['vpcs'],
         security_groups => $config['security_groups'],
         require         => Class["bsl_infrastructure::${name}"],
       }
