@@ -34,6 +34,10 @@ bsl_core::puppetmaster::manage_infrastructure: true
 bsl_infrastructure::providers:
   aws:
     config:
+#      vpcs:
+#        us-east-1-default:
+#          name: default
+#
       security_groups:
 #        us-east-1-default:
 #          name: default
@@ -79,7 +83,7 @@ bsl_infrastructure::tenants:
 #                  monitoring: true
                   key_name: bitswarmlabs
                   security_groups:
-                    - www
+                    - us-east-1-www
 #                    - rancher_server
                   tags:
                     profile: docker
