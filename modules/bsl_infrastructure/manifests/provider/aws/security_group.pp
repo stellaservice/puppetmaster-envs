@@ -27,7 +27,8 @@ define bsl_infrastructure::provider::aws::security_group(
     $vpc_name = Ec2_vpc[$vpc]['name']
   }
 
-  ec2_securitygroup { $name:
+  ec2_securitygroup { $title:
+    name        => $name,
     region      => $region,
     description => $description,
     ingress     => $ingress,
