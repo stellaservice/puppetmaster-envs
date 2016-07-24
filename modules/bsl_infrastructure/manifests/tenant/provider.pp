@@ -2,6 +2,7 @@ define bsl_infrastructure::tenant::provider(
   $purge = 'false',
   $bsl_account_id,
   $vpc_tenant_id,
+  $internal_domain = $::domain,
   $config = undef,
 ) {
   include 'bsl_infrastructure::auth'
@@ -14,6 +15,7 @@ define bsl_infrastructure::tenant::provider(
         purge             => $purge,
         bsl_account_id    => $bsl_account_id,
         vpc_tenant_id     => $vpc_tenant_id,
+        internal_domain   => $internal_domain,
         services          => $config['services'],
         zones             => $config['zones'],
         vpcs              => $config['vpcs'],
