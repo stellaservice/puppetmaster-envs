@@ -8,7 +8,7 @@ class bsl_infrastructure::tenant::provider::aws(
 ) {
   assert_private("bsl_infrastructure::tenant::provider::aws is private and cannot be invoked directly")
 
-  include 'bsl_infrastructure::provider::aws::sdk'
+  include 'bsl_infrastructure::aws'
 
   if $vpcs {
     validate_hash($vpcs)
@@ -17,7 +17,7 @@ class bsl_infrastructure::tenant::provider::aws(
       purge           => $purge,
       bsl_account_id  => $bsl_account_id,
       vpc_tenant_id   => $vpc_tenant_id,
-      internal_domain => $internal_domain,
+      internal_domain => $bsl_infrastructure::aws::internal_domain,
       services        => $services,
       zones           => $zones,
       require         => Class['bsl_infrastructure::provider::aws::sdk'],
