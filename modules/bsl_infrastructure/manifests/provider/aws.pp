@@ -5,7 +5,7 @@ class bsl_infrastructure::provider::aws(
   $services = undef,
   $zones = undef,
   $vpcs = undef,
-) inherits bsl_infrastructure::provider::aws::params {
+) {
   assert_private("bsl_infrastructure::provider::aws is private and cannot be invoked directly")
 
   include 'bsl_infrastructure::provider::aws::sdk'
