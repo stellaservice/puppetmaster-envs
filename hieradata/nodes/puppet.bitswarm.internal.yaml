@@ -23,11 +23,11 @@ bsl_puppet::r10k_sources:
     project: 'bitswarmlabs/puppetmaster-envs'
     manage_deploy_key: false
 
-bsl_infrastructure::aws::config::domain: 'bitswarm.internal'
-bsl_infrastructure::aws::config::vpc_name: 'bitswarm.internal vpc'
-bsl_infrastructure::aws::config::primary_subnet_name: 'us-east-1b.bitswarm.internal'
-bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
-bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
+#bsl_infrastructure::aws::config::domain: 'bitswarm.internal'
+#bsl_infrastructure::aws::config::vpc_name: 'bitswarm.internal vpc'
+#bsl_infrastructure::aws::config::primary_subnet_name: 'us-east-1b.bitswarm.internal'
+#bsl_infrastructure::aws::config::route_table_name: 'bitswarm'
+#bsl_infrastructure::aws::config::gateway_name: 'bitswarm.internal'
 
 bsl_core::puppetmaster::manage_infrastructure: false
 
@@ -41,21 +41,21 @@ bsl_infrastructure::tenants:
         config:
           services:
             rancher:
-              ec2_instances:
+              instances:
                 rancher:
                   region: us-east-1
-                  availability_zone: us-east-1a
-                  image_id: ami-c8800bdf
-                  instance_type: t1.micro
-                  monitoring: true
+#                  availability_zone: us-east-1a
+#                  image_id: ami-c8800bdf
+                  instance_type: t1.small
+#                  monitoring: true
                   key_name: bitswarmlabs
                   security_groups:
                     - default
-                    - rancher_server
+#                    - rancher_server
                   tags:
                     profile: docker
                     role: rancherserver
-#              elb_loadbalancer: rancher
+#              elastic_loadbalancer: rancher
 #              rds_instance: rancher
 
 #bsl_infrastructure::accounts:

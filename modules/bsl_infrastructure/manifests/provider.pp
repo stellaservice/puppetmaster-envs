@@ -1,6 +1,7 @@
 define bsl_infrastructure::provider(
   $purge = 'false',
-  $tenant_id,
+  $bsl_account_id,
+  $vpc_tenant_id,
   $internal_domain = undef,
   $puppetmaster = undef,
   $config = undef,
@@ -18,7 +19,8 @@ define bsl_infrastructure::provider(
 
       class { "bsl_infrastructure::provider::${name}":
         purge             => $purge,
-        tenant_id         => $tenant_id,
+        bsl_account_id    => $bsl_account_id,
+        vpc_tenant_id     => $vpc_tenant_id,
         services          => $config['services'],
         zones             => $config['zones'],
         vpcs              => $config['vpcs'],

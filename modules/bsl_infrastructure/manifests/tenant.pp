@@ -8,10 +8,10 @@ define bsl_infrastructure::tenant(
 ) {
   include 'bsl_infrastructure::auth'
 
-  bsl_account::verify { $name:
-    account_id => $bsl_account_id,
-    tenant_id  => $vpc_tenant_id,
-  }
+  # bsl_account::verify { $name:
+  #   account_id => $bsl_account_id,
+  #   tenant_id  => $vpc_tenant_id,
+  # }
 
   if $providers {
     validate_hash($providers)

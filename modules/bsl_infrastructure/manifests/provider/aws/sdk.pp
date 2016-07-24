@@ -1,8 +1,8 @@
-class bsl_infrastructure::aws::sdk(
+class bsl_infrastructure::provider::aws::sdk(
   $aws_sdk_gem_version = present,
   $retries_gem_version = present,
 ) {
-  assert_private("${module_name} is private and cannot be invoked directly")
+  assert_private("bsl_infrastructure::provider::aws::sdk is private and cannot be invoked directly")
 
   # If we're on Amazon we've got the ruby sdk in an rpm. Otherwise we'll get
   # it via gems.

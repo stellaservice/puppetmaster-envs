@@ -1,48 +1,51 @@
 class bsl_infrastructure::provider::aws(
   $purge = 'false',
-  $tenant_id,
+  $bsl_account_id,
+  $vpc_tenant_id,
   $services = undef,
   $zones = undef,
   $vpcs = undef,
 ) inherits bsl_infrastructure::provider::aws::params {
   assert_private("bsl_infrastructure::provider::aws is private and cannot be invoked directly")
 
-  require 'bsl_infrastructure::aws'
+  include 'bsl_infrastructure::provider::aws::sdk'
 
   if $vpcs {
     validate_hash($vpcs)
 
     $vpc_defaults = {
-      ensure          => $ensure,
-      account_id      => $bsl_account_id,
-      tenant_id       => $vpc_tenant_id,
+      purge           => $purge,
+      bsl_account_id  => $bsl_account_id,
+      vpc_tenant_id   => $vpc_tenant_id,
       internal_domain => $internal_domain,
       services        => $services,
       zones           => $zones,
+      require         => Class['bsl_infrastructure::provider::aws::sdk'],
     }
 
-    create_resources('bsl_infrastructure::aws::resource::vpc', $vpcs, $vpc_defaults)
+    create_resources('bsl_infrastructure::resource::aws::vpc', $vpcs, $vpc_defaults)
   }
 
   if $zones {
     validate_hash($zones)
 
     $zone_defaults = {
-      ensure => 'present',
+      require         => Class['bsl_infrastructure::provider::aws::sdk'],
     }
 
-    create_resources('bsl_infrastructure::aws::resource::route53::zone', $zones, $zone_defaults)
+    create_resources('bsl_infrastructure::resource::aws::zone', $zones, $zone_defaults)
   }
 
   if $services {
     validate_hash($services)
 
     $service_defaults = {
-      purge      => $purge,
-      account_id => $account_id,
-      tenant_id  => $tenant_id,
+      purge           => $purge,
+      bsl_account_id  => $bsl_account_id,
+      vpc_tenant_id   => $vpc_tenant_id,
+      require         => Class['bsl_infrastructure::provider::aws::sdk'],
     }
 
-    create_resources('bsl_infrastructure::aws::resource::ec2::service', $services, $service_defaults)
+    create_resources('bsl_infrastructure::resource::aws::service', $services, $service_defaults)
   }
 }
