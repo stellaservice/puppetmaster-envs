@@ -43,9 +43,15 @@
 # Copyright 2016 Your name here, unless otherwise noted.
 #
 class bsl_infrastructure(
+  $providers = undef,
   $tenants = undef,
 ) {
   include 'bsl_infrastructure::auth'
+
+  if $providers {
+    validate_hash($providers)
+    create_resources('bsl_infrastructure::provider', $providers)
+  }
 
   if $tenants {
     validate_hash($tenants)

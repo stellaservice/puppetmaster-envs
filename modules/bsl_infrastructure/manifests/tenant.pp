@@ -24,6 +24,6 @@ define bsl_infrastructure::tenant(
       puppetmaster    => $puppetmaster,
     }
 
-    create_resources('bsl_infrastructure::provider', $providers, $defaults)
+    create_resources('bsl_infrastructure::tenant::provider', $providers, $defaults)
   }
 }

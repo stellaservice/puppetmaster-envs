@@ -1,51 +1,17 @@
 class bsl_infrastructure::provider::aws(
-  $purge = 'false',
-  $bsl_account_id,
-  $vpc_tenant_id,
-  $services = undef,
-  $zones = undef,
-  $vpcs = undef,
+  $security_groups = undef,
 ) {
   assert_private("bsl_infrastructure::provider::aws is private and cannot be invoked directly")
 
   include 'bsl_infrastructure::provider::aws::sdk'
 
-  if $vpcs {
-    validate_hash($vpcs)
+  if $security_groups {
+    validate_hash($security_groups)
 
-    $vpc_defaults = {
-      purge           => $purge,
-      bsl_account_id  => $bsl_account_id,
-      vpc_tenant_id   => $vpc_tenant_id,
-      internal_domain => $internal_domain,
-      services        => $services,
-      zones           => $zones,
-      require         => Class['bsl_infrastructure::provider::aws::sdk'],
+    $sg_defaults = {
+      require => Class['bsl_infrastructure::provider::aws::sdk'],
     }
 
-    create_resources('bsl_infrastructure::resource::aws::vpc', $vpcs, $vpc_defaults)
-  }
-
-  if $zones {
-    validate_hash($zones)
-
-    $zone_defaults = {
-      require         => Class['bsl_infrastructure::provider::aws::sdk'],
-    }
-
-    create_resources('bsl_infrastructure::resource::aws::zone', $zones, $zone_defaults)
-  }
-
-  if $services {
-    validate_hash($services)
-
-    $service_defaults = {
-      purge           => $purge,
-      bsl_account_id  => $bsl_account_id,
-      vpc_tenant_id   => $vpc_tenant_id,
-      require         => Class['bsl_infrastructure::provider::aws::sdk'],
-    }
-
-    create_resources('bsl_infrastructure::resource::aws::service', $services, $service_defaults)
+    create_resources('bsl_infrastructure::provider::aws::security_group', $security_groups, $sg_defaults)
   }
 }

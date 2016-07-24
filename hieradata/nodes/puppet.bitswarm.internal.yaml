@@ -31,6 +31,38 @@ bsl_puppet::r10k_sources:
 
 bsl_core::puppetmaster::manage_infrastructure: true
 
+bsl_infrastructure::providers:
+  aws:
+    config:
+      security_groups:
+#        us-east-1-default:
+#          name: default
+#          description: 'default security group for us-east-1'
+#          region: 'us-east-1'
+#          ingress:
+#            - ssh:
+#                protocol: tcp
+#                port: 22,
+#                cidr: '0.0.0.0/0'
+
+        us-east-1-www:
+          name: www
+          description: 'security group for public web servers in us-east-1'
+          region: 'us-east-1'
+          ingress:
+            - ssh:
+                protocol: tcp
+                port: 22,
+                cidr: '0.0.0.0/0'
+            - http:
+                protocol: tcp
+                port: 80,
+                cidr: '0.0.0.0/0'
+            - https:
+                protocol: tcp
+                port: 443,
+                cidr: '0.0.0.0/0'
+
 bsl_infrastructure::tenants:
   bitswarmlabs:
     purge: false
@@ -50,7 +82,7 @@ bsl_infrastructure::tenants:
 #                  monitoring: true
                   key_name: bitswarmlabs
                   security_groups:
-                    - sg-2848d34f
+                    - www
 #                    - rancher_server
                   tags:
                     profile: docker
