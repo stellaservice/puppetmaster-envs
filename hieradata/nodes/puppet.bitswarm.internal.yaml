@@ -36,7 +36,7 @@ bsl_infrastructure::providers:
     config:
       vpcs:
         us-east-1-default:
-          name: 'default vpc'
+          name: default
           region: us-east-1
 
       security_groups:
@@ -54,7 +54,7 @@ bsl_infrastructure::providers:
           name: www
           description: 'security group for public web servers in us-east-1'
           region: 'us-east-1'
-          vpc: 'us-east-1-default'
+          vpc: default
           ingress:
             - protocol: tcp
               port: 22,
