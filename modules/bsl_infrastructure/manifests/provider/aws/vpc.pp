@@ -18,7 +18,7 @@ define bsl_infrastructure::provider::aws::vpc(
     $set_tags = $default_tags
   }
 
-  ec2_securitygroup { $name:
+  ec2_vpc { $name:
     region => $region,
     description => $description,
     ingress => $ingress,
