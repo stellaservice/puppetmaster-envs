@@ -18,7 +18,7 @@ define bsl_infrastructure::provider::aws::iam_policy(
   iam_policy { $title:
     ensure   => $ensure,
     name     => $name,
-    document => $document_template,
+    document => $document,
   }
 
   if $vpc {
