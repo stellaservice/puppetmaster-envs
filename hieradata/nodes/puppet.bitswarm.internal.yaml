@@ -42,18 +42,18 @@ bsl_infrastructure::providers:
           tags:
             description: 'default vpc for us-east-1'
           subnets:
-            default_us-east-1b:
-              name: 'default_us-east-1b'
-              availability_zone: us-east-1b
-              cidr_block: '172.31.48.0/20'
-            default_us-east-1c:
-              name: 'default_us-east-1c'
-              availability_zone: us-east-1c
-              cidr_block: '172.31.0.0/20'
-            default_us-east-1d:
-              name: 'default_us-east-1d'
-              availability_zone: us-east-1d
-              cidr_block: '172.31.16.0/20'
+#            default_us-east-1b:
+#              name: 'default_us-east-1b'
+#              availability_zone: us-east-1b
+#              cidr_block: '172.31.48.0/20'
+#            default_us-east-1c:
+#              name: 'default_us-east-1c'
+#              availability_zone: us-east-1c
+#              cidr_block: '172.31.0.0/20'
+#            default_us-east-1d:
+#              name: 'default_us-east-1d'
+#              availability_zone: us-east-1d
+#              cidr_block: '172.31.16.0/20'
             default_us-east-1e:
               name: 'default_us-east-1e'
               availability_zone: us-east-1e
@@ -99,7 +99,7 @@ bsl_infrastructure::tenants:
               instances:
                 rancher:
                   region: us-east-1
-#                  availability_zone: us-east-1a
+                  availability_zone: us-east-1e
 #                  image_id: ami-c8800bdf
                   instance_type: t1.small
 #                  monitoring: true
