@@ -170,7 +170,6 @@ Puppet::Type.type(:ec2_instance).provide(:v2, :parent => PuppetX::Puppetlabs::Aw
       {name: 'group-name', values: groups},
     ]).each do |response|
       response.security_groups.each do |sg|
-        puts "-- #{sg.vpc_id}: #{sg}"
         classic_groups.push(sg) if sg.vpc_id.nil?
         (vpc_groups[sg.vpc_id] ||= []).push(sg) if sg.vpc_id
       end
