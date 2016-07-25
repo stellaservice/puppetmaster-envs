@@ -20,15 +20,13 @@ define bsl_infrastructure::provider::aws::vpc_subnet(
     $set_tags = $default_tags
   }
 
-  ec2_vpc { $title:
-    name         => $name,
-    region       => $region,
-    cidr_block   => $cidr_block,
-    dhcp_options => $dhcp_options,
-    tags         => $set_tags,
-  }
-
-  if $vpc {
-    Ec2_vpc[$vpc]->Ec2_securitygroup[$name]
+  ec2_vpc_subnet { $title:
+    name              => $name,
+    region            => $region,
+    cidr_block        => $cidr_block,
+    availability_zone => $availability_zone,
+    tags              => $set_tags,
+    route_table       => $route_table,
+    routes            => $routes,
   }
 }
