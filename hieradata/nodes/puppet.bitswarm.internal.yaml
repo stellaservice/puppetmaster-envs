@@ -41,6 +41,8 @@ bsl_infrastructure::providers:
           cidr_block: '172.31.0.0/16'
           tags:
             description: 'default vpc for us-east-1'
+          subnets:
+            default_us-east-1b:
 
       security_groups:
 #        us-east-1-default:

@@ -1,10 +1,11 @@
-define bsl_infrastructure::provider::aws::vpc(
+define bsl_infrastructure::provider::aws::vpc_subnet(
   $region,
-  $cidr_block,
-  $dhcp_options = undef,
-  $instance_tenancy = undef,
+  $vpc = undef,
+  $cidr_block = undef,
+  $availability_zone = undef,
   $tags = undef,
-  $subnets = undef,
+  $route_table = undef,
+  $routes = undef,
 ) {
   $default_tags = {
     'Name'           => $name,
@@ -29,17 +30,5 @@ define bsl_infrastructure::provider::aws::vpc(
 
   if $vpc {
     Ec2_vpc[$vpc]->Ec2_securitygroup[$name]
-  }
-
-  if $subnets {
-    validate_hash($subnets)
-
-    $vpc_subnet_defaults = {
-      vpc     => $name,
-      region  => $region,
-      require => Ec2_vpc[$title],
-    }
-
-    create_resources('bsl_infrastructure::provider::aws::vpc_subnet', $subnets, $vpc_subnet_defaults)
   }
 }
