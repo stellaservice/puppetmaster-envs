@@ -27,6 +27,6 @@ define bsl_infrastructure::provider::aws::vpc_subnet(
     availability_zone => $availability_zone,
     tags              => $set_tags,
     route_table       => $route_table,
-    routes            => $routes,
+    # routes            => $routes,
   }
 }
