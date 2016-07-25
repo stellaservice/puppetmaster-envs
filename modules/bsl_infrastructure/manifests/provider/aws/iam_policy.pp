@@ -13,6 +13,8 @@ define bsl_infrastructure::provider::aws::iam_policy(
     fail 'not sure what you want me to do here, need either $document_contents or $document_template path'
   }
 
+  notify { "bsl_infrastructure::provider::aws::iam_policy[${title}] ensure=${ensure}": }
+  ->
   iam_policy { $title:
     ensure   => $ensure,
     name     => $name,
