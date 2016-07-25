@@ -94,7 +94,9 @@ define bsl_infrastructure::resource::aws::service::instance(
   }
 
   $default_tags = {
-    'Name' => $name,
+    'Name'           => $name,
+    'bsl_account_id' => $bsl_account_id,
+    'vpc_tenant_id'  => $vpc_tenant_id,
     'puppet_managed' => 'true',
   }
 
@@ -109,26 +111,26 @@ define bsl_infrastructure::resource::aws::service::instance(
   Anchor["bsl_infrastructure::resource::aws::service::instance[$title]::begin"]
   ->
   ec2_instance { $instance_title:
-    name => $name,
-    ensure => $ensure,
-    region => $region,
-    image_id => $set_image_id,
-    instance_type => $instance_type,
-    security_groups => $security_groups,
-    tags => $set_tags,
+    name                                 => $name,
+    ensure                               => $ensure,
+    region                               => $region,
+    image_id                             => $set_image_id,
+    instance_type                        => $instance_type,
+    security_groups                      => $security_groups,
+    tags                                 => $set_tags,
     # no parameter defined? -- tenancy => $tenancy,
-    user_data => $set_user_data,
-    key_name => $key_name,
-    monitoring => $monitoring,
-    availability_zone => $availability_zone,
-    private_ip_address => $private_ip_address,
-    associate_public_ip_address => $associate_public_ip_address,
-    subnet => $subnet,
-    ebs_optimized => $ebs_optimized,
+    user_data                            => $set_user_data,
+    key_name                             => $key_name,
+    monitoring                           => $monitoring,
+    availability_zone                    => $availability_zone,
+    private_ip_address                   => $private_ip_address,
+    associate_public_ip_address          => $associate_public_ip_address,
+    subnet                               => $subnet,
+    ebs_optimized                        => $ebs_optimized,
     instance_initiated_shutdown_behavior => $instance_initiated_shutdown_behavior,
-    block_devices => $block_devices,
-    iam_instance_profile_name => $iam_instance_profile_name,
-    iam_instance_profile_arn => $iam_instance_profile_arn,
+    block_devices                        => $block_devices,
+    iam_instance_profile_name            => $iam_instance_profile_name,
+    iam_instance_profile_arn             => $iam_instance_profile_arn,
   }
 
   if $subnet {

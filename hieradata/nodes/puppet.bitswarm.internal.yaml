@@ -103,7 +103,7 @@ bsl_infrastructure::tenants:
 #                  image_id: ami-c8800bdf
                   instance_type: t2.small
 #                  monitoring: true
-                  key_name: bitswarmlabs
+                  key_name: bitswarmops
                   security_groups:
                     - www
 #                    - rancher_server
