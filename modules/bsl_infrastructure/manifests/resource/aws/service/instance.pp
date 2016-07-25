@@ -140,7 +140,7 @@ define bsl_infrastructure::resource::aws::service::instance(
     Ec2_securitygroup[$security_groups]
     ->Ec2_instance[$instance_title]
   }
-  
+
   # read only properties:
   #
   # instance_id
@@ -151,6 +151,6 @@ define bsl_infrastructure::resource::aws::service::instance(
   # public_dns_name
   # kernel_id
 
-  Ec2_instance[$instance_title]~>
+  Ec2_instance <| region == $region |> ~>
   anchor { "bsl_infrastructure::resource::aws::service::instance[$title]::end": }
 }
