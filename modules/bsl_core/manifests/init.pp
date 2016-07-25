@@ -11,7 +11,7 @@ class bsl_core(
   $ec2_instance_id = $::ec2_metadata['instance-id']
   $puppetmaster_fqdn = hiera('puppetmaster', 'puppet')
 
-  if !empty($::ec2_metadata['iam']['info']) {
+  if $::ec2_metadata['iam']['info'] {
     $iam_info = parsejson($::ec2_metadata['iam']['info'])
     $iam_arn = $iam_info['InstanceProfileArn']
     $iam_profile_id = $iam_info['InstanceProfileId']
