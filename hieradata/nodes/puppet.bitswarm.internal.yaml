@@ -99,7 +99,7 @@ bsl_infrastructure::tenants:
               instances:
                 rancher:
                   region: us-east-1
-                  availability_zone: us-east-1e
+                  subnet: default_us-east-1e
 #                  image_id: ami-c8800bdf
                   instance_type: t1.small
 #                  monitoring: true
