@@ -45,15 +45,17 @@
 class bsl_infrastructure(
   $providers = undef,
   $tenants = undef,
+  $manage_providers = 'true',
+  $manage_tenants = 'true',
 ) {
   include 'bsl_infrastructure::auth'
 
-  if $providers {
+  if $providers and str2bool($manage_providers) {
     validate_hash($providers)
     create_resources('bsl_infrastructure::provider', $providers)
   }
 
-  if $tenants {
+  if $tenants and str2bool($manage_tenants) {
     validate_hash($tenants)
     create_resources('bsl_infrastructure::tenant', $tenants)
   }

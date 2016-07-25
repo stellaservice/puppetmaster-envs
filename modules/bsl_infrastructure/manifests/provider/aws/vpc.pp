@@ -1,4 +1,5 @@
 define bsl_infrastructure::provider::aws::vpc(
+  $ensure = 'present',
   $region,
   $cidr_block,
   $dhcp_options = undef,
@@ -20,6 +21,7 @@ define bsl_infrastructure::provider::aws::vpc(
   }
 
   ec2_vpc { $title:
+    ensure       => $ensure,
     name         => $name,
     region       => $region,
     cidr_block   => $cidr_block,
@@ -36,6 +38,7 @@ define bsl_infrastructure::provider::aws::vpc(
 
     $vpc_subnet_defaults = {
       vpc     => $name,
+      ensure  => $ensure,
       region  => $region,
       require => Ec2_vpc[$title],
     }

@@ -1,4 +1,5 @@
 define bsl_infrastructure::provider::aws::vpc_subnet(
+  $ensure = 'present',
   $region,
   $vpc = undef,
   $cidr_block = undef,
@@ -21,6 +22,7 @@ define bsl_infrastructure::provider::aws::vpc_subnet(
   }
 
   ec2_vpc_subnet { $title:
+    ensure            => $ensure,
     name              => $name,
     region            => $region,
     cidr_block        => $cidr_block,

@@ -1,6 +1,7 @@
 class bsl_infrastructure::provider::aws(
   $vpcs = undef,
   $security_groups = undef,
+  $iam_policies = undef,
 ) {
   assert_private("bsl_infrastructure::provider::aws is private and cannot be invoked directly")
 
@@ -24,5 +25,11 @@ class bsl_infrastructure::provider::aws(
     }
 
     create_resources('bsl_infrastructure::provider::aws::security_group', $security_groups, $sg_defaults)
+  }
+
+  if $iam_policies {
+    validate_hash($iam_policies)
+
+    create_resources('bsl_infrastructure::provider::aws::iam_policy', $iam_policies)
   }
 }
