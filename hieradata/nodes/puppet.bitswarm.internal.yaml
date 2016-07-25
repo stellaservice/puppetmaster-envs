@@ -139,9 +139,12 @@ bsl_infrastructure::providers:
       iam_policies:
         default:
           document_template: 'bsl_infrastructure/iam/policies/default.erb'
+          roles:
+            - bitswarm-ops
 
         infrastructure-mgmt:
           document_template: 'bsl_infrastructure/iam/policies/infrastructure-mgmt.erb'
+
 
 bsl_infrastructure::manage_tenants: false
 bsl_infrastructure::tenants:

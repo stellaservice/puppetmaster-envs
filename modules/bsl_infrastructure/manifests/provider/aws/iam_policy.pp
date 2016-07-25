@@ -2,6 +2,10 @@ define bsl_infrastructure::provider::aws::iam_policy(
   $ensure = 'present',
   $document_contents = undef,
   $document_template = undef,
+  $users = undef,
+  $groups = undef,
+  $roles = undef,
+
 ) {
   if $document_contents {
     $document = $document_contents
@@ -13,27 +17,27 @@ define bsl_infrastructure::provider::aws::iam_policy(
     fail 'not sure what you want me to do here, need either $document_contents or $document_template path'
   }
 
-  notify { "bsl_infrastructure::provider::aws::iam_policy[${title}] ensure=${ensure}": }
-  ->
   iam_policy { $title:
     ensure   => $ensure,
     name     => $name,
     document => $document,
   }
 
-  if $vpc {
-    Ec2_vpc[$vpc]->Ec2_securitygroup[$name]
-  }
-
-  if $subnets {
-    validate_hash($subnets)
-
-    $vpc_subnet_defaults = {
-      vpc     => $name,
-      region  => $region,
-      require => Ec2_vpc[$title],
+  if $users or $groups or $roles {
+    if $users {
+      validate_array($users)
+    }
+    if $groups {
+      validate_array($groups)
+    }
+    if $roles {
+      validate_array($roles)
     }
 
-    create_resources('bsl_infrastructure::provider::aws::vpc_subnet', $subnets, $vpc_subnet_defaults)
+    iam_policy_attachment { $title:
+      users  => $users,
+      groups => $groups,
+      roles  => $roles,
+    }
   }
 }
