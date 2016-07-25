@@ -3,5 +3,5 @@
 mkdir -p /etc/facter/facts.d
 echo '---' > /etc/facter/facts.d/bsl_tenant.yaml
 echo 'bsl_account_id: <%= @bsl_account_id %>' >> /etc/facter/facts.d/bsl_tenant.yaml
-echo 'vpc_tenant_id: <%= @avpc_tenant_id %>' >> /etc/facter/facts.d/bsl_tenant.yaml
+echo 'vpc_tenant_id: <%= @vpc_tenant_id %>' >> /etc/facter/facts.d/bsl_tenant.yaml
 echo 'environment: <%= @puppet_environment %>' >> /etc/facter/facts.d/bsl_tenant.yaml

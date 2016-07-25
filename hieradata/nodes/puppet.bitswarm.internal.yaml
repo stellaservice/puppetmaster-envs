@@ -99,10 +99,8 @@ bsl_infrastructure::tenants:
               instances:
                 rancher:
                   region: us-east-1
-                  subnet: default_us-east-1e
-#                  image_id: ami-c8800bdf
+                  subnet: default_us-east-1b
                   instance_type: t2.small
-#                  monitoring: true
                   key_name: bitswarmops
                   security_groups:
                     - www
@@ -110,8 +108,6 @@ bsl_infrastructure::tenants:
                   tags:
                     profile: docker
                     role: rancher_server
-#              elastic_loadbalancer: rancher
-#              rds_instance: rancher
 
 #bsl_infrastructure::accounts:
 #  bitswarmlabs:
