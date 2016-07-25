@@ -151,6 +151,6 @@ define bsl_infrastructure::resource::aws::service::instance(
   # public_dns_name
   # kernel_id
 
-  Ec2_instance <| region == $region |> ~>
+  Ec2_instance[$instance_title]~>
   anchor { "bsl_infrastructure::resource::aws::service::instance[$title]::end": }
 }
