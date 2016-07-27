@@ -9,7 +9,7 @@ class devbox {
     domain => 'bitswarm.io'
   }
 
-  package { 'rdebug-ide':
-    ensure => installed,
-  }
+  # package { 'rdebug-ide':
+  #   ensure => installed,
+  # }
 }
