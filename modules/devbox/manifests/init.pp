@@ -1,6 +1,8 @@
 class devbox {
   notify { "## hello from devbox!": }
-  include apt::update
+
+  include apt
+
 
   class { 'hostname':
     hostname => 'devbox',
