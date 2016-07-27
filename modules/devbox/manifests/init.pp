@@ -3,8 +3,8 @@ class devbox {
 
   include apt
   include '::rvm'
-  rvm::system_user { 'ravery': }
-  
+  rvm::system_user { 'ravery': create => false }
+
   class { 'hostname':
     hostname => 'devbox',
     domain => 'bitswarm.io'
