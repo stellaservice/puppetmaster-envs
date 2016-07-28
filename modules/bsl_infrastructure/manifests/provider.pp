@@ -17,6 +17,7 @@ define bsl_infrastructure::provider(
       class { "bsl_infrastructure::provider::${name}":
         vpcs            => $config['vpcs'],
         security_groups => $config['security_groups'],
+        iam_roles       => $config['iam_roles'],
         iam_policies    => $config['iam_policies'],
         require         => Class["bsl_infrastructure::${name}"],
       }

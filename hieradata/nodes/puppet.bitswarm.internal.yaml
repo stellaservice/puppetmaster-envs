@@ -139,7 +139,7 @@ bsl_infrastructure::providers:
       iam_roles:
         bitswarmlabs-rancher-prod:
           ensure: present
-          
+
       iam_policies:
         default:
           document_template: 'bsl_infrastructure/iam/policies/default.erb'
@@ -167,7 +167,7 @@ bsl_infrastructure::tenants:
                   subnet: default_us-east-1b
                   instance_type: t2.small
                   key_name: bitswarmops
-                  iam_profile: bitswarmlabs-ops
+                  iam_profile: bitswarmlabs-rancher-prod
                   security_groups:
                     - www
                     - rancher_server
