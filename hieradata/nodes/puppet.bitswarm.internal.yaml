@@ -172,7 +172,7 @@ bsl_infrastructure::tenants:
                   iam_instance_profile_name: bitswarmlabs-rancher-prod
                   security_groups:
                     - www
-                    - rancher_server
+                    - rancher-server
                   tags:
                     profile: docker
                     role: rancher_server
