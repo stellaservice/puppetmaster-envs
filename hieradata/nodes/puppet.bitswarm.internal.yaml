@@ -144,10 +144,12 @@ bsl_infrastructure::providers:
         default:
           document_template: 'bsl_infrastructure/iam/policies/default.erb'
           roles:
-            - bitswarm-ops
+            - bitswarmlabs-rancher-prod
 
         infrastructure-mgmt:
           document_template: 'bsl_infrastructure/iam/policies/infrastructure-mgmt.erb'
+          roles:
+            - bitswarmlabs-rancher-prod
 
 
 bsl_infrastructure::manage_tenants: false
