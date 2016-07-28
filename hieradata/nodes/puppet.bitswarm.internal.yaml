@@ -152,7 +152,7 @@ bsl_infrastructure::providers:
             - bitswarmlabs-rancher-prod
 
 
-bsl_infrastructure::manage_tenants: false
+bsl_infrastructure::manage_tenants: true
 bsl_infrastructure::tenants:
   bitswarmlabs:
     purge: false
