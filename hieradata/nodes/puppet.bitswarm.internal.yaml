@@ -136,6 +136,10 @@ bsl_infrastructure::providers:
               port: 2376 # docker daemon
               cidr: '172.31.0.0/16'
 
+      iam_roles:
+        bitswarmlabs-rancher-prod:
+          ensure: present
+          
       iam_policies:
         default:
           document_template: 'bsl_infrastructure/iam/policies/default.erb'
