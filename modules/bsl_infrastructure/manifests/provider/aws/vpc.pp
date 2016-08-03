@@ -29,10 +29,6 @@ define bsl_infrastructure::provider::aws::vpc(
     tags         => $set_tags,
   }
 
-  if $vpc {
-    Ec2_vpc[$vpc]->Ec2_securitygroup[$name]
-  }
-
   if $subnets {
     validate_hash($subnets)
 
