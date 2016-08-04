@@ -34,11 +34,13 @@ define bsl_infrastructure::provider::aws::iam_policy(
       validate_array($roles)
     }
 
-    iam_policy_attachment { $title:
-      name   => $name,
-      users  => $users,
-      groups => $groups,
-      roles  => $roles,
+    if $ensure == present {
+      iam_policy_attachment { $title:
+        name   => $name,
+        users  => $users,
+        groups => $groups,
+        roles  => $roles,
+      }
     }
   }
 }
