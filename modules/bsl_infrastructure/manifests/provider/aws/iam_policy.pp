@@ -35,6 +35,8 @@ define bsl_infrastructure::provider::aws::iam_policy(
     }
 
     iam_policy_attachment { $title:
+      name   => $name,
+      ensure => $ensure,
       users  => $users,
       groups => $groups,
       roles  => $roles,

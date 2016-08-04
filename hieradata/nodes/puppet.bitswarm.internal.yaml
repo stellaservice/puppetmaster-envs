@@ -140,16 +140,18 @@ bsl_infrastructure::providers:
         bitswarmlabs-rancher-prod:
           ensure: absent
 
-#      iam_policies:
-#        default:
-#          document_template: 'bsl_infrastructure/iam/policies/default.erb'
-#          roles:
-#            - bitswarmlabs-rancher-prod
-#
-#        infrastructure-mgmt:
-#          document_template: 'bsl_infrastructure/iam/policies/infrastructure-mgmt.erb'
-#          roles:
-#            - bitswarmlabs-rancher-prod
+      iam_policies:
+        default:
+          ensure: absent
+          document_template: 'bsl_infrastructure/iam/policies/default.erb'
+          roles:
+            - bitswarmlabs-rancher-prod
+
+        infrastructure-mgmt:
+          ensure: absent
+          document_template: 'bsl_infrastructure/iam/policies/infrastructure-mgmt.erb'
+          roles:
+            - bitswarmlabs-rancher-prod
 
 
 bsl_infrastructure::manage_tenants: true
