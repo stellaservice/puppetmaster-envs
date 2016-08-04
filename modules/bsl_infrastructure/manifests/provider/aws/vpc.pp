@@ -8,7 +8,6 @@ define bsl_infrastructure::provider::aws::vpc(
   $subnets = undef,
 ) {
   $default_tags = {
-    'Name'           => $name,
     'puppet_managed' => 'true',
   }
 

@@ -11,7 +11,6 @@ define bsl_infrastructure::provider::aws::security_group(
   }
 
   $default_tags = {
-    'Name'           => $name,
     'puppet_managed' => 'true',
   }
 

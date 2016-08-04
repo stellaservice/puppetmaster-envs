@@ -138,7 +138,8 @@ bsl_infrastructure::providers:
 
       iam_roles:
         bitswarmlabs-rancher-prod:
-          ensure: absent
+          ensure: present
+          instance_profile: true
 
       iam_policies:
         default:

@@ -94,7 +94,6 @@ define bsl_infrastructure::resource::aws::service::instance(
   }
 
   $default_tags = {
-    'Name'           => $name,
     'bsl_account_id' => $bsl_account_id,
     'vpc_tenant_id'  => $vpc_tenant_id,
     'puppet_managed' => 'true',
