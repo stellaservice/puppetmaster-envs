@@ -13,8 +13,7 @@ define bsl_infrastructure::provider::aws::iam_role(
     iam_instance_profile { $title:
       ensure  => $ensure,
       name    => $name,
-      roles   => [$title],
-      require => Iam_role[$title],
+      roles   => [ $title ],
     }
   }
 }
