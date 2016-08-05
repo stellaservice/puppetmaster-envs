@@ -2,6 +2,7 @@ define bsl_infrastructure::provider::aws::iam_role(
   $ensure = 'present',
   $service_principal = 'ec2.amazonaws.com',
   $instance_profile = 'true',
+  $policies = undef
 ) {
   iam_role { $title:
     ensure          => $ensure,
@@ -14,6 +15,12 @@ define bsl_infrastructure::provider::aws::iam_role(
       ensure  => $ensure,
       name    => $name,
       roles   => [ $title ],
+    }
+  }
+
+  if $ensure == present and $policies {
+    iam_policy_attachment { $policies:
+      roles => [ $title ],
     }
   }
 }
