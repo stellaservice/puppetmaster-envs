@@ -143,13 +143,11 @@ bsl_infrastructure::providers:
 
       iam_policies:
         default:
-          ensure: absent
           document_template: 'bsl_infrastructure/iam/policies/default.erb'
           roles:
             - bitswarmlabs-rancher-prod
 
         infrastructure-mgmt:
-          ensure: absent
           document_template: 'bsl_infrastructure/iam/policies/infrastructure-mgmt.erb'
           roles:
             - bitswarmlabs-rancher-prod
