@@ -35,7 +35,7 @@ mod 'puppet/extlib', '0.11.3'
 mod 'puppet/puppetboard', '2.8.2'
 mod 'puppetlabs/apache', '1.10.0'
 mod 'puppetlabs/apt', '2.2.2'
-mod 'puppetlabs/aws', :git => 'https://github.com/bitswarmlabs/puppet-aws.git', :branch => 'development'
+mod 'puppetlabs/aws', :git => 'https://github.com/bitswarmlabs/puppetlabs-aws.git', :branch => 'development'
 mod 'puppetlabs/cloudformation', :latest
 mod 'puppetlabs/concat', '2.1.0'
 mod 'puppetlabs/docker_platform', '2.1.0'
