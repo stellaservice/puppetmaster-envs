@@ -10,18 +10,10 @@ define bsl_infrastructure::provider::aws::iam_role(
   }
 
   if str2bool($instance_profile) {
-    if $ensure == 'present' {
-      iam_instance_profile { $title:
-        ensure  => $ensure,
-        name    => $name,
-        roles   => [ $title ],
-      }
-    }
-    else {
-      iam_instance_profile { $title:
-        name    => $name,
-        ensure  => $ensure,
-      }
+    iam_instance_profile { $title:
+      ensure  => $ensure,
+      name    => $name,
+      roles   => [ $title ],
     }
   }
 }
