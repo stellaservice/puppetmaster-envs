@@ -144,10 +144,12 @@ bsl_infrastructure::providers:
         bitswarmlabs-rancher-development:
           ensure: present
           instance_profile: true
+          path: /bitswarmlabs
 
         bitswarmlabs-rancher-production:
           ensure: present
           instance_profile: true
+          path: /bitswarmlabs
           policies:
             - bitswarmlabs-infrastructure
 
@@ -174,9 +176,7 @@ bsl_infrastructure::tenants:
                     - www
                     - rancher-server
                   tags:
-                    profile: docker
                     role: rancher_server
+                  elastic_ip: bitswarmlabs-rancher-us-east-1
 
-#          iam_profiles:
-#            bitswarmlabs-ops:
 

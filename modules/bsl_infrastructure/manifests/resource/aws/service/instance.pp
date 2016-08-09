@@ -44,6 +44,10 @@ define bsl_infrastructure::resource::aws::service::instance(
   $block_devices = undef,
   $iam_instance_profile_name = undef,
   $iam_instance_profile_arn = undef,
+
+  # abstractions
+  $elastic_ip = undef,
+  $elastic_ip_ensure = undef,
 ) {
   $instance_title = "${vpc_tenant_id}_${name}"
 
@@ -151,6 +155,22 @@ define bsl_infrastructure::resource::aws::service::instance(
   # private_dns_name
   # public_dns_name
   # kernel_id
+
+  if $elastic_ip {
+    $_elastic_ip_ensure = $elastic_ip_ensure ? {
+      undef => $ensure ? {
+        'present' => 'attached',
+        'absent'  => 'detached'
+      },
+      default => $elastic_ip_ensure,
+    }
+
+    ec2_elastic_ip { $elastic_ip:
+      region   => $region,
+      instance => $name,
+      ensure   => $_elastic_ip_ensure,
+    }
+  }
 
   Ec2_instance[$instance_title]~>
   anchor { "bsl_infrastructure::resource::aws::service::instance[$title]::end": }
