@@ -177,6 +177,6 @@ bsl_infrastructure::tenants:
                     - rancher-server
                   tags:
                     role: rancher_server
-                  elastic_ip: bitswarmlabs-rancher-us-east-1
+                  elastic_ip_addr: 52.72.51.50
 
 

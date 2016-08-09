@@ -46,7 +46,7 @@ define bsl_infrastructure::resource::aws::service::instance(
   $iam_instance_profile_arn = undef,
 
   # abstractions
-  $elastic_ip = undef,
+  $elastic_ip_addr = undef,
   $elastic_ip_ensure = undef,
 ) {
   $instance_title = "${vpc_tenant_id}_${name}"
@@ -156,7 +156,9 @@ define bsl_infrastructure::resource::aws::service::instance(
   # public_dns_name
   # kernel_id
 
-  if $elastic_ip {
+  if $elastic_ip_addr {
+    validate_ipv4_address($elastic_ip_addr)
+
     $_elastic_ip_ensure = $elastic_ip_ensure ? {
       undef => $ensure ? {
         'present' => 'attached',
@@ -167,7 +169,7 @@ define bsl_infrastructure::resource::aws::service::instance(
       default => $elastic_ip_ensure,
     }
 
-    ec2_elastic_ip { $elastic_ip:
+    ec2_elastic_ip { $elastic_ip_addr:
       region   => $region,
       instance => $name,
       ensure   => $_elastic_ip_ensure,
