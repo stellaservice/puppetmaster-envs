@@ -160,7 +160,9 @@ define bsl_infrastructure::resource::aws::service::instance(
     $_elastic_ip_ensure = $elastic_ip_ensure ? {
       undef => $ensure ? {
         'present' => 'attached',
-        'absent'  => 'detached'
+        'running' => 'attached',
+        'absent'  => 'detached',
+        'stopped' => 'detached',
       },
       default => $elastic_ip_ensure,
     }
