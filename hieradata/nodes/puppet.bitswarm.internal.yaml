@@ -144,12 +144,12 @@ bsl_infrastructure::providers:
         bitswarmlabs-rancher-development:
           ensure: present
           instance_profile: true
-          path: /bitswarmlabs
+          path: /bitswarmlabs/
 
         bitswarmlabs-rancher-production:
           ensure: present
           instance_profile: true
-          path: /bitswarmlabs
+          path: /bitswarmlabs/
           policies:
             - bitswarmlabs-infrastructure
 
