@@ -16,4 +16,9 @@ class bsl_core::puppetmaster(
       err('bsl_infrastructure not available for bsl_core::puppetmaster')
     }
   }
+
+  # Installing Amazon Simple Systems Management agent
+  class { '::ssm':
+    region => 'us-east-1',
+  }
 }
