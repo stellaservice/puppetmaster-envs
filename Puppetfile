@@ -10,6 +10,7 @@ mod 'bitswarmlabs/jenkins', :git => 'https://github.com/bitswarmlabs/puppet-jenk
 mod 'bitswarmlabs/ohmyzsh', :latest
 mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/systemd', '0.2.2'
+mod 'chaordix/ssm', '0.3.0'
 mod 'counsyl/sys', '0.9.20'
 mod 'compete/hiera_yamlgpg', '1.1.0'
 mod 'conjur/conjur', '0.0.4'
