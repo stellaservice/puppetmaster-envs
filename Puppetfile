@@ -47,7 +47,7 @@ mod 'puppetlabs/inifile', '1.5.0'
 mod 'puppetlabs/java', '1.5.0'
 mod 'puppetlabs/ntp', '4.2.0'
 mod 'puppetlabs/pe_gem', '0.2.0'
-mod 'puppetlabs/postgresql', '4.7.1'
+mod 'puppetlabs/postgresql', '4.8.0'
 mod 'puppetlabs/puppetdb', '5.1.2'
 mod 'puppetlabs/rancher', :latest
 mod 'puppetlabs/reboot', '1.2.1'
