@@ -2,8 +2,8 @@ class bsl_core(
   $service_acct = $bsl_core::params::service_acct
 ) inherits bsl_core::params {
   include '::git'
-  include '::awscli'
-  include '::ec2tagfacts'
+  #include '::awscli'
+  #include '::ec2tagfacts'
   include '::bsl_secrets'
   include '::bsl_core::dotfiles'
   include '::vim'
