@@ -5,3 +5,4 @@ hello_worlds:
   - 'environments/core/hieradata/iam/puppetmaster.yaml reporting in'
 
 external_fqdn: 'puppetmaster.bitswarm.io'
+bsl_puppet::config::server_dns_alt_names: 'puppet.bitswarm.io'
