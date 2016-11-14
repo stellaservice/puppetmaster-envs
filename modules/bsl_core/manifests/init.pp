@@ -8,7 +8,10 @@ class bsl_core(
   include '::bsl_core::dotfiles'
   include '::vim'
 
-  $ec2_instance_id = $::ec2_metadata['instance-id']
+  if $::ec2_metadata and $::ec2_metadata['instance-id'] {
+    $ec2_instance_id = $::ec2_metadata['instance-id']
+  }
+
   $puppetmaster_fqdn = hiera('puppetmaster', 'puppet')
 
   if $::ec2_metadata and $::ec2_metadata['iam'] and $::ec2_metadata['iam']['info'] {
