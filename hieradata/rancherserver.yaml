@@ -1,4 +1,0 @@
----
-classes:
-  - docker
-  - rancher::server
