@@ -19,7 +19,7 @@ class bsl_core::puppetmaster(
   }
 
   # Installing Amazon Simple Systems Management agent
-  class { '::ssm':
-    region => $aws_region,
-  }
+  # class { '::ssm':
+  #   region => $aws_region,
+  # }
 }

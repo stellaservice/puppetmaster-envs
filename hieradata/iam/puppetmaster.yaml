@@ -4,4 +4,4 @@
 hello_worlds:
   - 'environments/core/hieradata/iam/puppetmaster.yaml reporting in'
 
-external_fqdn: 'puppetmaster.bitswarm.io'
+#external_fqdn: 'puppetmaster.bitswarm.io'

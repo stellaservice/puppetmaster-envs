@@ -1,7 +1,0 @@
----
-hello_worlds:
-  - 'environments/core/hieradata/defaults.yaml reporting in'
-
-puppetmaster: 'puppet.bitswarm.internal'
-domain: 'bitswarm.internal'
-

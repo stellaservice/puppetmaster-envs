@@ -1,18 +1,18 @@
 # app_project specific defaults
 # Don't put any secrets here, this is a public repo!
 ---
-classes:
-  - bsl_core::foreman
-
-hello_worlds:
-  - 'environments/core/hieradata/apps/foreman.yaml reporting in'
-
-jvm_min_heap_size: '2G'
-jvm_max_heap_size: '2G'
-
-bsl_puppet::server: 'true'
-bsl_puppet::foreman: 'true'
-bsl_puppet::manage_puppetboard: 'false'
-bsl_puppet::manage_puppetdb: 'false'
-bsl_puppet::manage_r10k_webhooks: 'true'
-bsl_puppet::manage_dependencies: 'true'
+#classes:
+#  - bsl_core::foreman
+#
+#hello_worlds:
+#  - 'environments/core/hieradata/apps/foreman.yaml reporting in'
+#
+#jvm_min_heap_size: '2G'
+#jvm_max_heap_size: '2G'
+#
+#bsl_puppet::server: 'true'
+#bsl_puppet::foreman: 'true'
+#bsl_puppet::manage_puppetboard: 'false'
+#bsl_puppet::manage_puppetdb: 'false'
+#bsl_puppet::manage_r10k_webhooks: 'true'
+#bsl_puppet::manage_dependencies: 'true'

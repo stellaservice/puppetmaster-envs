@@ -4,4 +4,4 @@
 hello_worlds:
   - 'environments/core/hieradata/iam/foreman.yaml reporting in'
 
-external_fqdn: 'foreman.bitswarm.io'
+#external_fqdn: 'foreman.bitswarm.io'

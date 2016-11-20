@@ -1,13 +1,7 @@
 class bsl_core(
-  $service_acct = $bsl_core::params::service_acct
+  $service_acct = $bsl_core::params::service_acct,
+  $manage_hostname = 'false'
 ) inherits bsl_core::params {
-  include '::git'
-  #include '::awscli'
-  #include '::ec2tagfacts'
-  include '::bsl_secrets'
-  include '::bsl_core::dotfiles'
-  include '::vim'
-
   if $::ec2_metadata and $::ec2_metadata['instance-id'] {
     $ec2_instance_id = $::ec2_metadata['instance-id']
   }
@@ -31,7 +25,7 @@ class bsl_core(
     require => File['/etc/facter/facts.d'],
   }
 
-  if $::ec2_tag_hostname {
+  if $::ec2_tag_hostname and str2bool($manage_hostname) {
     class { 'hostname':
       hostname => $::ec2_tag_hostname,
       domain   => hiera('domain', $::domain),
