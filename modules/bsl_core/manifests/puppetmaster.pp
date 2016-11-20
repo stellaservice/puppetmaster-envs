@@ -1,5 +1,6 @@
 class bsl_core::puppetmaster(
   $manage_infrastructure = 'false',
+  $aws_region = 'us-east-1'
 ) {
   if $::osfamily == 'Debian' {
     include apt
@@ -19,6 +20,6 @@ class bsl_core::puppetmaster(
 
   # Installing Amazon Simple Systems Management agent
   class { '::ssm':
-    region => 'us-east-1',
+    region => $aws_region,
   }
 }
